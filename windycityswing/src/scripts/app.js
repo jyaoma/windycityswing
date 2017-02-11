@@ -10,7 +10,7 @@ import createLogger from 'redux-logger';
 import { Provider } from 'react-redux';
 // import rootSaga from './sagas';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
-import Container from './Container';
+import IndexPage from './IndexPage';
 import HomePage from './components/home/HomePage';
 
 // const logger = createLogger();
@@ -24,10 +24,8 @@ import HomePage from './components/home/HomePage';
 ReactDOM.render(
     // <Provider store={store}>
         <Router history={hashHistory}>
-            <Route path="/" component={Container}>
-                <IndexRoute component={HomePage}/>
-                <Route path="/home" component={HomePage}/>
-            </Route>
+            <Route path="/" component={IndexPage}/>
+            <Route path="/WindyCitySwing" component={HomePage}/>
         </Router>,
     // </Provider>,
     document.getElementById('app'));
