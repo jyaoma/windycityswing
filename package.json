@@ -1,0 +1,75 @@
+{
+  "name": "windycityswing",
+  "version": "1.0.0",
+  "description": "Windy City Swing",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "redux-saga": "0.10.3"
+  },
+  "devDependencies": {
+    "babel-jest": "^9.0.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-runtime": "^6.8.0",
+    "babel-polyfill": "^6.8.0",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-runtime": "^6.6.1",
+    "copy-webpack-plugin": "^3.0.1",
+    "enzyme": "^2.7.0",
+    "eslint": "^3.8.1",
+    "eslint-config-standard": "^6.2.0",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-react": "^6.4.1",
+    "eslint-plugin-standard": "^2.0.1",
+    "html-webpack-plugin": "^2.24.0",
+    "react-redux": "^4.4.1",
+    "react-router": "^2.1.0",
+    "redux": "^3.3.1",
+    "redux-logger": "^2.6.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dumbdimb/windycityswing.git"
+  },
+  "keywords": [
+    "swing",
+    "dancing"
+  ],
+  "author": "Jeremy Ma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dumbdimb/windycityswing/issues"
+  },
+  "homepage": "https://github.com/dumbdimb/windycityswing#readme",
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "jest",
+    "clean": "IF EXIST archive RMDIR /S /Q archive && IF EXIST dist RMDIR /S /Q dist",
+    "build": "npm run clean && .\\node_modules\\.bin\\webpack -d --bail",
+    "prestart": "npm run build",
+    "start": ".\\node_modules\\.bin\\webpack-dev-server --port 8080 --hot --inline --content-base dist"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/__tests__/testUtils"
+    ],
+    "preprocessorIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/__tests__/setup.js",
+    "globals": {
+      "BASE_URL": true,
+      "NODE_ENV": true
+    }
+  }
+}
