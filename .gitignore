@@ -20,3 +20,6 @@ bundle.js*
 
 # Generated
 dist/
+
+# Clarissa
+vday2017/
