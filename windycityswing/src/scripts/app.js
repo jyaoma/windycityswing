@@ -12,6 +12,7 @@ import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router';
 import IndexPage from './IndexPage';
 import HomePage from './components/home/HomePage';
+import Vday2017 from '../../../vday2017/src/scripts/Vday2017'
 
 // const logger = createLogger();
 
@@ -26,6 +27,7 @@ ReactDOM.render(
         <Router history={hashHistory}>
             <Route path="/" component={IndexPage}/>
             <Route path="/WindyCitySwing" component={HomePage}/>
+            <Route path="/vday2017" component={Vday2017}/>
         </Router>,
     // </Provider>,
     document.getElementById('app'));

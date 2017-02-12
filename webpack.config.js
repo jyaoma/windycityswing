@@ -43,8 +43,21 @@ const createConfig = () => {
                     }
                 },
                 {
+                    test: /\.js$/,
+                    include: path.join(__dirname, 'vday2017', 'src', 'scripts'),
+                    loader: 'babel',
+                    query: {
+                        presets: ['es2015', 'react']
+                    }
+                },
+                {
                     test: /\.less$/,
                     include: path.join(__dirname, 'windycityswing', 'src', 'less'),
+                    loaders: ['style', 'css', 'resolve-url', 'less']
+                },
+                {
+                    test: /\.less$/,
+                    include: path.join(__dirname, 'vday2017', 'src', 'less'),
                     loaders: ['style', 'css', 'resolve-url', 'less']
                 },
                 {
@@ -58,6 +71,11 @@ const createConfig = () => {
                     include: path.join(__dirname, 'windycityswing', 'src', 'images')
                 },
                 {
+                    test: /\.(jpg|svg|png)$/,
+                    loader: 'url-loader?limit=10000&name=images/[name]-[hash].[ext]',
+                    include: path.join(__dirname, 'vday2017', 'src', 'images')
+                },
+                {
                     include: /\.json$/, loaders: ['json-loader']
                 }
             ]
@@ -69,8 +87,8 @@ const createConfig = () => {
 
         plugins: [
             new CopyWebpackPlugin([
-                {from: './src/images/', to: 'images/'}, // TODO: Use url-loader, it's better than this. Then remove copy-webpack-plugin.
-                {from: './src/lib/assets/fonts/', to: 'fonts/'}
+                {from: '.\\vday2017\\src\\images\\', to: 'images\\'}, // TODO: Use url-loader, it's better than this. Then remove copy-webpack-plugin.
+                {from: '.\\src\\lib\\assets\\fonts\\', to: 'fonts\\'}
             ]),
             new HtmlWebpackPlugin({
                 template: path.join(__dirname, 'index.html')

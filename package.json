@@ -55,7 +55,7 @@
     "clean": "IF EXIST archive RMDIR /S /Q archive && IF EXIST dist RMDIR /S /Q dist",
     "build": "npm run clean && .\\node_modules\\.bin\\webpack -d --bail",
     "prestart": "npm run build",
-    "start": ".\\node_modules\\.bin\\webpack-dev-server --port 8080 --hot --inline --content-base dist"
+    "start": ".\\node_modules\\.bin\\webpack-dev-server --host 0.0.0.0 --port 8080 --hot --inline --content-base dist"
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
