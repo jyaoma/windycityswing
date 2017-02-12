@@ -1,0 +1,40 @@
+{
+  "extends": [
+    "standard",
+    "plugin:react/recommended"
+  ],
+
+  "env": {
+    "jasmine": true,
+    "jest": true,
+    "jquery": true
+  },
+
+  "plugins": [
+    "react"
+  ],
+
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+
+  "globals": {
+      "google": true,
+      "BASE_URL": true,
+      "RESCUER_URL": true,
+      "RESCUE_URL": true,
+      "NODE_ENV": true
+  },
+
+  "rules": {
+    "prefer-const": 2,
+    "indent": ["error", 4],
+    "eol-last": 0,
+    "semi": [2, "always"],
+    "no-extra-semi": 2,
+    "semi-spacing": [2, { "before": false, "after": true }],
+    "no-new": 0
+  }
+}

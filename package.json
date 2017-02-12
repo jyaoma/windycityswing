@@ -4,6 +4,7 @@
   "description": "Windy City Swing",
   "main": "index.js",
   "dependencies": {
+    "eslint": "^3.15.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "redux-saga": "0.10.3"
@@ -24,6 +25,8 @@
     "eslint-plugin-react": "^6.4.1",
     "eslint-plugin-standard": "^2.0.1",
     "html-webpack-plugin": "^2.24.0",
+    "jest-cli": "^12.1.1",
+    "react-addons-test-utils": "^15.0.2",
     "react-redux": "^4.4.1",
     "react-router": "^2.1.0",
     "redux": "^3.3.1",
@@ -66,7 +69,7 @@
       "js",
       "jsx"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/__tests__/setup.js",
+    "setupTestFrameworkScriptFile": "<rootDir>/windycityswing/__tests__/setup.js",
     "globals": {
       "BASE_URL": true,
       "NODE_ENV": true

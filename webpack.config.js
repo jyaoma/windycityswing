@@ -1,15 +1,15 @@
-const webpack = require('webpack');
+// const webpack = require('webpack');
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const createConfig = () => {
-    function stringify (obj) {
-        Object.keys(obj).forEach((key) => {
-            obj[key] = `"${obj[key]}"`;
-        });
-        return obj;
-    }
+    // function stringify (obj) {
+    //     Object.keys(obj).forEach((key) => {
+    //         obj[key] = `"${obj[key]}"`;
+    //     });
+    //     return obj;
+    // }
 
     const config = {
         entry: './windycityswing/src/scripts/app.js',

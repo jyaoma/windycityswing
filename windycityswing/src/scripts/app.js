@@ -5,11 +5,11 @@ import ReactDOM from 'react-dom';
 // import { createStore, applyMiddleware } from 'redux';
 // import createSagaMiddleware from 'redux-saga';
 // import thunk from 'redux-thunk';
-import createLogger from 'redux-logger';
+// import createLogger from 'redux-logger';
 // import reducers from './index';
-import { Provider } from 'react-redux';
+// import { Provider } from 'react-redux';
 // import rootSaga from './sagas';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import { Router, Route, hashHistory } from 'react-router';
 import IndexPage from './IndexPage';
 import HomePage from './components/home/HomePage';
 
