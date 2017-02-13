@@ -93,7 +93,8 @@ const createConfig = () => {
         plugins: [
             new CopyWebpackPlugin([
                 {from: '.\\vday2017\\src\\images\\', to: 'images\\'}, // TODO: Use url-loader, it's better than this. Then remove copy-webpack-plugin.
-                {from: '.\\vday2017\\src\\fonts\\', to: 'fonts\\'}
+                {from: '.\\vday2017\\src\\fonts\\', to: 'fonts\\'},
+                {from: '.\\vday2017\\src\\less\\', to: 'less\\'}
             ]),
             new HtmlWebpackPlugin({
                 template: path.join(__dirname, 'index.html')
