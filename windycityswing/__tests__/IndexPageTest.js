@@ -19,7 +19,11 @@ describe('Index Page', () => {
 
     describe('links', () => {
         it('has a link to Windy City Swing', () => {
-            expect(tree.find('Link').text()).toEqual('Windy City Swing');
+            expect(tree.find('Link').at(0).text()).toEqual('Windy City Swing');
+        });
+
+        it('has a link to the 2017 valentines day website', () => {
+            expect(tree.find('Link').at(1).text()).toEqual('Valentines Day 2017');
         });
     });
 });

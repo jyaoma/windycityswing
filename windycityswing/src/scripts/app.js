@@ -1,4 +1,5 @@
 // import './../less/main.less';
+import '../../../vday2017/src/less/vday2017.less';
 // import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -12,7 +13,7 @@ import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router';
 import IndexPage from './IndexPage';
 import HomePage from './components/home/HomePage';
-import Vday2017 from '../../../vday2017/src/scripts/Vday2017'
+import Vday2017 from '../../../vday2017/src/scripts/Vday2017';
 
 // const logger = createLogger();
 
