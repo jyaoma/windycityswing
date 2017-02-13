@@ -62,7 +62,7 @@ const createConfig = () => {
                 },
                 {
                     test: /\.(eot|woff|woff2|ttf|svg)$/,
-                    include: path.join(__dirname, 'windycityswing', 'src', 'lib', 'assets', 'fonts'),
+                    include: path.join(__dirname, 'windycityswing', 'src', 'fonts'),
                     loader: 'url-loader?limit=70000&name=fonts/[name]-[hash].[ext]'
                 },
                 {
@@ -94,7 +94,10 @@ const createConfig = () => {
             new CopyWebpackPlugin([
                 {from: '.\\vday2017\\src\\images\\', to: 'images\\'}, // TODO: Use url-loader, it's better than this. Then remove copy-webpack-plugin.
                 {from: '.\\vday2017\\src\\fonts\\', to: 'fonts\\'},
-                {from: '.\\vday2017\\src\\less\\', to: 'less\\'}
+                {from: '.\\vday2017\\src\\less\\', to: 'less\\'},
+                {from: '.\\windycityswing\\src\\images\\', to: 'images\\'}, // TODO: Use url-loader, it's better than this. Then remove copy-webpack-plugin.
+                {from: '.\\windycityswing\\src\\fonts\\', to: 'fonts\\'},
+                {from: '.\\windycityswing\\src\\less\\', to: 'less\\'}
             ]),
             new HtmlWebpackPlugin({
                 template: path.join(__dirname, 'index.html')
