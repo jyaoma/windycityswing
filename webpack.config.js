@@ -4,13 +4,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const createConfig = () => {
-    // function stringify (obj) {
-    //     Object.keys(obj).forEach((key) => {
-    //         obj[key] = `"${obj[key]}"`;
-    //     });
-    //     return obj;
-    // }
-
     const config = {
         entry: './windycityswing/src/scripts/app.js',
 
@@ -18,19 +11,6 @@ const createConfig = () => {
             path: path.join(__dirname, 'dist'),
             filename: 'bundle.js'
         },
-
-        // devServer: {
-        //     hot: true,
-        //     port: 8080,
-        //     inline: true,
-        //     contentBase: "dist/"
-        //     proxy: {
-        //         "/WindyCitySwing": {
-        //             target: "http://localhost:8080/",
-        //             secure: false
-        //         }
-        //     }
-        // },
 
         module: {
             loaders: [
@@ -61,12 +41,12 @@ const createConfig = () => {
                     loaders: ['style', 'css', 'resolve-url', 'less']
                 },
                 {
-                    test: /\.(eot|woff|woff2|ttf|svg)$/,
+                    test: /\.(eot|woff|woff2|ttf|svg|otf)$/,
                     include: path.join(__dirname, 'windycityswing', 'src', 'fonts'),
                     loader: 'url-loader?limit=70000&name=fonts/[name]-[hash].[ext]'
                 },
                 {
-                    test: /\.(eot|woff|woff2|ttf|svg)$/,
+                    test: /\.(eot|woff|woff2|ttf|svg|otf)$/,
                     include: path.join(__dirname, 'vday2017', 'src', 'fonts'),
                     loader: 'url-loader?limit=70000&name=fonts/[name]-[hash].[ext]'
                 },

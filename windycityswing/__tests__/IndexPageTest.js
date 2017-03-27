@@ -13,8 +13,8 @@ describe('Index Page', () => {
     });
 
     it('renders the headers correctly', () => {
-        expect(tree.find('h1').text()).toEqual('Welcome to Jeremy\'s Web Host!');
-        expect(tree.find('h2').text()).toEqual('Pick one of the sites below:');
+        expect(tree.find('span').at(0).text()).toEqual('Welcome to Jeremy\'s Web Host!');
+        expect(tree.find('span').at(1).text()).toEqual('Pick one of the sites below:');
     });
 
     describe('links', () => {
