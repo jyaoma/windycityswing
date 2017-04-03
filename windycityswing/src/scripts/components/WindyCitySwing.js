@@ -10,6 +10,7 @@ class WindyCitySwing extends React.Component {
             <div id='windy-city-swing'>
                 <Header/>
                 {this.props.children}
+                <div id='skyline'></div>
             </div>
         );
     }
