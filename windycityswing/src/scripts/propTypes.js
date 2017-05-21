@@ -1,7 +1,7 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const windyCitySwingProps = {
-    children: React.PropTypes.object
+    children: PropTypes.object
 };
 
 export default windyCitySwingProps;

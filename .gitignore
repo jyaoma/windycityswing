@@ -1,3 +1,5 @@
+__clientTemp
+
 # Logs
 logs
 *.log
@@ -26,3 +28,6 @@ vday2017/
 
 #mocks
 mocks/
+
+#nginx
+nginx-1.12.0/

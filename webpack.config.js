@@ -13,11 +13,11 @@ const createConfig = () => {
         },
 
         module: {
-            loaders: [
+            rules: [
                 {
                     test: /\.js$/,
                     include: path.join(__dirname, 'windycityswing', 'src', 'scripts'),
-                    loader: 'babel',
+                    loader: 'babel-loader',
                     query: {
                         presets: ['es2015', 'react']
                     }
@@ -25,7 +25,7 @@ const createConfig = () => {
                 {
                     test: /\.js$/,
                     include: path.join(__dirname, 'vday2017', 'src', 'scripts'),
-                    loader: 'babel',
+                    loader: 'babel-loader',
                     query: {
                         presets: ['es2015', 'react']
                     }
@@ -33,12 +33,12 @@ const createConfig = () => {
                 {
                     test: /\.less$/,
                     include: path.join(__dirname, 'windycityswing', 'src', 'less'),
-                    loaders: ['style', 'css', 'resolve-url', 'less']
+                    loaders: ['style-loader', 'css-loader', 'resolve-url-loader', 'less-loader']
                 },
                 {
                     test: /\.less$/,
                     include: path.join(__dirname, 'vday2017', 'src', 'less'),
-                    loaders: ['style', 'css', 'resolve-url', 'less']
+                    loaders: ['style-loader', 'css-loader', 'resolve-url-loader', 'less-loader']
                 },
                 {
                     test: /\.(eot|woff|woff2|ttf|svg|otf)$/,
@@ -59,15 +59,12 @@ const createConfig = () => {
                     test: /\.(jpg|svg|png)$/,
                     loader: 'url-loader?limit=10000&name=images/[name]-[hash].[ext]',
                     include: path.join(__dirname, 'vday2017', 'src', 'images')
-                },
-                {
-                    include: /\.json$/, loaders: ['json-loader']
                 }
             ]
         },
 
         resolve: {
-            extensions: ['', '.json', '.jsx', '.js']
+            extensions: ['.json', '.jsx', '.js']
         },
 
         plugins: [

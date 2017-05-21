@@ -10,7 +10,8 @@ import ReactDOM from 'react-dom';
 // import reducers from './index';
 // import { Provider } from 'react-redux';
 // import rootSaga from './sagas';
-import { Router, Route, hashHistory } from 'react-router';
+import { Router, Route, Switch } from 'react-router';
+import createHashHistory from 'history/createHashHistory';
 import IndexPage from './IndexPage';
 import WindyCitySwing from './components/WindyCitySwing';
 import Vday2017 from '../../../vday2017/src/scripts/Vday2017';
@@ -25,10 +26,12 @@ import Vday2017 from '../../../vday2017/src/scripts/Vday2017';
 
 ReactDOM.render(
     // <Provider store={store}>
-        <Router history={hashHistory}>
-            <Route path="/" component={IndexPage}/>
-            <Route path="/WindyCitySwing" component={WindyCitySwing}/>
-            <Route path="/vday2017" component={Vday2017}/>
+        <Router history={createHashHistory()}>
+            <Switch>
+                <Route exact path="/" component={IndexPage}/>
+                <Route path="/WindyCitySwing" component={WindyCitySwing}/>
+                <Route path="/vday2017" component={Vday2017}/>
+            </Switch>
         </Router>,
     // </Provider>,
     document.getElementById('app'));

@@ -1,7 +1,7 @@
 jest.unmock('../src/scripts/IndexPage');
 
 import React from 'react';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 
 import IndexPage from '../src/scripts/IndexPage';
 
@@ -9,7 +9,7 @@ describe('Index Page', () => {
     let tree;
 
     beforeEach(() => {
-        tree = mount(<IndexPage/>);
+        tree = shallow(<IndexPage/>);
     });
 
     it('renders the headers correctly', () => {
@@ -19,11 +19,11 @@ describe('Index Page', () => {
 
     describe('links', () => {
         it('has a link to Windy City Swing', () => {
-            expect(tree.find('Link').at(0).text()).toEqual('Windy City Swing');
+            expect(tree.find('Link').at(0).props().children).toEqual('Windy City Swing');
         });
 
         it('has a link to the 2017 valentines day website', () => {
-            expect(tree.find('Link').at(1).text()).toEqual('Valentines Day 2017');
+            expect(tree.find('Link').at(1).props().children).toEqual('Valentines Day 2017');
         });
     });
 });

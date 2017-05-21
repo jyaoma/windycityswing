@@ -1,0 +1,9 @@
+{
+  "middleware": [],
+  "routes": {
+    "Homepage": {
+      "path": "/",
+      "page": "windycityswing/src/scripts/app.js"
+    }
+  }
+}
