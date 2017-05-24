@@ -7,8 +7,9 @@
     "pretest": "eslint .",
     "test": "jest",
     "clean": "IF EXIST archive RMDIR /S /Q archive && IF EXIST dist RMDIR /S /Q dist",
-    "start": "webpack-dev-server --inline --hot --content-base dist/ --host 0.0.0.0 --port 3000 --public 10.0.0.122",
-    "build": "npm run clean && webpack -d --bail"
+    "prestart": "npm run clean && npm run build",
+    "start": "webpack-dev-server --inline --hot --content-base dist/ --host 0.0.0.0 --port 3000 --public 10.0.0.122:3000",
+    "build": "webpack -d --bail"
   },
   "license": "Apache-2.0",
   "dependencies": {
