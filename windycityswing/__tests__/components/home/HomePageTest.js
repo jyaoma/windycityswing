@@ -17,10 +17,6 @@ describe('Home Page', () => {
         tree = mount(<HomePage/>);
     });
 
-    it('has a title', () => {
-        expect(tree.find('.event-calendar__title').text()).toEqual('Events');
-    });
-
     describe('event table', () => {
         let eventTable;
         beforeEach(() => {
@@ -31,7 +27,7 @@ describe('Home Page', () => {
             const currentMonth = moment().format('MMMM YYYY');
 
             const eventTableMonth = eventTable.find('tr').at(0).find('td').at(1);
-            expect(eventTableMonth.props().colSpan).toEqual('5');
+            expect(eventTableMonth.props().colSpan).toEqual('3');
             expect(eventTableMonth.props().children).toEqual(currentMonth);
         });
 

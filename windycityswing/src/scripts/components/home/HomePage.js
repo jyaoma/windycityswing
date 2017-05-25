@@ -131,7 +131,6 @@ class HomePage extends React.Component {
         document.title = 'Windy City Swing';
         return (
             <div className='windy-city-home'>
-                <span className='event-calendar__title'>Events</span>
                 <table className='event-calendar'>
                     <tbody>
                         <tr>
