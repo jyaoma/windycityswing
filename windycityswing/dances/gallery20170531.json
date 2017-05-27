@@ -1,0 +1,86 @@
+{
+    "title": "Gallery Dance",
+    "siteTitle": "Lockport",
+    "date": {
+        "month": 5,
+        "day": 31,
+        "weekday": 3
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20170531T193000",
+        "endTimestamp": "20170531T220000"
+    },
+    "recurrence": {
+        "frequency": "none",
+        "rules": []
+    },
+    "facebookUrl": "https://www.facebook.com/events/1361062103977058/",
+    "organizer": "Gallery Cafe",
+    "instructor": null,
+    "schedule": {
+        "1": {
+            "hour": 19,
+            "minute": 30,
+            "event": "Dancing"
+        },
+        "2": {
+            "hour": 22,
+            "minute": 0,
+            "event": "End"
+        }
+    },
+    "info": [],
+    "infoUrl": null,
+    "attendance": "1-50",
+    "music": {
+        "type": "Live music",
+        "url": "https://www.facebook.com/magnoliajassband/",
+        "by": "Magnolia Jass Band"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Gallery Cafe",
+        "addressOne": "1760 W North Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60622"
+    },
+    "dressCode": "Casual",
+    "danceStyles": [],
+    "transportation": {
+        "transit": {
+            "rail": [
+                {
+                    "line": "Blue",
+                    "stop": "Damen"
+                }
+            ],
+            "bus": [
+                {
+                    "lineNumber": "9",
+                    "lineName": "Ashland",
+                    "stop": "North & Ashland"
+                },
+                {
+                    "lineNumber": "50",
+                    "lineName": "Damen",
+                    "stop": "North & Damen"
+                },
+                {
+                    "lineNumber": "56",
+                    "lineName": "Milwaukee",
+                    "stop": "North & Milwaukee"
+                },
+                {
+                    "lineNumber": "72",
+                    "lineName": "North",
+                    "stop": "Wood & North"
+                }
+            ],
+            "ctaUrl": "http://www.transitchicago.com/assets/1/clickable_system_map/200806C.htm"
+        },
+        "parking": "Street parking available.",
+        "price": "$7"
+    }
+}
