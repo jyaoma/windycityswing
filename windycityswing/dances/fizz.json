@@ -1,0 +1,106 @@
+{
+    "title": "Fizz",
+    "className": "fizz",
+    "siteTitle": "Fizz",
+    "date": {
+        "year": 2017,
+        "month": 5,
+        "day": 2,
+        "weekday": 2
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20170502T200000",
+        "endTimestamp": "20170503T000000"
+    },
+    "recurrence": {
+        "frequency": "weekly",
+        "rules": ["dayOfWeek"],
+        "dayOfWeek": 2
+    },
+    "facebookUrl": "https://www.facebook.com/Fizz-Swing-Dancing-73706742234/",
+    "organizer": "Fizz Staff",
+    "instructor": "Fizz Staff",
+    "schedule": {
+        "1": {
+            "hour": 20,
+            "minute": 0,
+            "event": "Swing lesson"
+        },
+        "2": {
+            "hour": 21,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        "3": {
+            "hour": 24,
+            "minute": 0,
+            "event": "End"
+        }
+    },
+    "info": [
+        "Occurs every Monday.",
+        "All ages event."
+    ],
+    "infoUrl": "",
+    "attendance": "50-100",
+    "music": {
+        "type": "DJ",
+        "url": "",
+        "by": "Fizz Staff"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Lion Head Pub",
+        "addressOne": "2251 N Lincoln Ave",
+        "addressTwo": "2nd Floor",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60614"
+    },
+    "dressCode": "Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "transportation": {
+        "transit": {
+            "rail": [
+                {
+                    "line": "Red",
+                    "stop": "Fullerton"
+                },
+                {
+                    "line": "Brown",
+                    "stop": "Fullerton"
+                },
+                {
+                    "line": "Purple",
+                    "stop": "Fullerton"
+                }
+            ],
+            "bus": [
+                {
+                    "lineNumber": "11",
+                    "lineName": "Lincoln",
+                    "stop": "Lincoln & Belden/Orchard"
+                },
+                {
+                    "lineNumber": "37",
+                    "lineName": "Sedgwick",
+                    "stop": "Lincoln & Webster"
+                },
+                {
+                    "lineNumber": "74",
+                    "lineName": "Fullerton",
+                    "stop": "Lincoln & Belden/Orchard"
+                }
+            ],
+            "ctaUrl": "http://www.transitchicago.com/assets/1/clickable_system_map/200806N.htm"
+        },
+        "parking": "Street parking",
+        "price": "$7 for general public, $5 for students"
+    }
+}
