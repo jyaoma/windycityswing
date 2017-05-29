@@ -1,9 +1,11 @@
 {
     "title": "First Fridays",
+    "className": "first-fridays",
     "siteTitle": "First Fridays",
     "date": {
-        "month": 7,
-        "day": 11,
+        "year": 2017,
+        "month": 5,
+        "day": 5,
         "weekday": 5
     },
     "timezone": {

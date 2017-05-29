@@ -5,8 +5,24 @@ import {shallow} from 'enzyme';
 import CalendarDay from '..\\..\\..\\src\\scripts\\components\\home\\CalendarDay';
 
 describe('CalendarDay', () => {
+    const testEvent = {
+        "title": "Test Event",
+        "className": "test-event",
+        "date": {
+            "year": 2017,
+            "month": 5,
+            "day": 1,
+            "weekday": 3
+        }
+    };
+    let tree;
+
+    beforeEach(() => {
+        tree = shallow(<CalendarDay day={1} events={[testEvent]}/>);
+    });
+
     it('renders correctly', () => {
-        expect(renderer.create(<CalendarDay day={1}/>).toJSON()).toMatchSnapshot();
+        expect(renderer.create(<CalendarDay day={1} events={[testEvent]}/>).toJSON()).toMatchSnapshot();
     });
 
     describe('rendering logic', () => {
@@ -33,5 +49,22 @@ describe('CalendarDay', () => {
                 expect(tree.text()).toEqual('');
             });
         });
+
+        describe('when event is undefined', () => {
+            it('does not render anything event related', () => {
+                tree = shallow(<CalendarDay day={1}/>);
+                expect(tree.find('.calendar-day__event').length).toEqual(0);
+            });
+        });
+
+        describe('when event is specified', () => {
+            it('renders the event', () => {
+                expect(tree.find('.calendar-day__event').length).not.toEqual(0);
+            });
+
+            it('should have the className specified', () => {
+                expect(tree.find('.calendar-day__event').at(0).props().className.indexOf(testEvent.className)).not.toEqual(-1);
+            });
+        })
     });
 });

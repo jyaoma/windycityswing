@@ -1,7 +1,7 @@
 jest.unmock('..\\..\\src\\scripts\\components\\home\\HomePage');
 
 import React from 'react';
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import moment from 'moment';
 
 import HomePage from '..\\..\\src\\scripts\\components\\home\\HomePage';
@@ -99,6 +99,94 @@ describe('Home Page', () => {
             expect(tree.instance().state.currentMonth).toEqual(nextMonth);
             expect(tree.find('.event-calendar__month').text()).toEqual(nextMonthName + ' ' + year.toString());
             expect(tree.find('.calendar-day').length).toEqual(numberOfDaysInNextMonth);
+        });
+
+        it('sends an event to the correct day', () => {
+            const testEvent = {
+                "title": "Test Event",
+                "date": {
+                    "year": 2017,
+                    "month": 5,
+                    "day": 30,
+                    "weekday": 3
+                }
+            };
+            tree = shallow(<HomePage/>);
+            tree.instance().setState({
+                currentYear: 2017,
+                currentMonth: 5,
+                events: [testEvent]
+            });
+
+            const theDayThatThisEventShouldBeOn = tree.find('CalendarDay').at(30);
+
+            expect(theDayThatThisEventShouldBeOn.props().events).toContainEqual(testEvent);
+        });
+
+        it('sends an event on the first day of the month', () => {
+            const testEvent = {
+                "title": "Test Event",
+                "date": {
+                    "year": 2017,
+                    "month": 5,
+                    "day": 1,
+                    "weekday": 3
+                }
+            };
+            tree = shallow(<HomePage/>);
+            tree.instance().setState({
+                currentYear: 2017,
+                currentMonth: 5,
+                events: [testEvent]
+            });
+
+            const theDayThatThisEventShouldBeOn = tree.find('CalendarDay').at(1);
+
+            expect(theDayThatThisEventShouldBeOn.props().events).toContainEqual(testEvent);
+        });
+
+        it('sends an event on the last day of the month', () => {
+            const testEvent = {
+                "title": "Test Event",
+                "date": {
+                    "year": 2017,
+                    "month": 5,
+                    "day": 31,
+                    "weekday": 3
+                }
+            };
+            tree = shallow(<HomePage/>);
+            tree.instance().setState({
+                currentYear: 2017,
+                currentMonth: 5,
+                events: [testEvent]
+            });
+
+            const theDayThatThisEventShouldBeOn = tree.find('CalendarDay').at(31);
+
+            expect(theDayThatThisEventShouldBeOn.props().events).toContainEqual(testEvent);
+        });
+
+        it('does not send an event to days that are not part of this month', () => {
+            const testEvent = {
+                "title": "Test Event",
+                "date": {
+                    "year": 2017,
+                    "month": 5,
+                    "day": 1,
+                    "weekday": 3
+                }
+            };
+            tree = shallow(<HomePage/>);
+            tree.instance().setState({
+                currentYear: 2017,
+                currentMonth: 5,
+                events: [testEvent]
+            });
+
+            const aDayThatThisEventShouldNotBeOn = tree.find('CalendarDay').at(0);
+
+            expect(aDayThatThisEventShouldNotBeOn.props().events).toBeUndefined();
         });
     });
 });

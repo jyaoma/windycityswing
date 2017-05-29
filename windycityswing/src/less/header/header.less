@@ -35,9 +35,11 @@ span {
 	font-family: 'Rampung';
 	font-size: 12pt;
 	text-align: center;
-	width:100%;
+	width:90%;
+	margin-left: 5%;
+	margin-right: 5%;
 	margin-top: 8pt;
-	margin-bottom: 50pt;
+	margin-bottom: 30pt;
 }
 
 #main-menu {
@@ -59,4 +61,28 @@ span {
 	line-height: 80pt;
 	margin-left: 40pt;
 	margin-right: 40pt;
+}
+
+@media (max-width: 480px) {
+	#title {
+		font-size:24pt;
+	}
+
+	#subtitle {
+		font-size: 10pt;
+		margin-top: 4pt;
+		margin-bottom: 10pt;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+	#title {
+		font-size:30pt;
+	}
+
+	#subtitle {
+		font-size: 10pt;
+		margin-top: 4pt;
+		margin-bottom: 15pt;
+	}
 }

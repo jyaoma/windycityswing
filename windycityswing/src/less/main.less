@@ -2,10 +2,12 @@
 @import 'home/home';
 
 #windy-city-swing {
-    margin: 0;
-    background-color: #b3ddf2;
-    padding-bottom: 150pt;
+    position: fixed;
+    width: 100%;
     height: 100%;
+    margin: 0;
+    overflow-y: auto;
+    background-color: #b3ddf2;
 }
 
 #index {
@@ -39,4 +41,25 @@ html {
 	width: 100%;
 	height: 102pt;
 	z-index: 10;
+    vertical-align: bottom;
+}
+
+@media (max-width: 480px) {
+    #windy-city-swing {
+        padding-bottom: 40pt;
+    }
+
+    #skyline {
+        height: 40pt;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    #windy-city-swing {
+        padding-bottom: 60pt;
+    }
+
+	#skyline {
+        height: 60pt;
+    }
 }

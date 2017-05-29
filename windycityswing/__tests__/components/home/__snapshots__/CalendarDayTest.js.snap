@@ -5,5 +5,14 @@ exports[`CalendarDay renders correctly 1`] = `
   className="calendar-day"
 >
   1
+  <div
+    className="calendar-day__events"
+  >
+    <div
+      className="calendar-day__event calendar-day__event--test-event"
+    >
+      Test Event
+    </div>
+  </div>
 </td>
 `;

@@ -1,8 +1,11 @@
+@import 'events';
+
 .windy-city-home {
     background-color: white;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100pt;
     bottom: 0;
     box-shadow: 0 1pt 3pt gray;
     padding-top: 1%;
@@ -22,26 +25,124 @@
 
 .event-calendar__weekday-name {
     text-align: center;
-    font-size: 28pt;
     height: 30pt;
 }
 
 .calendar-day {
-    text-align: center;
-    vertical-align: middle;
-    font-size: 36pt;
-    height: 75pt;
     border: 1px solid #CCCCCC;
 }
 
 .event-calendar__navigator {
     text-align: center;
     cursor: pointer;
-    font-size: 24pt;
 }
 
 .event-calendar__month {
     text-align: center;
-    font-size: 36pt;
-    height: 50pt;
+}
+
+@media (max-width: 480px) {
+    .event-calendar__weekday-name {
+        font-size: 12pt;
+    }
+
+    .event-calendar__navigator {
+        font-size: 12pt;
+        padding-top: 10pt;
+    }
+
+    .event-calendar__month {
+        font-size: 18pt;
+        height: 25pt;
+        padding-top: 10pt;
+    }
+
+    .calendar-day {
+        font-size: 18pt;
+        text-align: center;
+        vertical-align: middle;
+        height: 35pt;
+    }
+
+    .calendar-day__events {
+        display: flex;
+        flex-direction: row;
+        height: 4pt;
+        margin-left: 2pt;
+        margin-right: 2pt;
+    }
+
+    .calendar-day__event {
+        font-size: 0pt;
+        height: 4pt;
+        width: 4pt;
+        border-radius: 2pt;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+    .event-calendar__weekday-name {
+        font-size: 20pt;
+    }
+
+    .event-calendar__navigator {
+        font-size: 20pt;
+    }
+
+    .event-calendar__month {
+        font-size: 30pt;
+        height: 50pt;
+    }
+
+    .calendar-day {
+        font-size: 36pt;
+        text-align: center;
+        vertical-align: middle;
+        height: 60pt;
+    }
+
+    .calendar-day__events {
+        display: flex;
+        flex-direction: row;
+        height: 8pt;
+        margin-left: 6pt;
+        margin-right: 6pt;
+    }
+
+    .calendar-day__event {
+        font-size: 0pt;
+        height: 8pt;
+        width: 8pt;
+        border-radius: 4pt;
+    }
+}
+
+@media (min-width: 769px) {
+    .event-calendar__weekday-name {
+        font-size: 28pt;
+    }
+
+    .event-calendar__navigator {
+        font-size: 24pt;
+    }
+
+    .event-calendar__month {
+        font-size: 36pt;
+        height: 50pt;
+    }
+
+    .calendar-day {
+        vertical-align: top;
+        font-size: 24pt;
+        height: 75pt;
+    }
+
+    .calendar-day__event {
+        font-size: 8pt;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: 1pt;
+        padding-left: 3pt;
+        border-radius: 4pt;
+    }
 }
