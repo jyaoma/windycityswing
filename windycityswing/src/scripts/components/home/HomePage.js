@@ -17,7 +17,8 @@ class HomePage extends React.Component {
             events: dances,
             modalHidden: true,
             modalDay: 0,
-            modalEvents: []
+            modalEvents: [],
+            modalWeekday: -1
         };
 
         this.openModal = this.openModal.bind(this);
@@ -209,10 +210,19 @@ class HomePage extends React.Component {
     }
 
     openModal (day, events) {
+        let dayString = day.toString();
+        if (day < 10) {
+            dayString = '0' + dayString;
+        }
+        dayString = '-' + dayString;
+
+        const weekday = moment(this.state.currentMonthString.replace('-01', dayString), 'YYYY-MM-DD').day();
+
         this.setState({
             modalHidden: false,
             modalDay: day,
-            modalEvents: events
+            modalEvents: events,
+            modalWeekday: weekday
         });
     }
 
@@ -279,7 +289,13 @@ class HomePage extends React.Component {
                         {this.renderCalendar()}
                     </tbody>
                 </table>
-                <CalendarDayModal hidden={this.state.modalHidden} day={this.state.modalDay} events={this.state.modalEvents} closeModal={this.closeModal}/>
+                <CalendarDayModal
+                    hidden={this.state.modalHidden}
+                    day={this.state.modalDay}
+                    events={this.state.modalEvents}
+                    closeModal={this.closeModal}
+                    month={this.state.currentMonth}
+                    weekday={this.state.modalWeekday}/>
             </div>
         );
     }

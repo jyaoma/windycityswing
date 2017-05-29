@@ -226,6 +226,27 @@ describe('handling the modal', () => {
         expect(modalProps.events).toEqual(state.modalEvents);
     });
 
+    it('should display the day\'s weekday', () => {
+        tree.instance().setState({
+            currentMonthString: '2017-05-01'
+        });
+
+        tree.instance().openModal(31, [testEvent]);
+
+        expect(tree.find('CalendarDayModal').props().weekday).toEqual(3);
+    });
+
+    it('should show the current month', () => {
+        const state = {
+            currentMonth: 5
+        };
+        tree.instance().setState(state);
+
+        tree.instance().openModal(31, [testEvent]);
+
+        expect(tree.find('CalendarDayModal').props().month).toEqual(state.currentMonth);
+    });
+
     it('can close the modal', () => {
         const state = {
             modalHidden: false,

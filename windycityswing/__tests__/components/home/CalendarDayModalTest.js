@@ -38,11 +38,23 @@ const passedInEvents = [testEvent, testEventTwo];
 const closeModal = jest.fn();
 
 beforeEach(() => {
-    tree = shallow(<CalendarDayModal day={1} events={passedInEvents} hidden={false} closeModal={closeModal}/>)
+    tree = shallow(<CalendarDayModal
+                        day={1}
+                        events={passedInEvents}
+                        hidden={false}
+                        closeModal={closeModal}
+                        month={5}
+                        weekday={3}/>);
 });
 
 it('should render correctly', () => {
-    expect(renderer.create(<CalendarDayModal day={1} events={[testEvent]} hidden={false} closeModal={closeModal}/>).toJSON()).toMatchSnapshot();
+    expect(renderer.create(<CalendarDayModal
+                                day={1}
+                                events={[testEvent]}
+                                hidden={false}
+                                closeModal={closeModal}
+                                month={5}
+                                weekday={3}/>).toJSON()).toMatchSnapshot();
 });
 
 it('should hide', () => {
