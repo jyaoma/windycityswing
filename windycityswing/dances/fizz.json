@@ -5,8 +5,8 @@
     "date": {
         "year": 2017,
         "month": 5,
-        "day": 2,
-        "weekday": 2
+        "day": 1,
+        "weekday": 1
     },
     "timezone": {
         "tzid": "America/Chicago",
@@ -16,7 +16,7 @@
     "recurrence": {
         "frequency": "weekly",
         "rules": ["dayOfWeek"],
-        "dayOfWeek": 2
+        "dayOfWeek": 1
     },
     "facebookUrl": "https://www.facebook.com/Fizz-Swing-Dancing-73706742234/",
     "organizer": "Fizz Staff",
