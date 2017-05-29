@@ -10,7 +10,7 @@ exports[`should render correctly 1`] = `
     <span
       className="calendar-day-modal__day"
     >
-      1
+      WED, MAY 1
     </span>
     <div
       className="calendar-day-modal__close-container"
@@ -39,7 +39,7 @@ exports[`should render correctly 1`] = `
       <span
         className="calendar-day-modal__event-address"
       >
-        Test Locaiton, undefined
+        Test Locaiton, undefined, undefined, undefined
       </span>
     </div>
   </div>
