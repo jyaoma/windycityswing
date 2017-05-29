@@ -4,6 +4,7 @@ const moment = require('moment');
 import dances from '../../../../dances/dances';
 
 import CalendarDay from './CalendarDay';
+import CalendarDayModal from './CalendarDayModal';
 
 class HomePage extends React.Component {
     constructor (props, context) {
@@ -13,9 +14,14 @@ class HomePage extends React.Component {
             currentMonth: Number(moment().format('M')),
             currentYear: Number(moment().format('YYYY')),
             currentMonthString: moment().format('YYYY') + '-' + moment().format('MM') + '-01',
-            events: dances
+            events: dances,
+            modalHidden: true,
+            modalDay: 0,
+            modalEvents: []
         };
 
+        this.openModal = this.openModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
         this.goToPreviousMonth = this.goToPreviousMonth.bind(this);
         this.goToNextMonth = this.goToNextMonth.bind(this);
     }
@@ -69,56 +75,63 @@ class HomePage extends React.Component {
 
         const firstWeek = <tr key={1} className='event-calendar__week-one'>
             <CalendarDay
-                events={dayOfTheWeekOfTheFirstDayOfTheMonth === 0 ? eventMap[currentDay] : undefined}
-                day={dayOfTheWeekOfTheFirstDayOfTheMonth === 0 ? currentDay++ : undefined}/>
+                events={dayOfTheWeekOfTheFirstDayOfTheMonth === 0 ? eventMap[currentDay] : null}
+                onClick={this.openModal}
+                day={dayOfTheWeekOfTheFirstDayOfTheMonth === 0 ? currentDay++ : null}/>
             <CalendarDay
-                events={dayOfTheWeekOfTheFirstDayOfTheMonth <= 1 ? eventMap[currentDay] : undefined}
-                day={dayOfTheWeekOfTheFirstDayOfTheMonth <= 1 ? currentDay++ : undefined}/>
+                events={dayOfTheWeekOfTheFirstDayOfTheMonth <= 1 ? eventMap[currentDay] : null}
+                onClick={this.openModal}
+                day={dayOfTheWeekOfTheFirstDayOfTheMonth <= 1 ? currentDay++ : null}/>
             <CalendarDay
-                events={dayOfTheWeekOfTheFirstDayOfTheMonth <= 2 ? eventMap[currentDay] : undefined}
-                day={dayOfTheWeekOfTheFirstDayOfTheMonth <= 2 ? currentDay++ : undefined}/>
+                events={dayOfTheWeekOfTheFirstDayOfTheMonth <= 2 ? eventMap[currentDay] : null}
+                onClick={this.openModal}
+                day={dayOfTheWeekOfTheFirstDayOfTheMonth <= 2 ? currentDay++ : null}/>
             <CalendarDay
-                events={dayOfTheWeekOfTheFirstDayOfTheMonth <= 3 ? eventMap[currentDay] : undefined}
-                day={dayOfTheWeekOfTheFirstDayOfTheMonth <= 3 ? currentDay++ : undefined}/>
+                events={dayOfTheWeekOfTheFirstDayOfTheMonth <= 3 ? eventMap[currentDay] : null}
+                onClick={this.openModal}
+                day={dayOfTheWeekOfTheFirstDayOfTheMonth <= 3 ? currentDay++ : null}/>
             <CalendarDay
-                events={dayOfTheWeekOfTheFirstDayOfTheMonth <= 4 ? eventMap[currentDay] : undefined}
-                day={dayOfTheWeekOfTheFirstDayOfTheMonth <= 4 ? currentDay++ : undefined}/>
+                events={dayOfTheWeekOfTheFirstDayOfTheMonth <= 4 ? eventMap[currentDay] : null}
+                onClick={this.openModal}
+                day={dayOfTheWeekOfTheFirstDayOfTheMonth <= 4 ? currentDay++ : null}/>
             <CalendarDay
-                events={dayOfTheWeekOfTheFirstDayOfTheMonth <= 5 ? eventMap[currentDay] : undefined}
-                day={dayOfTheWeekOfTheFirstDayOfTheMonth <= 5 ? currentDay++ : undefined}/>
+                events={dayOfTheWeekOfTheFirstDayOfTheMonth <= 5 ? eventMap[currentDay] : null}
+                onClick={this.openModal}
+                day={dayOfTheWeekOfTheFirstDayOfTheMonth <= 5 ? currentDay++ : null}/>
             <CalendarDay
-                events={dayOfTheWeekOfTheFirstDayOfTheMonth <= 6 ? eventMap[currentDay] : undefined}
-                day={dayOfTheWeekOfTheFirstDayOfTheMonth <= 6 ? currentDay++ : undefined}/>
+                events={dayOfTheWeekOfTheFirstDayOfTheMonth <= 6 ? eventMap[currentDay] : null}
+                onClick={this.openModal}
+                day={dayOfTheWeekOfTheFirstDayOfTheMonth <= 6 ? currentDay++ : null}/>
         </tr>;
 
         const secondWeek = <tr key={2}>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
             </tr>;
 
         const thirdWeek = <tr key={3}>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
             </tr>;
 
         const fourthWeek = <tr key={4}>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
-                <CalendarDay events={eventMap[currentDay]} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
+                <CalendarDay events={eventMap[currentDay]} onClick={this.openModal} day={currentDay++}/>
             </tr>;
 
         let fifthWeek;
@@ -126,13 +139,34 @@ class HomePage extends React.Component {
             fifthWeek = null;
         } else {
             fifthWeek = <tr key={5}>
-                <CalendarDay events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : undefined} day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : undefined}/>
-                <CalendarDay events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : undefined} day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : undefined}/>
-                <CalendarDay events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : undefined} day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : undefined}/>
-                <CalendarDay events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : undefined} day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : undefined}/>
-                <CalendarDay events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : undefined} day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : undefined}/>
-                <CalendarDay events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : undefined} day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : undefined}/>
-                <CalendarDay events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : undefined} day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : undefined}/>
+                <CalendarDay
+                    events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : null}
+                    onClick={this.openModal}
+                    day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : null}/>
+                <CalendarDay
+                    events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : null}
+                    onClick={this.openModal}
+                    day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : null}/>
+                <CalendarDay
+                    events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : null}
+                    onClick={this.openModal}
+                    day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : null}/>
+                <CalendarDay
+                    events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : null}
+                    onClick={this.openModal}
+                    day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : null}/>
+                <CalendarDay
+                    events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : null}
+                    onClick={this.openModal}
+                    day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : null}/>
+                <CalendarDay
+                    events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : null}
+                    onClick={this.openModal}
+                    day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : null}/>
+                <CalendarDay
+                    events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : null}
+                    onClick={this.openModal}
+                    day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : null}/>
             </tr>;
         }
 
@@ -141,16 +175,53 @@ class HomePage extends React.Component {
             sixthWeek = null;
         } else {
             sixthWeek = <tr key={6}>
-                <CalendarDay events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : undefined} day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : undefined}/>
-                <CalendarDay events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : undefined} day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : undefined}/>
-                <CalendarDay events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : undefined} day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : undefined}/>
-                <CalendarDay events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : undefined} day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : undefined}/>
-                <CalendarDay events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : undefined} day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : undefined}/>
-                <CalendarDay events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : undefined} day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : undefined}/>
-                <CalendarDay events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : undefined} day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : undefined}/>
+                <CalendarDay
+                    events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : null}
+                    onClick={currentDay <= maxDaysInCurrentMonth ? this.openModal : null}
+                    day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : null}/>
+                <CalendarDay
+                    events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : null}
+                    onClick={currentDay <= maxDaysInCurrentMonth ? this.openModal : null}
+                    day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : null}/>
+                <CalendarDay
+                    events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : null}
+                    onClick={currentDay <= maxDaysInCurrentMonth ? this.openModal : null}
+                    day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : null}/>
+                <CalendarDay
+                    events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : null}
+                    onClick={currentDay <= maxDaysInCurrentMonth ? this.openModal : null}
+                    day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : null}/>
+                <CalendarDay
+                    events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : null}
+                    onClick={currentDay <= maxDaysInCurrentMonth ? this.openModal : null}
+                    day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : null}/>
+                <CalendarDay
+                    events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : null}
+                    onClick={currentDay <= maxDaysInCurrentMonth ? this.openModal : null}
+                    day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : null}/>
+                <CalendarDay
+                    events={currentDay <= maxDaysInCurrentMonth ? eventMap[currentDay] : null}
+                    onClick={currentDay <= maxDaysInCurrentMonth ? this.openModal : null}
+                    day={currentDay <= maxDaysInCurrentMonth ? currentDay++ : null}/>
             </tr>;
         }
         return [firstWeek, secondWeek, thirdWeek, fourthWeek, fifthWeek, sixthWeek];
+    }
+
+    openModal (day, events) {
+        this.setState({
+            modalHidden: false,
+            modalDay: day,
+            modalEvents: events
+        });
+    }
+
+    closeModal () {
+        this.setState({
+            modalHidden: true,
+            modalDay: 0,
+            modalEvents: []
+        });
     }
 
     goToPreviousMonth () {
@@ -208,6 +279,7 @@ class HomePage extends React.Component {
                         {this.renderCalendar()}
                     </tbody>
                 </table>
+                <CalendarDayModal hidden={this.state.modalHidden} day={this.state.modalDay} events={this.state.modalEvents} closeModal={this.closeModal}/>
             </div>
         );
     }

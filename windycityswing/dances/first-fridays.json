@@ -54,7 +54,7 @@
     "floorSize": "Medium",
     "location": {
         "addressName": "Big City Swing",
-        "addressOne": "1012 W Randolph Ave",
+        "addressOne": "1012 W Randolph Ave.",
         "city": "Chicago",
         "state": "IL",
         "zip": "60607"

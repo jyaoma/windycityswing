@@ -3,13 +3,16 @@
 exports[`CalendarDay renders correctly 1`] = `
 <td
   className="calendar-day"
+  onClick={[Function]}
 >
-  1
+  <span>
+    1
+  </span>
   <div
     className="calendar-day__events"
   >
     <div
-      className="calendar-day__event calendar-day__event--test-event"
+      className="calendar-day__event event--test-event"
     >
       Test Event
     </div>

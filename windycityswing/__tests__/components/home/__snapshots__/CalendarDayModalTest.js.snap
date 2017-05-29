@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<div
+  className="calendar-day-modal__container"
+>
+  <div
+    className="calendar-day-modal"
+  >
+    <span
+      className="calendar-day-modal__day"
+    >
+      1
+    </span>
+    <div
+      className="calendar-day-modal__close-container"
+      onClick={[Function]}
+    >
+      <svg
+        className="calendar-day-modal__close"
+        viewBox="0 0 9 9"
+      >
+        <path
+          d="M2 2 L7 7"
+        />
+        <path
+          d="M2 7 L7 2"
+        />
+      </svg>
+    </div>
+    <div
+      className="calendar-day-modal__event event--test-event"
+    >
+      <span
+        className="calendar-day-modal__event-title"
+      >
+        Test Event
+      </span>
+      <span
+        className="calendar-day-modal__event-address"
+      >
+        Test Locaiton, undefined
+      </span>
+    </div>
+  </div>
+</div>
+`;

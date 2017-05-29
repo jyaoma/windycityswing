@@ -8,7 +8,7 @@ const events = (eventList) => {
         const renderedEventList = [];
         for (let i = 0; i < eventList.length; i++) {
             const event = eventList[i];
-            renderedEventList.push(<div className={'calendar-day__event calendar-day__event--'+event.className} key={i}>{event.title}</div>);
+            renderedEventList.push(<div className={'calendar-day__event event--'+event.className} key={i}>{event.title}</div>);
         }
         return renderedEventList;
     }
@@ -19,8 +19,8 @@ const CalendarDay = (props) => {
         return <td></td>;
     }
     return (
-    <td className='calendar-day'>
-        {props.day}
+    <td className='calendar-day' onClick={() => {props.onClick(props.day, props.events)}}>
+        <span>{props.day}</span>
         <div className='calendar-day__events'>
             {events(props.events)}
         </div>
