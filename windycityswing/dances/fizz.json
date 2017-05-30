@@ -15,7 +15,8 @@
     },
     "recurrence": {
         "rule": "dayOfWeek",
-        "dayOfWeek": 1
+        "dayOfWeek": 1,
+        "exceptions": ["2017-05-29"]
     },
     "facebookUrl": "https://www.facebook.com/Fizz-Swing-Dancing-73706742234/",
     "organizer": "Fizz Staff",
