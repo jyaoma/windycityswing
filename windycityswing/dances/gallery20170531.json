@@ -14,8 +14,7 @@
         "endTimestamp": "20170531T220000"
     },
     "recurrence": {
-        "frequency": "none",
-        "rules": []
+        "rule": "none"
     },
     "facebookUrl": "https://www.facebook.com/events/1361062103977058/",
     "organizer": "Gallery Cafe",

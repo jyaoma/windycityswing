@@ -14,8 +14,7 @@
         "endTimestamp": "20170503T000000"
     },
     "recurrence": {
-        "frequency": "weekly",
-        "rules": ["dayOfWeek"],
+        "rule": "dayOfWeek",
         "dayOfWeek": 1
     },
     "facebookUrl": "https://www.facebook.com/Fizz-Swing-Dancing-73706742234/",

@@ -14,8 +14,7 @@
         "endTimestamp": "20170712T000000"
     },
     "recurrence": {
-        "frequency": "monthly",
-        "rules": ["dayOfWeek", "weekOfMonth"],
+        "rule": "dayOfWeekOfMonth",
         "dayOfWeek": 5,
         "weekOfMonth": 0
     },

@@ -69,8 +69,40 @@ class HomePage extends React.Component {
 
         for (let i = 0; i < this.state.events.length; i++) {
             const event = this.state.events[i];
-            if (event.date.year === this.state.currentYear && event.date.month === this.state.currentMonth) {
+            if (event.date.year === this.state.currentYear && event.date.month === this.state.currentMonth && (!event.recurrence || !event.recurrence.rule || event.recurrence.rule === 'none')) {
                 eventMap[event.date.day].push(event);
+            }
+            if (event.recurrence) {
+                if (event.recurrence.rule === 'dayOfWeek') {
+                    let currentDayOfEvent = event.recurrence.dayOfWeek - dayOfTheWeekOfTheFirstDayOfTheMonth + 1;
+                    if (currentDayOfEvent > 0) {
+                        eventMap[(event.recurrence.dayOfWeek - dayOfTheWeekOfTheFirstDayOfTheMonth + 1)].push(event);
+                    }
+                    currentDayOfEvent+=7;
+                    eventMap[currentDayOfEvent].push(event);
+                    currentDayOfEvent+=7;
+                    eventMap[currentDayOfEvent].push(event);
+                    currentDayOfEvent+=7;
+                    eventMap[currentDayOfEvent].push(event);
+                    currentDayOfEvent+=7;
+                    if (currentDayOfEvent <= maxDaysInCurrentMonth) {
+                        eventMap[currentDayOfEvent].push(event);
+                    }
+                    currentDayOfEvent+=7;
+                    if (currentDayOfEvent <= maxDaysInCurrentMonth) {
+                        eventMap[currentDayOfEvent].push(event);
+                    }
+                } else if (event.recurrence.rule === 'dayOfMonth') {
+                    eventMap[event.recurrence.dayOfMonth].push(event);
+                } else if (event.recurrence.rule === 'dayOfWeekOfMonth') {
+                    let dayOfEvent = event.recurrence.dayOfWeek - dayOfTheWeekOfTheFirstDayOfTheMonth + 1;
+                    if (dayOfEvent <= 0) {
+                        dayOfEvent += 7;
+                    }
+                    dayOfEvent += (7 * event.recurrence.weekOfMonth);
+
+                    eventMap[dayOfEvent].push(event);
+                }
             }
         }
 

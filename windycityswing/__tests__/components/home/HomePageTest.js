@@ -59,6 +59,10 @@ describe('event table', () => {
     });
 
     it('has the first day of the month in the correct column of the first week in the calendar', () => {
+        tree.instance().setState({
+            events: []
+        });
+
         const firstWeek = eventTable.find('.event-calendar__week-one');
         const dayOfTheWeekOfTheFirstDayOfTheMonth = moment(moment().format('YYYY') + '-' + moment().format('MM') + '-01').format('d');
 
@@ -110,94 +114,179 @@ describe('event table', () => {
         expect(tree.find('.calendar-day').length).toEqual(numberOfDaysInNextMonth);
     });
 
-    it('sends an event to the correct day', () => {
-        tree = shallow(<HomePage/>);
-        tree.instance().setState({
-            currentYear: 2017,
-            currentMonth: 5,
-            events: [testEvent]
+    describe('handling event placement', () => {
+        beforeEach(() => {
+            tree = shallow(<HomePage/>);
         });
 
-        const theDayThatThisEventShouldBeOn = tree.find('CalendarDay').at(30);
+        it('sends an event to the correct day', () => {
+            tree.instance().setState({
+                currentYear: 2017,
+                currentMonth: 5,
+                events: [testEvent]
+            });
 
-        expect(theDayThatThisEventShouldBeOn.props().events).toContainEqual(testEvent);
+            const theDayThatThisEventShouldBeOn = tree.find('CalendarDay').at(30);
+
+            expect(theDayThatThisEventShouldBeOn.props().events).toContainEqual(testEvent);
+        });
+
+        it('sends an event on the first day of the month', () => {
+            const testEvent = {
+                "title": "Test Event",
+                "date": {
+                    "year": 2017,
+                    "month": 5,
+                    "day": 1,
+                    "weekday": 3
+                }
+            };
+
+            tree.instance().setState({
+                currentYear: 2017,
+                currentMonth: 5,
+                events: [testEvent]
+            });
+
+            const theDayThatThisEventShouldBeOn = tree.find('CalendarDay').at(1);
+
+            expect(theDayThatThisEventShouldBeOn.props().events).toContainEqual(testEvent);
+        });
+
+        it('sends an event on the last day of the month', () => {
+            const testEvent = {
+                "title": "Test Event",
+                "date": {
+                    "year": 2017,
+                    "month": 5,
+                    "day": 31,
+                    "weekday": 3
+                }
+            };
+
+            tree.instance().setState({
+                currentYear: 2017,
+                currentMonth: 5,
+                events: [testEvent]
+            });
+
+            const theDayThatThisEventShouldBeOn = tree.find('CalendarDay').at(31);
+
+            expect(theDayThatThisEventShouldBeOn.props().events).toContainEqual(testEvent);
+        });
+
+        it('does not send an event to days that are not part of this month', () => {
+            const testEvent = {
+                "title": "Test Event",
+                "date": {
+                    "year": 2017,
+                    "month": 5,
+                    "day": 1,
+                    "weekday": 3
+                }
+            };
+
+            tree.instance().setState({
+                currentYear: 2017,
+                currentMonth: 5,
+                events: [testEvent]
+            });
+
+            const aDayThatThisEventShouldNotBeOn = tree.find('CalendarDay').at(0);
+
+            expect(aDayThatThisEventShouldNotBeOn.props().events).toBeNull();
+        });
+
+        it('should have an onClick handler', () => {
+            tree.instance().setState({
+                currentYear: 2017,
+                currentMonth: 5,
+                events: [testEvent]
+            });
+
+            expect(tree.find('CalendarDay').at(30).props().onClick).toEqual(tree.instance().openModal);
+        });
     });
 
-    it('sends an event on the first day of the month', () => {
-        const testEvent = {
-            "title": "Test Event",
-            "date": {
-                "year": 2017,
-                "month": 5,
-                "day": 1,
-                "weekday": 3
+    describe('handing recurring events', () => {
+        it('places a weekly event multiple times on the calendar', () => {
+            const testEvent = {
+                "title": "Test Event",
+                "date": {
+                    "year": 2017,
+                    "month": 5,
+                    "day": 2,
+                    "weekday": 2
+                },
+                "recurrence": {
+                    "rule": "dayOfWeek",
+                    "dayOfWeek": 2
+                }
             }
-        };
-        tree = shallow(<HomePage/>);
-        tree.instance().setState({
-            currentYear: 2017,
-            currentMonth: 5,
-            events: [testEvent]
+
+            tree.instance().setState({
+                currentYear: 2017,
+                currentMonth: 5,
+                events: [testEvent]
+            });
+
+            const days = tree.find('CalendarDay');
+
+            expect(days.at(2).props().events).toContainEqual(testEvent);
+            expect(days.at(9).props().events).toContainEqual(testEvent);
+            expect(days.at(16).props().events).toContainEqual(testEvent);
+            expect(days.at(23).props().events).toContainEqual(testEvent);
+            expect(days.at(30).props().events).toContainEqual(testEvent);
         });
 
-        const theDayThatThisEventShouldBeOn = tree.find('CalendarDay').at(1);
-
-        expect(theDayThatThisEventShouldBeOn.props().events).toContainEqual(testEvent);
-    });
-
-    it('sends an event on the last day of the month', () => {
-        const testEvent = {
-            "title": "Test Event",
-            "date": {
-                "year": 2017,
-                "month": 5,
-                "day": 31,
-                "weekday": 3
+        it('places a monthly event by day of month', () => {
+            const testEvent = {
+                "title": "Test Event",
+                "date": {
+                    "year": 2017,
+                    "month": 5,
+                    "day": 2,
+                    "weekday": 2
+                },
+                "recurrence": {
+                    "rule": "dayOfMonth",
+                    "dayOfMonth": 2
+                }
             }
-        };
-        tree = shallow(<HomePage/>);
-        tree.instance().setState({
-            currentYear: 2017,
-            currentMonth: 5,
-            events: [testEvent]
+
+            tree.instance().setState({
+                currentYear: 2017,
+                currentMonth: 5,
+                events: [testEvent]
+            });
+
+            expect(tree.find('CalendarDay').at(2).props().events).toContainEqual(testEvent);
         });
 
-        const theDayThatThisEventShouldBeOn = tree.find('CalendarDay').at(31);
-
-        expect(theDayThatThisEventShouldBeOn.props().events).toContainEqual(testEvent);
-    });
-
-    it('does not send an event to days that are not part of this month', () => {
-        const testEvent = {
-            "title": "Test Event",
-            "date": {
-                "year": 2017,
-                "month": 5,
-                "day": 1,
-                "weekday": 3
+        it('places a monthly event by day of week and week of month', () => {
+            const testEvent = {
+                "title": "Test Event",
+                "date": {
+                    "year": 2017,
+                    "month": 5,
+                    "day": 2,
+                    "weekday": 2
+                },
+                "recurrence": {
+                    "rule": "dayOfWeekOfMonth",
+                    "dayOfWeek": 2,
+                    "weekOfMonth": 2
+                }
             }
-        };
-        tree = shallow(<HomePage/>);
-        tree.instance().setState({
-            currentYear: 2017,
-            currentMonth: 5,
-            events: [testEvent]
+
+            tree.instance().setState({
+                currentYear: 2017,
+                currentMonth: 5,
+                events: [testEvent]
+            });
+
+            expect(tree.find('CalendarDay').at(16).props().events).toContainEqual(testEvent);
         });
-
-        const aDayThatThisEventShouldNotBeOn = tree.find('CalendarDay').at(0);
-
-        expect(aDayThatThisEventShouldNotBeOn.props().events).toBeNull();
-    });
-
-    it('should have an onClick handler', () => {
-        tree = shallow(<HomePage/>);
-        tree.instance().setState({
-            currentYear: 2017,
-            currentMonth: 5,
-            events: [testEvent]
-        });
-
-        expect(tree.find('CalendarDay').at(30).props().onClick).toEqual(tree.instance().openModal);
     });
 });
 
