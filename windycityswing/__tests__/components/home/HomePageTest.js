@@ -239,6 +239,37 @@ describe('event table', () => {
             expect(days.at(30).props().events).toContainEqual(testEvent);
         });
 
+        it('does not place an event where there is an exception', () => {
+            const testEvent = {
+                "title": "Test Event",
+                "date": {
+                    "year": 2017,
+                    "month": 5,
+                    "day": 2,
+                    "weekday": 2
+                },
+                "recurrence": {
+                    "rule": "dayOfWeek",
+                    "dayOfWeek": 2,
+                    "exceptions": ["2017-05-23"]
+                }
+            }
+
+            tree.instance().setState({
+                currentYear: 2017,
+                currentMonth: 5,
+                events: [testEvent]
+            });
+
+            const days = tree.find('CalendarDay');
+
+            expect(days.at(2).props().events).toContainEqual(testEvent);
+            expect(days.at(9).props().events).toContainEqual(testEvent);
+            expect(days.at(16).props().events).toContainEqual(testEvent);
+            expect(days.at(23).props().events).not.toContainEqual(testEvent);
+            expect(days.at(30).props().events).toContainEqual(testEvent);
+        });
+
         it('places a monthly event by day of month', () => {
             const testEvent = {
                 "title": "Test Event",
@@ -261,6 +292,31 @@ describe('event table', () => {
             });
 
             expect(tree.find('CalendarDay').at(2).props().events).toContainEqual(testEvent);
+        });
+
+        it('does not place an monthly event by day of month if it is an exception', () => {
+            const testEvent = {
+                "title": "Test Event",
+                "date": {
+                    "year": 2017,
+                    "month": 5,
+                    "day": 2,
+                    "weekday": 2
+                },
+                "recurrence": {
+                    "rule": "dayOfMonth",
+                    "dayOfMonth": 2,
+                    "exceptions": ["2017-05-02"]
+                }
+            }
+
+            tree.instance().setState({
+                currentYear: 2017,
+                currentMonth: 5,
+                events: [testEvent]
+            });
+
+            expect(tree.find('CalendarDay').at(2).props().events).not.toContainEqual(testEvent);
         });
 
         it('places a monthly event by day of week and week of month', () => {
@@ -286,6 +342,32 @@ describe('event table', () => {
             });
 
             expect(tree.find('CalendarDay').at(16).props().events).toContainEqual(testEvent);
+        });
+
+        it('does not place an monthly event by day of week of month if it is an exception', () => {
+            const testEvent = {
+                "title": "Test Event",
+                "date": {
+                    "year": 2017,
+                    "month": 5,
+                    "day": 2,
+                    "weekday": 2
+                },
+                "recurrence": {
+                    "rule": "dayOfWeekOfMonth",
+                    "dayOfWeek": 2,
+                    "weekOfMonth": 2,
+                    "exceptions": ["2017-05-16"]
+                }
+            }
+
+            tree.instance().setState({
+                currentYear: 2017,
+                currentMonth: 5,
+                events: [testEvent]
+            });
+
+            expect(tree.find('CalendarDay').at(16).props().events).not.toContainEqual(testEvent);
         });
     });
 });

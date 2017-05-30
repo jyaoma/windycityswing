@@ -27,6 +27,20 @@ class HomePage extends React.Component {
         this.goToNextMonth = this.goToNextMonth.bind(this);
     }
 
+    isAnException(event, day) {
+        if (event.recurrence && event.recurrence.exceptions) {
+            let dayString = day.toString();
+            if (day < 10) {
+                dayString = '0' + dayString;
+            }
+            dayString = '-' + dayString;
+            const exceptionString = this.state.currentMonthString.replace('-01', dayString);
+            const exceptionFinder = (exception) => {return exception === exceptionString}
+            return !!event.recurrence.exceptions.find(exceptionFinder)
+        }
+        return false;
+    }
+
     renderCalendar () {
         const dayOfTheWeekOfTheFirstDayOfTheMonth = moment(this.state.currentMonthString).format('d');
         const daysInEachMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
@@ -75,24 +89,30 @@ class HomePage extends React.Component {
             if (event.recurrence) {
                 if (event.recurrence.rule === 'dayOfWeek') {
                     let currentDayOfEvent = event.recurrence.dayOfWeek - dayOfTheWeekOfTheFirstDayOfTheMonth + 1;
-                    if (currentDayOfEvent > 0) {
+                    if (currentDayOfEvent > 0 && !this.isAnException(event, currentDayOfEvent)) {
                         eventMap[(event.recurrence.dayOfWeek - dayOfTheWeekOfTheFirstDayOfTheMonth + 1)].push(event);
                     }
                     currentDayOfEvent+=7;
-                    eventMap[currentDayOfEvent].push(event);
-                    currentDayOfEvent+=7;
-                    eventMap[currentDayOfEvent].push(event);
-                    currentDayOfEvent+=7;
-                    eventMap[currentDayOfEvent].push(event);
-                    currentDayOfEvent+=7;
-                    if (currentDayOfEvent <= maxDaysInCurrentMonth) {
+                    if (!this.isAnException(event, currentDayOfEvent)) {
                         eventMap[currentDayOfEvent].push(event);
                     }
                     currentDayOfEvent+=7;
-                    if (currentDayOfEvent <= maxDaysInCurrentMonth) {
+                    if (!this.isAnException(event, currentDayOfEvent)) {
                         eventMap[currentDayOfEvent].push(event);
                     }
-                } else if (event.recurrence.rule === 'dayOfMonth') {
+                    currentDayOfEvent+=7;
+                    if (!this.isAnException(event, currentDayOfEvent)) {
+                        eventMap[currentDayOfEvent].push(event);
+                    }
+                    currentDayOfEvent+=7;
+                    if (currentDayOfEvent <= maxDaysInCurrentMonth && !this.isAnException(event, currentDayOfEvent)) {
+                        eventMap[currentDayOfEvent].push(event);
+                    }
+                    currentDayOfEvent+=7;
+                    if (currentDayOfEvent <= maxDaysInCurrentMonth && !this.isAnException(event, currentDayOfEvent)) {
+                        eventMap[currentDayOfEvent].push(event);
+                    }
+                } else if (event.recurrence.rule === 'dayOfMonth' && !this.isAnException(event, event.recurrence.dayOfMonth)) {
                     eventMap[event.recurrence.dayOfMonth].push(event);
                 } else if (event.recurrence.rule === 'dayOfWeekOfMonth') {
                     let dayOfEvent = event.recurrence.dayOfWeek - dayOfTheWeekOfTheFirstDayOfTheMonth + 1;
@@ -101,7 +121,9 @@ class HomePage extends React.Component {
                     }
                     dayOfEvent += (7 * event.recurrence.weekOfMonth);
 
-                    eventMap[dayOfEvent].push(event);
+                    if (!this.isAnException(event, dayOfEvent)) {
+                        eventMap[dayOfEvent].push(event);
+                    }
                 }
             }
         }
