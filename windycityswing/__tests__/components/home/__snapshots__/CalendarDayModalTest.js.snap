@@ -28,8 +28,9 @@ exports[`should render correctly 1`] = `
         />
       </svg>
     </div>
-    <div
+    <a
       className="calendar-day-modal__event event--test-event"
+      href="/#/WindyCitySwing/event/test-event"
     >
       <span
         className="calendar-day-modal__event-title"
@@ -41,7 +42,7 @@ exports[`should render correctly 1`] = `
       >
         Test Locaiton, undefined, undefined, undefined
       </span>
-    </div>
+    </a>
   </div>
 </div>
 `;

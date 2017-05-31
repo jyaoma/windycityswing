@@ -14,6 +14,8 @@ import { Router, Route, Switch } from 'react-router';
 import createHashHistory from 'history/createHashHistory';
 import IndexPage from './IndexPage';
 import WindyCitySwing from './components/WindyCitySwing';
+import HomePage from './components/home/HomePage';
+import EventPage from './components/event/EventPage';
 import Vday2017 from '../../../vday2017/src/scripts/Vday2017';
 
 // const logger = createLogger();
@@ -29,7 +31,10 @@ ReactDOM.render(
         <Router history={createHashHistory()}>
             <Switch>
                 <Route exact path="/" component={IndexPage}/>
-                <Route path="/WindyCitySwing" component={WindyCitySwing}/>
+                <WindyCitySwing>
+                    <Route exact path="/WindyCitySwing" component={HomePage}/>
+                    <Route path="/WindyCitySwing/event/:eventName" component={EventPage}/>
+                </WindyCitySwing>
                 <Route path="/vday2017" component={Vday2017}/>
             </Switch>
         </Router>,

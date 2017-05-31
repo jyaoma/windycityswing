@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Header from './Header';
-import HomePage from './home/HomePage';
 import {windyCitySwingProps} from '../propTypes';
 
 class WindyCitySwing extends React.Component {
@@ -10,7 +9,7 @@ class WindyCitySwing extends React.Component {
         return (
             <div id='windy-city-swing'>
                 <Header/>
-                <HomePage/>
+                {this.props.children}
                 <div id='skyline'></div>
             </div>
         );

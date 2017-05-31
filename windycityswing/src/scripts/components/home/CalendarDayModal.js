@@ -13,10 +13,10 @@ const events = (eventList) => {
     for (let i = 0; i < eventList.length; i++) {
         const event = eventList[i];
         result.push(
-            <div className={'calendar-day-modal__event event--'+event.className} key={i}>
+            <a href={'/#/WindyCitySwing/event/'+event.className} className={'calendar-day-modal__event event--'+event.className} key={i}>
                 <span className='calendar-day-modal__event-title'>{event.title}</span>
                 <span className='calendar-day-modal__event-address'>{event.location.addressName + ', ' + event.location.addressOne + ', ' + event.location.city + ', ' + event.location.state}</span>
-            </div>);
+            </a>);
     }
 
     return result;
