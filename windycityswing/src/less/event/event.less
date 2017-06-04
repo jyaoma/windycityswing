@@ -1,33 +1,55 @@
 .event-details {
     background-color: white;
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100pt;
     bottom: 0;
     box-shadow: 0 1pt 3pt gray;
-    padding-top: 15pt;
-    padding-bottom: 15pt;
+    padding: 15pt;
+    font-family: sans-serif;
 }
 
 .event-details__title {
     text-align: center;
-    font-family: sans-serif;
+    margin-bottom: 10pt;
+}
+
+.event-details__description-header {
+    font-weight: bold;
+    font-size: 8pt;
+    color: gray;
+    margin-bottom: 2pt;
 }
 
 @media (max-width: 480px) {
+    .event-details {
+        width: 80%;
+    }
+
     .event-details__title {
         font-size: 20pt;
+    }
+
+    .event-details__description {
+        font-size: 11pt;
     }
 }
 
 @media (min-width: 480px) and (max-width: 769px) {
+    .event-details {
+        width: 400pt;
+    }
+
     .event-details__title {
         font-size: 30pt;
     }
 }
 
 @media (min-width: 769px) {
+    .event-details {
+        width: 500pt;
+    }
+
     .event-details__title {
         font-size: 30pt;
     }
