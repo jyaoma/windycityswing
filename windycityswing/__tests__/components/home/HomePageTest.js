@@ -123,6 +123,7 @@ describe('event table', () => {
             tree.instance().setState({
                 currentYear: 2017,
                 currentMonth: 5,
+                currentMonthString: '2017-05-01',
                 events: [testEvent]
             });
 
@@ -145,6 +146,7 @@ describe('event table', () => {
             tree.instance().setState({
                 currentYear: 2017,
                 currentMonth: 5,
+                currentMonthString: '2017-05-01',
                 events: [testEvent]
             });
 
@@ -167,6 +169,7 @@ describe('event table', () => {
             tree.instance().setState({
                 currentYear: 2017,
                 currentMonth: 5,
+                currentMonthString: '2017-05-01',
                 events: [testEvent]
             });
 
@@ -189,6 +192,7 @@ describe('event table', () => {
             tree.instance().setState({
                 currentYear: 2017,
                 currentMonth: 5,
+                currentMonthString: '2017-05-01',
                 events: [testEvent]
             });
 
@@ -201,6 +205,7 @@ describe('event table', () => {
             tree.instance().setState({
                 currentYear: 2017,
                 currentMonth: 5,
+                currentMonthString: '2017-05-01',
                 events: [testEvent]
             });
 
@@ -227,6 +232,7 @@ describe('event table', () => {
             tree.instance().setState({
                 currentYear: 2017,
                 currentMonth: 5,
+                currentMonthString: '2017-05-01',
                 events: [testEvent]
             });
 
@@ -258,6 +264,7 @@ describe('event table', () => {
             tree.instance().setState({
                 currentYear: 2017,
                 currentMonth: 5,
+                currentMonthString: '2017-05-01',
                 events: [testEvent]
             });
 
@@ -288,6 +295,7 @@ describe('event table', () => {
             tree.instance().setState({
                 currentYear: 2017,
                 currentMonth: 5,
+                currentMonthString: '2017-05-01',
                 events: [testEvent]
             });
 
@@ -313,6 +321,7 @@ describe('event table', () => {
             tree.instance().setState({
                 currentYear: 2017,
                 currentMonth: 5,
+                currentMonthString: '2017-05-01',
                 events: [testEvent]
             });
 
@@ -338,6 +347,7 @@ describe('event table', () => {
             tree.instance().setState({
                 currentYear: 2017,
                 currentMonth: 5,
+                currentMonthString: '2017-05-01',
                 events: [testEvent]
             });
 
