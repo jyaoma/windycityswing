@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="event-details"
+>
+  <span
+    className="event-details__title"
+  >
+    Fizz
+  </span>
+  <span
+    className="event-details__header"
+  >
+    DESCRIPTION
+  </span>
+  <span
+    className="event-details__description"
+  >
+    Occurs every Monday.
+  </span>
+  <span
+    className="event-details__description"
+  >
+    All ages event.
+  </span>
+  <span
+    className="event-details__header"
+  >
+    SCHEDULE
+  </span>
+  <table>
+    <tbody>
+      <tr>
+        <td
+          className="event-details__schedule__time"
+        >
+          8:00 PM
+        </td>
+        <td
+          className="event-details__schedule__event"
+        >
+          Swing lesson
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td
+          className="event-details__schedule__duration event-details__schedule__duration-one"
+        >
+          1 hr
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="event-details__schedule__time"
+        >
+          9:00 PM
+        </td>
+        <td
+          className="event-details__schedule__event"
+        >
+          Dancing
+        </td>
+      </tr>
+      <tr>
+        <td />
+        <td
+          className="event-details__schedule__duration event-details__schedule__duration-three"
+        >
+          3 hr
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="event-details__schedule__time"
+        >
+          Midnight
+        </td>
+        <td
+          className="event-details__schedule__event"
+        >
+          End
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

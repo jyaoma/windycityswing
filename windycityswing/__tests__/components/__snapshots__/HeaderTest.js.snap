@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<a
+  href="#/WindyCitySwing"
+  id="header"
+>
+  <span
+    id="title"
+  >
+    Windy City Swing
+  </span>
+  <div
+    id="subtitle"
+  >
+    THE SWING DANCING INFORMATION IN CHICAGO AND CHICAGOLAND AREA
+  </div>
+</a>
+`;

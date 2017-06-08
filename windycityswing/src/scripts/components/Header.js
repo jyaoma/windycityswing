@@ -3,10 +3,10 @@ import React from 'react';
 class Header extends React.Component {
     render () {
         return (
-            <div id='header'>
+            <a id='header' href='#/WindyCitySwing'>
                 <span id='title'>Windy City Swing</span>
                 <div id="subtitle">THE SWING DANCING INFORMATION IN CHICAGO AND CHICAGOLAND AREA</div>
-            </div>
+            </a>
         );
     }
 }
