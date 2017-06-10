@@ -93,12 +93,12 @@ const eventLinks = (event) => {
         return null;
     }
     const results = [];
-    results.push(<span className='event-details__header'>LINKS</span>);
+    results.push(<span key='link' className='event-details__header'>LINKS</span>);
     if (!!event.infoUrl) {
-        results.push(<a href={event.infoUrl} className='event-details__link'>EVENT WEBSITE</a>);
+        results.push(<a key='event' href={event.infoUrl} className='event-details__link'>EVENT WEBSITE</a>);
     }
     if (!!event.facebookUrl) {
-        results.push(<a href={event.facebookUrl} className='event-details__link event-details__link--facebook'>FACEBOOK PAGE</a>);
+        results.push(<a key='facebook' href={event.facebookUrl} className='event-details__link event-details__link--facebook'>FACEBOOK PAGE</a>);
     }
     return results;
 }
