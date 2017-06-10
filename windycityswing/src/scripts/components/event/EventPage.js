@@ -95,10 +95,10 @@ const eventLinks = (event) => {
     const results = [];
     results.push(<span className='event-details__header'>LINKS</span>);
     if (!!event.infoUrl) {
-        results.push(<span className='event-details__link'>EVENT WEBSITE</span>);
+        results.push(<a href={event.infoUrl} className='event-details__link'>EVENT WEBSITE</a>);
     }
     if (!!event.facebookUrl) {
-        results.push(<span className='event-details__link event-details__link--facebook'>FACEBOOK PAGE</span>);
+        results.push(<a href={event.facebookUrl} className='event-details__link event-details__link--facebook'>FACEBOOK PAGE</a>);
     }
     return results;
 }
