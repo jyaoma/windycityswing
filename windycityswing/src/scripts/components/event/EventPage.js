@@ -88,6 +88,21 @@ const eventTimeline = (event) => {
     return result;
 }
 
+const eventLinks = (event) => {
+    if (!event.infoUrl && !event.facebookUrl) {
+        return null;
+    }
+    const results = [];
+    results.push(<span className='event-details__header'>LINKS</span>);
+    if (!!event.infoUrl) {
+        results.push(<span className='event-details__link'>EVENT WEBSITE</span>);
+    }
+    if (!!event.facebookUrl) {
+        results.push(<span className='event-details__link event-details__link--facebook'>FACEBOOK PAGE</span>);
+    }
+    return results;
+}
+
 const EventPage = ({match}) => {
     const eventFinder = event => event.className === match.params.eventName;
     const event = dances.find(eventFinder);
@@ -95,6 +110,8 @@ const EventPage = ({match}) => {
     return (
     <div className='event-details'>
         <span className='event-details__title'>{event.title}</span>
+        
+        {eventLinks(event)}
         <span className='event-details__header'>DESCRIPTION</span>
         {eventDescription(event)}
         <span className='event-details__header'>SCHEDULE</span>
