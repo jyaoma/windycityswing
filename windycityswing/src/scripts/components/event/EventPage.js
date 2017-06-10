@@ -110,7 +110,7 @@ const EventPage = ({match}) => {
     return (
     <div className='event-details'>
         <span className='event-details__title'>{event.title}</span>
-        
+
         {eventLinks(event)}
         <span className='event-details__header'>DESCRIPTION</span>
         {eventDescription(event)}

@@ -12,6 +12,16 @@ exports[`renders correctly 1`] = `
   <span
     className="event-details__header"
   >
+    LINKS
+  </span>
+  <span
+    className="event-details__link event-details__link--facebook"
+  >
+    FACEBOOK PAGE
+  </span>
+  <span
+    className="event-details__header"
+  >
     DESCRIPTION
   </span>
   <span
