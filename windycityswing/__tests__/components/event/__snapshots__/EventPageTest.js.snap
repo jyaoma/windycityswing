@@ -14,11 +14,12 @@ exports[`renders correctly 1`] = `
   >
     LINKS
   </span>
-  <span
+  <a
     className="event-details__link event-details__link--facebook"
+    href="https://www.facebook.com/Fizz-Swing-Dancing-73706742234/"
   >
     FACEBOOK PAGE
-  </span>
+  </a>
   <span
     className="event-details__header"
   >
