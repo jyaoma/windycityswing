@@ -4,7 +4,7 @@
   "description": "Windy City Swing",
   "main": "index.js",
   "scripts": {
-    "pretest": "eslint .",
+    "pretest": "eslint . --fix",
     "test": "jest",
     "clean": "IF EXIST archive RMDIR /S /Q archive && IF EXIST dist RMDIR /S /Q dist",
     "prestart": "npm run clean && npm run build",

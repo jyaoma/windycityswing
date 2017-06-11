@@ -126,20 +126,25 @@ const EventPage = ({match}) => {
         <span className='event-details__title'>{event.title}</span>
 
         {eventLinks(event)}
+
         <span className='event-details__header'>DESCRIPTION</span>
         {eventDescription(event)}
+
         <span className='event-details__header'>LOCATION</span>
         <span className='event-details__address-name'>{event.location.addressName}</span>
         <span className='event-details__address-street'>{event.location.addressOne + (event.location.addressTwo ? ', ' + event.location.addressTwo : '')}</span>
         <span className='event-details__address-city'>{event.location.city + ', ' + event.location.state + ' ' + event.location.zip}</span>
+
         <span className='event-details__header'>PRICE</span>
         <span className='event-details__price'>{event.price}</span>
+
         <span className='event-details__header'>SCHEDULE</span>
         <table>
             <tbody>
                 {eventTimeline(event)}
             </tbody>
         </table>
+
         <span className='event-details__header'>DRESS CODE</span>
         <span className='event-details__dress-code'>{event.dressCode}</span>
     </div>);
