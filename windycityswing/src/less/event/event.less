@@ -70,16 +70,31 @@
     font-weight: bold;
     color: white;
     background-color: gray;
-    width: 100pt;
+    width: 60pt;
     padding: 2pt;
     text-align: center;
     margin-bottom: 2pt;
-    display: block;
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: space-between;
     text-decoration: none;
+
+    &:hover {
+        background-color: darkgray;
+    }
 }
 
 .event-details__link--facebook {
     background-color: #3B5998;
+
+    &:hover {
+        background-color: #0084ff;
+    }
+}
+
+.event-details__link-icon {
+    height: 8pt;
+    width: 8pt;
 }
 
 @media (max-width: 480px) {

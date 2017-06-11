@@ -95,10 +95,24 @@ const eventLinks = (event) => {
     const results = [];
     results.push(<span key='link' className='event-details__header'>LINKS</span>);
     if (!!event.infoUrl) {
-        results.push(<a key='event' href={event.infoUrl} className='event-details__link'>EVENT WEBSITE</a>);
+        results.push(<a key='event' href={event.infoUrl} target='_blank' className='event-details__link'>
+            <span>Home Page</span>
+            <svg viewBox='0 0 16 16' stroke='white' fill='transparent' className='event-details__link-icon'>
+                <path d='M8 3 L1 3 L1 15 L13 15 L13 8'/>
+                <path d='M10 1 L15 1 L15 6'/>
+                <line x1='7' y1='9' x2='15' y2='1'/>
+            </svg>
+        </a>);
     }
     if (!!event.facebookUrl) {
-        results.push(<a key='facebook' href={event.facebookUrl} className='event-details__link event-details__link--facebook'>FACEBOOK PAGE</a>);
+        results.push(<a key='facebook' href={event.facebookUrl} target='_blank' className='event-details__link event-details__link--facebook'>
+            <span>Facebook</span>
+            <svg viewBox='0 0 16 16' stroke='white' fill='transparent' className='event-details__link-icon'>
+                <path d='M8 3 L1 3 L1 15 L13 15 L13 8'/>
+                <path d='M10 1 L15 1 L15 6'/>
+                <line x1='7' y1='9' x2='15' y2='1'/>
+            </svg>
+        </a>);
     }
     return results;
 }
