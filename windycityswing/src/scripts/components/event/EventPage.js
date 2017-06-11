@@ -136,6 +136,8 @@ const EventPage = ({match}) => {
                 {eventTimeline(event)}
             </tbody>
         </table>
+        <span className='event-details__header'>DRESS CODE</span>
+        <span className='event-details__dress-code'>{event.dressCode}</span>
     </div>);
 }
 

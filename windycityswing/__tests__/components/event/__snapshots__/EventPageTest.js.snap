@@ -128,5 +128,15 @@ exports[`renders correctly 1`] = `
       </tr>
     </tbody>
   </table>
+  <span
+    className="event-details__header"
+  >
+    DRESS CODE
+  </span>
+  <span
+    className="event-details__dress-code"
+  >
+    Casual
+  </span>
 </div>
 `;
