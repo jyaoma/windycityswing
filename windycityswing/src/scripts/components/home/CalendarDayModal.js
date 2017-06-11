@@ -22,6 +22,13 @@ const events = (eventList) => {
     return result;
 }
 
+const instructions = (eventList) => {
+    if (!eventList || eventList.length === 0) {
+        return null;
+    }
+    return (<span className='calendar-day-modal__instructions'>Select an event to see its details</span>);
+}
+
 const CalendarDayModal = (props) => {
     if (!props || props.hidden || !props.day) {
         return null;
@@ -37,6 +44,7 @@ const CalendarDayModal = (props) => {
                         </svg>
                     </div>
                     {events(props.events)}
+                    {instructions(props.events)}
                 </div>
             </div>
         );

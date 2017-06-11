@@ -43,6 +43,11 @@ exports[`should render correctly 1`] = `
         Test Locaiton, undefined, undefined, undefined
       </span>
     </a>
+    <span
+      className="calendar-day-modal__instructions"
+    >
+      Select an event to see its details
+    </span>
   </div>
 </div>
 `;

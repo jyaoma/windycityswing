@@ -69,3 +69,20 @@ it('should render the same number of events as passed into the modal', () => {
 it('can be closed', () => {
     expect(tree.find('.calendar-day-modal__close-container').props().onClick).toEqual(closeModal);
 });
+
+describe('instructions', () => {
+    it('shows', () => {
+        expect(tree.find('.calendar-day-modal__instructions').length).toEqual(1);
+    });
+
+    it('hides when there are no events', () => {
+        tree = shallow(<CalendarDayModal
+                        day={1}
+                        events={[]}
+                        hidden={false}
+                        closeModal={closeModal}
+                        month={5}
+                        weekday={3}/>);
+        expect(tree.find('.calendar-day-modal__instructions').length).toEqual(0);
+    });
+});

@@ -344,6 +344,7 @@ class HomePage extends React.Component {
                         {this.renderCalendar()}
                     </tbody>
                 </table>
+                <span className='event-calendar__instructions'>Select one of the days above to see the events happening on that day</span>
                 <CalendarDayModal
                     hidden={this.state.modalHidden}
                     day={this.state.modalDay}
