@@ -100,7 +100,7 @@
             ],
             "ctaUrl": "http://www.transitchicago.com/assets/1/clickable_system_map/200806N.htm"
         },
-        "parking": "Street parking",
-        "price": "$7 for general public, $5 for students"
-    }
+        "parking": "Street parking"
+    },
+    "price": "$7/person for general public, $5/person for students"
 }

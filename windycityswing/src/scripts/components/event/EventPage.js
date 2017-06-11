@@ -128,6 +128,8 @@ const EventPage = ({match}) => {
         {eventLinks(event)}
         <span className='event-details__header'>DESCRIPTION</span>
         {eventDescription(event)}
+        <span className='event-details__header'>PRICE</span>
+        <span className='event-details__price'>{event.price}</span>
         <span className='event-details__header'>SCHEDULE</span>
         <table>
             <tbody>

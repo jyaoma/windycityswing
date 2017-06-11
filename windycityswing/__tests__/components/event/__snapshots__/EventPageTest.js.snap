@@ -60,6 +60,16 @@ exports[`renders correctly 1`] = `
   <span
     className="event-details__header"
   >
+    PRICE
+  </span>
+  <span
+    className="event-details__price"
+  >
+    $7/person for general public, $5/person for students
+  </span>
+  <span
+    className="event-details__header"
+  >
     SCHEDULE
   </span>
   <table>
