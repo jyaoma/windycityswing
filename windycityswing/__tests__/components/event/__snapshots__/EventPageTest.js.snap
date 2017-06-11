@@ -60,6 +60,26 @@ exports[`renders correctly 1`] = `
   <span
     className="event-details__header"
   >
+    LOCATION
+  </span>
+  <span
+    className="event-details__address-name"
+  >
+    Lion Head Pub
+  </span>
+  <span
+    className="event-details__address-street"
+  >
+    2251 N Lincoln Ave, 2nd Floor
+  </span>
+  <span
+    className="event-details__address-city"
+  >
+    Chicago, IL 60614
+  </span>
+  <span
+    className="event-details__header"
+  >
     PRICE
   </span>
   <span
