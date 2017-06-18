@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const monthNames = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 const weekdayNames = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 
-const events = (eventList) => {
+const events = (eventList, props) => {
     if (!eventList || eventList.length === 0) {
         return <span className='calendar-day-modal__no-events'>Sorry, no events are listed for this day.</span>;
     }
@@ -12,8 +12,25 @@ const events = (eventList) => {
 
     for (let i = 0; i < eventList.length; i++) {
         const event = eventList[i];
+
+        let date = event.date.year.toString();
+
+        let monthString = props.month.toString();
+        if (props.month < 10) {
+            monthString = '0' + monthString;
+        }
+
+        date = date + '-' + monthString;
+
+        let dayString = props.day.toString();
+        if (props.day < 10) {
+            dayString = '0' + dayString;
+        }
+
+        date = date + '-' + dayString;
+
         result.push(
-            <a href={'/#/WindyCitySwing/event/'+event.className} className={'calendar-day-modal__event event--'+event.className} key={i}>
+            <a href={'/#/WindyCitySwing/event/'+event.className+'/'+date} className={'calendar-day-modal__event event--'+event.className} key={i}>
                 <span className='calendar-day-modal__event-title'>{event.title}</span>
                 <span className='calendar-day-modal__event-address'>{event.location.addressName + ', ' + event.location.addressOne + ', ' + event.location.city + ', ' + event.location.state}</span>
             </a>);
@@ -43,7 +60,7 @@ const CalendarDayModal = (props) => {
                             <path d='M2 7 L7 2'/>
                         </svg>
                     </div>
-                    {events(props.events)}
+                    {events(props.events, props)}
                     {instructions(props.events)}
                 </div>
             </div>

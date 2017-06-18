@@ -1,6 +1,7 @@
 import React from 'react';
 
 import dances from '../../../../dances/dances';
+import moment from 'moment';
 
 const eventDescription = (event) => {
     if (!event.info || event.info.length === 0) {
@@ -114,7 +115,43 @@ const eventLinks = (event) => {
             </svg>
         </a>);
     }
+
+    let gmapsLocation = event.location.addressName + ',+' + event.location.addressOne + ',+' + (event.location.addressTwo ? event.location.addressTwo + ',+' : '') + event.location.city + ',+' + event.location.state + '+' + event.location.zip;
+    gmapsLocation = gmapsLocation.replace(/\s/g, '+');
+
+    console.log(gmapsLocation);
+
+    results.push(<a key='gmaps' href={'https://www.google.com/maps/dir//' + gmapsLocation} target='_blank' className='event-details__link event-details__link--gmaps'>
+        <span>Directions</span>
+        <svg viewBox='0 0 16 16' stroke='white' fill='transparent' className='event-details__link-icon'>
+            <path d='M8 3 L1 3 L1 15 L13 15 L13 8'/>
+            <path d='M10 1 L15 1 L15 6'/>
+            <line x1='7' y1='9' x2='15' y2='1'/>
+        </svg>
+    </a>);
     return results;
+}
+
+const eventDate = (date) => {
+    const today = moment();
+    const dateObject = moment(date, 'YYYY-MM-DD');
+
+    let relativeDateIndicator = '';
+
+    if (today.month() === dateObject.month() && today.year() === dateObject.year()) {
+        if (today.date() === dateObject.date()) {
+            relativeDateIndicator = '(Tonight)';
+        } else if ((today.date() - 1) === dateObject.date()) {
+            relativeDateIndicator = '(Yesterday)';
+        } else if ((today.date() + 1) === dateObject.date()) {
+            relativeDateIndicator = '(Tomorrow)';
+        }
+    }
+
+    return (<div className='event-details__date--container'>
+    <span className='event-details__date'>{dateObject.format('dddd, MMMM Do')}</span>
+    <span className='event-details__date--relative'>{relativeDateIndicator}</span>
+    </div>);
 }
 
 const EventPage = ({match}) => {
@@ -139,6 +176,7 @@ const EventPage = ({match}) => {
         <span className='event-details__price'>{event.price}</span>
 
         <span className='event-details__header'>SCHEDULE</span>
+        {eventDate(match.params.date)}
         <table>
             <tbody>
                 {eventTimeline(event)}

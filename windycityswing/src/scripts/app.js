@@ -15,8 +15,8 @@ ReactDOM.render(
         <Switch>
             <Route exact path="/" component={IndexPage}/>
             <WindyCitySwing>
-                <Route exact path="/WindyCitySwing" component={HomePage}/>
-                <Route path="/WindyCitySwing/event/:eventName" component={EventPage}/>
+                <Route exact path="/WindyCitySwing/" component={HomePage}/>
+                <Route path="/WindyCitySwing/event/:eventName/:date" component={EventPage}/>
             </WindyCitySwing>
             <Route path="/vday2017" component={Vday2017}/>
         </Switch>

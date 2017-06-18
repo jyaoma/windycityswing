@@ -42,6 +42,34 @@ exports[`renders correctly 1`] = `
       />
     </svg>
   </a>
+  <a
+    className="event-details__link event-details__link--gmaps"
+    href="https://www.google.com/maps/dir//Lion+Head+Pub,+2251+N+Lincoln+Ave,+2nd+Floor,+Chicago,+IL+60614"
+    target="_blank"
+  >
+    <span>
+      Google Maps
+    </span>
+    <svg
+      className="event-details__link-icon"
+      fill="transparent"
+      stroke="white"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M8 3 L1 3 L1 15 L13 15 L13 8"
+      />
+      <path
+        d="M10 1 L15 1 L15 6"
+      />
+      <line
+        x1="7"
+        x2="15"
+        y1="9"
+        y2="1"
+      />
+    </svg>
+  </a>
   <span
     className="event-details__header"
   >
@@ -92,6 +120,20 @@ exports[`renders correctly 1`] = `
   >
     SCHEDULE
   </span>
+  <div
+    className="event-details__date--container"
+  >
+    <span
+      className="event-details__date"
+    >
+      Invalid date
+    </span>
+    <span
+      className="event-details__date--relative"
+    >
+      
+    </span>
+  </div>
   <table>
     <tbody>
       <tr>

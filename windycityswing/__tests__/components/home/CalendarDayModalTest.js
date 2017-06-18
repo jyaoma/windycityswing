@@ -86,3 +86,9 @@ describe('instructions', () => {
         expect(tree.find('.calendar-day-modal__instructions').length).toEqual(0);
     });
 });
+
+describe('events', () => {
+    it('leads to the event detail page', () => {
+        expect(tree.find('.calendar-day-modal__event').at(0).props().href).toEqual('/#/WindyCitySwing/event/test-event/2017-05-01');
+    });
+});

@@ -30,7 +30,7 @@ exports[`should render correctly 1`] = `
     </div>
     <a
       className="calendar-day-modal__event event--test-event"
-      href="/#/WindyCitySwing/event/test-event"
+      href="/#/WindyCitySwing/event/test-event/2017-05-01"
     >
       <span
         className="calendar-day-modal__event-title"
