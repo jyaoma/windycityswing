@@ -42,34 +42,6 @@ exports[`renders correctly 1`] = `
       />
     </svg>
   </a>
-  <a
-    className="event-details__link event-details__link--gmaps"
-    href="https://www.google.com/maps/dir//Lion+Head+Pub,+2251+N+Lincoln+Ave,+2nd+Floor,+Chicago,+IL+60614"
-    target="_blank"
-  >
-    <span>
-      Google Maps
-    </span>
-    <svg
-      className="event-details__link-icon"
-      fill="transparent"
-      stroke="white"
-      viewBox="0 0 16 16"
-    >
-      <path
-        d="M8 3 L1 3 L1 15 L13 15 L13 8"
-      />
-      <path
-        d="M10 1 L15 1 L15 6"
-      />
-      <line
-        x1="7"
-        x2="15"
-        y1="9"
-        y2="1"
-      />
-    </svg>
-  </a>
   <span
     className="event-details__header"
   >
@@ -200,5 +172,14 @@ exports[`renders correctly 1`] = `
   >
     Casual
   </span>
+  <span
+    className="event-details__header"
+  >
+    MAP
+  </span>
+  <iframe
+    className="event-details__map"
+    src="https://maps.google.com/maps?q=Lion%20Head%20Pub%2C%202251%20N%20Lincoln%20Ave%2C%20Chicago%2C%20IL&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&output=embed"
+  />
 </div>
 `;
