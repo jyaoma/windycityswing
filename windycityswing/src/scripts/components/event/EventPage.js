@@ -115,20 +115,6 @@ const eventLinks = (event) => {
             </svg>
         </a>);
     }
-
-    let gmapsLocation = event.location.addressName + ',+' + event.location.addressOne + ',+' + (event.location.addressTwo ? event.location.addressTwo + ',+' : '') + event.location.city + ',+' + event.location.state + '+' + event.location.zip;
-    gmapsLocation = gmapsLocation.replace(/\s/g, '+');
-
-    console.log(gmapsLocation);
-
-    results.push(<a key='gmaps' href={'https://www.google.com/maps/dir//' + gmapsLocation} target='_blank' className='event-details__link event-details__link--gmaps'>
-        <span>Directions</span>
-        <svg viewBox='0 0 16 16' stroke='white' fill='transparent' className='event-details__link-icon'>
-            <path d='M8 3 L1 3 L1 15 L13 15 L13 8'/>
-            <path d='M10 1 L15 1 L15 6'/>
-            <line x1='7' y1='9' x2='15' y2='1'/>
-        </svg>
-    </a>);
     return results;
 }
 
@@ -152,6 +138,13 @@ const eventDate = (date) => {
     <span className='event-details__date'>{dateObject.format('dddd, MMMM Do')}</span>
     <span className='event-details__date--relative'>{relativeDateIndicator}</span>
     </div>);
+}
+
+const eventMap = (event) => {
+    let gmapsLocation = event.location.addressName + ', ' + event.location.addressOne + ', ' + event.location.city + ', ' + event.location.state;
+    gmapsLocation = gmapsLocation.replace(/\s/g, '%20');
+    gmapsLocation = gmapsLocation.replace(/,/g, '%2C');
+    return <iframe className='event-details__map' src={'https://maps.google.com/maps?q=' + gmapsLocation + '&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&output=embed'}/>;
 }
 
 const EventPage = ({match}) => {
@@ -185,6 +178,12 @@ const EventPage = ({match}) => {
 
         <span className='event-details__header'>DRESS CODE</span>
         <span className='event-details__dress-code'>{event.dressCode}</span>
+        <span className='event-details__header'>MAP</span>
+        {/*<EventMap
+        containerElement={<div className='event-details__map'/>}
+        mapElement={<div id='map'/>}
+        event={event}/>*/}
+        {eventMap(event)}
     </div>);
 }
 
