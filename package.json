@@ -8,7 +8,7 @@
     "test": "jest",
     "clean": "IF EXIST archive RMDIR /S /Q archive && IF EXIST dist RMDIR /S /Q dist",
     "prestart": "npm run clean && npm run build",
-    "start": "webpack-dev-server --inline --hot --content-base dist/ --host 0.0.0.0 --port 3000 --public 10.0.0.122:3000",
+    "start": "webpack-dev-server --inline --hot --content-base dist/ --host 0.0.0.0 --port 3000 --public 10.0.0.122:3000 --history-api-fallback",
     "build": "webpack -d --bail",
     "publish": "webpack -p"
   },

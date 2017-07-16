@@ -179,10 +179,6 @@ const EventPage = ({match}) => {
         <span className='event-details__header'>DRESS CODE</span>
         <span className='event-details__dress-code'>{event.dressCode}</span>
         <span className='event-details__header'>MAP</span>
-        {/*<EventMap
-        containerElement={<div className='event-details__map'/>}
-        mapElement={<div id='map'/>}
-        event={event}/>*/}
         {eventMap(event)}
     </div>);
 }
