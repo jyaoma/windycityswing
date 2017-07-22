@@ -65,28 +65,6 @@
         "Charleston",
         "Balboa"
     ],
-    "transportation": {
-        "transit": {
-            "rail": [
-                {
-                    "line": "Green",
-                    "stop": "Morgan"
-                },
-                {
-                    "line": "Pink",
-                    "stop": "Morgan"
-                }
-            ],
-            "bus": [
-                {
-                    "lineNumber": "8",
-                    "lineName": "Halsted",
-                    "stop": "Halsted & Randolph"
-                }
-            ],
-            "ctaUrl": "http://www.transitchicago.com/assets/1/clickable_system_map/200806C.htm"
-        },
-        "parking": "Free street parking available."
-    },
+    "parking": "Free street parking available.",
     "price": "$10 per person, cash only."
 }

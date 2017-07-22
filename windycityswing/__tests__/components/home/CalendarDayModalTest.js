@@ -1,5 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { Router } from 'react-router';
+import { createBrowserHistory as createHistory } from 'history';
 import { shallow } from 'enzyme';
 
 import CalendarDayModal from '..\\..\\..\\src\\scripts\\components\\home\\CalendarDayModal';
@@ -48,13 +50,13 @@ beforeEach(() => {
 });
 
 it('should render correctly', () => {
-    expect(renderer.create(<CalendarDayModal
+    expect(renderer.create(<Router history={createHistory()}><CalendarDayModal
                                 day={1}
                                 events={[testEvent]}
                                 hidden={false}
                                 closeModal={closeModal}
                                 month={5}
-                                weekday={3}/>).toJSON()).toMatchSnapshot();
+                                weekday={3}/></Router>).toJSON()).toMatchSnapshot();
 });
 
 it('should hide', () => {
@@ -89,6 +91,6 @@ describe('instructions', () => {
 
 describe('events', () => {
     it('leads to the event detail page', () => {
-        expect(tree.find('.calendar-day-modal__event').at(0).props().href).toEqual('/#/WindyCitySwing/event/test-event/2017-05-01');
+        expect(tree.find('.calendar-day-modal__event').at(0).props().to).toEqual('/WindyCitySwing.test-event.2017-05-01');
     });
 });

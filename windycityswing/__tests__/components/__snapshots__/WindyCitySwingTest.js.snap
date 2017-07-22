@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   id="windy-city-swing"
 >
   <a
-    href="#/WindyCitySwing"
+    href="/WindyCitySwing"
     id="header"
   >
     <span

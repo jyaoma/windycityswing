@@ -65,42 +65,6 @@
         "Charleston",
         "Balboa"
     ],
-    "transportation": {
-        "transit": {
-            "rail": [
-                {
-                    "line": "Red",
-                    "stop": "Fullerton"
-                },
-                {
-                    "line": "Brown",
-                    "stop": "Fullerton"
-                },
-                {
-                    "line": "Purple",
-                    "stop": "Fullerton"
-                }
-            ],
-            "bus": [
-                {
-                    "lineNumber": "11",
-                    "lineName": "Lincoln",
-                    "stop": "Lincoln & Belden/Orchard"
-                },
-                {
-                    "lineNumber": "37",
-                    "lineName": "Sedgwick",
-                    "stop": "Lincoln & Webster"
-                },
-                {
-                    "lineNumber": "74",
-                    "lineName": "Fullerton",
-                    "stop": "Lincoln & Belden/Orchard"
-                }
-            ],
-            "ctaUrl": "http://www.transitchicago.com/assets/1/clickable_system_map/200806N.htm"
-        },
-        "parking": "Street parking"
-    },
+    "parking": "Street parking",
     "price": "$7/person for general public, $5/person for students"
 }

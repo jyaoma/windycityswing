@@ -1,0 +1,65 @@
+{
+    "title": "Fat Babies at Honky Tonk",
+    "className": "fat-babies-honky-tonk",
+    "siteTitle": "Fat Babies at Honky Tonk",
+    "date": {
+        "year": 2017,
+        "month": 7,
+        "day": 2,
+        "weekday": 0
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20170702T200000",
+        "endTimestamp": "20170702T230000"
+    },
+    "recurrence": {
+        "rule": "dayOfWeek",
+        "dayOfWeek": 0,
+        "exceptions": []
+    },
+    "facebookUrl": "",
+    "organizer": "Honky Tonk BBQ",
+    "instructor": "N/A",
+    "schedule": {
+        "1": {
+            "hour": 20,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        "2": {
+            "hour": 23,
+            "minute": 0,
+            "event": "End"
+        }
+    },
+    "info": [
+        "Occurs every Sunday.",
+        "No official dance space, but dancing is encouraged."
+    ],
+    "infoUrl": "",
+    "attendance": "10-50",
+    "music": {
+        "type": "Live",
+        "url": "http://www.thefatbabies.com/",
+        "by": "The Fat Babies"
+    },
+    "floorSize": "Small",
+    "location": {
+        "addressName": "Honky Tonk BBQ",
+        "addressOne": "1800 S Racine Ave",
+        "addressTwo": "",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60608"
+    },
+    "dressCode": "Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Street parking",
+    "price": "Free"
+}

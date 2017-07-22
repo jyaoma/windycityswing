@@ -49,39 +49,6 @@
     },
     "dressCode": "Casual",
     "danceStyles": [],
-    "transportation": {
-        "transit": {
-            "rail": [
-                {
-                    "line": "Blue",
-                    "stop": "Damen"
-                }
-            ],
-            "bus": [
-                {
-                    "lineNumber": "9",
-                    "lineName": "Ashland",
-                    "stop": "North & Ashland"
-                },
-                {
-                    "lineNumber": "50",
-                    "lineName": "Damen",
-                    "stop": "North & Damen"
-                },
-                {
-                    "lineNumber": "56",
-                    "lineName": "Milwaukee",
-                    "stop": "North & Milwaukee"
-                },
-                {
-                    "lineNumber": "72",
-                    "lineName": "North",
-                    "stop": "Wood & North"
-                }
-            ],
-            "ctaUrl": "http://www.transitchicago.com/assets/1/clickable_system_map/200806C.htm"
-        },
-        "parking": "Street parking available.",
-        "price": "$7"
-    }
+    "parking": "Street parking available.",
+    "price": "$7/person"
 }
