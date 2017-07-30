@@ -2,7 +2,7 @@
 @import 'modal';
 
 .windy-city-home {
-    background-color: white;
+    background-color: #FAFAFA;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -16,8 +16,8 @@
 .event-calendar {
     margin-left: 5%;
     width: 90%;
-    border-collapse: collapse;
     font-family: 'Rampung';
+    border-spacing: 5pt;
 }
 
 .event-calendar td {
@@ -30,12 +30,20 @@
 }
 
 .calendar-day {
-    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
     cursor: pointer;
+    position: relative;
+    box-shadow: 0pt 1pt 1pt 1pt #DDDDDD;
 }
 
-.calendar-day:hover {
-    background-color: #EEEEEE;
+.calendar-day__call-to-action {
+    text-decoration: underline;
+    font-family: sans-serif;
+    position: absolute;
+}
+
+.calendar-day__call-to-action:hover {
+    color: gray;
 }
 
 .event-calendar__navigator {
@@ -72,7 +80,7 @@
         font-size: 18pt;
         text-align: center;
         vertical-align: middle;
-        height: 35pt;
+        height: 26pt;
     }
 
     .calendar-day__events {
@@ -88,6 +96,10 @@
         height: 4pt;
         width: 4pt;
         border-radius: 2pt;
+    }
+
+    .calendar-day__call-to-action {
+        display: none;
     }
 
     .event-calendar__instructions {
@@ -132,6 +144,10 @@
         border-radius: 4pt;
     }
 
+    .calendar-day__call-to-action {
+        display: none;
+    }
+
     .event-calendar__instructions {
         margin-top: 20pt;
         padding: 0 10pt;
@@ -166,6 +182,12 @@
         padding: 1pt;
         padding-left: 3pt;
         border-radius: 4pt;
+    }
+
+    .calendar-day__call-to-action {
+        font-size: 9pt;
+        bottom: 2pt;
+        right: 2pt;
     }
 
     .event-calendar__instructions {

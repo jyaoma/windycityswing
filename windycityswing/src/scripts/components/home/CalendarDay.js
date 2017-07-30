@@ -14,6 +14,13 @@ const events = (eventList) => {
     }
 };
 
+const callToAction = (eventList) => {
+    if (!eventList || eventList.length === 0) {
+        return null;
+    }
+    return <span className='calendar-day__call-to-action'>Details >></span>;
+}
+
 const CalendarDay = (props) => {
     if (!props || !props.day) {
         return <td></td>;
@@ -24,6 +31,7 @@ const CalendarDay = (props) => {
         <div className='calendar-day__events'>
             {events(props.events)}
         </div>
+        {callToAction(props.events)}
     </td>);
 };
 
