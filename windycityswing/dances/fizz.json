@@ -33,7 +33,7 @@
             "event": "Dancing"
         },
         "3": {
-            "hour": 24,
+            "hour": 0,
             "minute": 0,
             "event": "End"
         }

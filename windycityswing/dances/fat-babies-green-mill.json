@@ -11,7 +11,7 @@
     "timezone": {
         "tzid": "America/Chicago",
         "startTimestamp": "20170704T210000",
-        "endTimestamp": "20170706T010000"
+        "endTimestamp": "20170705T010000"
     },
     "recurrence": {
         "rule": "dayOfWeek",

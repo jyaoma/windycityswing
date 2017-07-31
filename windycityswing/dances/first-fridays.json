@@ -10,7 +10,7 @@
     },
     "timezone": {
         "tzid": "America/Chicago",
-        "startTimestamp": "20140711T200000",
+        "startTimestamp": "20170711T200000",
         "endTimestamp": "20170712T000000"
     },
     "recurrence": {
@@ -33,7 +33,7 @@
             "event": "Dancing"
         },
         "3": {
-            "hour": 24,
+            "hour": 0,
             "minute": 0,
             "event": "End"
         }
