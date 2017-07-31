@@ -17,5 +17,10 @@ exports[`CalendarDay renders correctly 1`] = `
       Test Event
     </div>
   </div>
+  <span
+    className="calendar-day__call-to-action"
+  >
+    Details &gt;&gt;
+  </span>
 </td>
 `;
