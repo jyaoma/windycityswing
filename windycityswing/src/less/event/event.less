@@ -16,7 +16,7 @@
 
 .event-details__header {
     font-weight: bold;
-    font-size: 8pt;
+    font-size: 9pt;
     color: gray;
     margin-top: 10pt;
     margin-bottom: 2pt;
@@ -65,23 +65,35 @@
     height: 75pt;
 }
 
+.event-details__links {
+    display: flex;
+    flex-direction: row;
+}
+
 .event-details__link {
-    font-size: 8pt;
+    font-size: 10pt;
     font-weight: bold;
     color: white;
     background-color: gray;
-    width: 60pt;
-    padding: 2pt;
+    width: 100pt;
+    padding: 10pt;
     text-align: center;
+    margin-right: 10pt;
     margin-bottom: 2pt;
     display: flex;
     flex-direction: horizontal;
     justify-content: space-between;
     text-decoration: none;
+    text-align: left;
+    box-shadow: 0 1pt 3pt 1pt #AAAAAA;
 
     &:hover {
         background-color: darkgray;
     }
+}
+
+.event-details__link-text {
+    line-height: 10pt;
 }
 
 .event-details__link--facebook {
@@ -100,9 +112,17 @@
     }
 }
 
+.event-details__link--gcal {
+    background-color: #dd4b39;
+    
+    &:hover {
+        background-color: #e16151;
+    }
+}
+
 .event-details__link-icon {
-    height: 8pt;
-    width: 8pt;
+    height: 10pt;
+    min-width: 10pt;
 }
 
 .event-details__date--container {

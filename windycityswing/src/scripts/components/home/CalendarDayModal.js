@@ -61,8 +61,8 @@ const CalendarDayModal = (props) => {
                             <path d='M2 7 L7 2'/>
                         </svg>
                     </div>
-                    {events(props.events, props)}
                     {instructions(props.events)}
+                    {events(props.events, props)}
                 </div>
             </div>
         );

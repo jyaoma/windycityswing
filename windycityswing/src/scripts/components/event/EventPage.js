@@ -91,10 +91,9 @@ const eventTimeline = (event) => {
 
 const eventLinks = (event, date) => {
     const results = [];
-    results.push(<span key='link' className='event-details__header'>LINKS</span>);
     if (!!event.infoUrl) {
         results.push(<a key='event' href={event.infoUrl} target='_blank' className='event-details__link'>
-            <span>Home Page</span>
+            <span className='event-details__link-text'>Home Page</span>
             <svg viewBox='0 0 16 16' stroke='white' fill='transparent' className='event-details__link-icon'>
                 <path d='M8 3 L1 3 L1 15 L13 15 L13 8'/>
                 <path d='M10 1 L15 1 L15 6'/>
@@ -104,7 +103,7 @@ const eventLinks = (event, date) => {
     }
     if (!!event.facebookUrl) {
         results.push(<a key='facebook' href={event.facebookUrl} target='_blank' className='event-details__link event-details__link--facebook'>
-            <span>Facebook</span>
+            <span className='event-details__link-text'>Facebook</span>
             <svg viewBox='0 0 16 16' stroke='white' fill='transparent' className='event-details__link-icon'>
                 <path d='M8 3 L1 3 L1 15 L13 15 L13 8'/>
                 <path d='M10 1 L15 1 L15 6'/>
@@ -143,7 +142,7 @@ const eventLinks = (event, date) => {
     description.replace(' ', '+');
 
     results.push(<a key='gcal' href={`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${event.title}&dates=${dateObject.tz('Greenwich').format('YYYYMMDDTHHmmss')}Z/${endDateObject.tz('Greenwich').format('YYYYMMDDTHHmmss')}Z&details=${description}&location=${event.location.addressName}, ${event.location.addressOne} ${event.location.addressTwo ? event.location.addressTwo : ''},+${event.location.city},+${event.location.state} ${event.location.zip}#eventpage_6`} target='_blank' className='event-details__link event-details__link--gcal'>
-        <span>Google Calendar</span>
+        <span className='event-details__link-text'>Google Calendar</span>
         <svg viewBox='0 0 16 16' stroke='white' fill='transparent' className='event-details__link-icon'>
             <path d='M8 3 L1 3 L1 15 L13 15 L13 8'/>
             <path d='M10 1 L15 1 L15 6'/>
@@ -191,7 +190,10 @@ const EventPage = ({match}) => {
     <div className='event-details'>
         <span className='event-details__title'>{event.title}</span>
 
-        {eventLinks(event, match.params.date)}
+        <span className='event-details__header'>LINKS</span>
+        <div className='event-details__links'>
+            {eventLinks(event, match.params.date)}
+        </div>
 
         <span className='event-details__header'>DESCRIPTION</span>
         {eventDescription(event)}
