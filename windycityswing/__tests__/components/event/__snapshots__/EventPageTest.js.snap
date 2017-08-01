@@ -14,62 +14,70 @@ exports[`renders correctly 1`] = `
   >
     LINKS
   </span>
-  <a
-    className="event-details__link event-details__link--facebook"
-    href="https://www.facebook.com/Fizz-Swing-Dancing-73706742234/"
-    target="_blank"
+  <div
+    className="event-details__links"
   >
-    <span>
-      Facebook
-    </span>
-    <svg
-      className="event-details__link-icon"
-      fill="transparent"
-      stroke="white"
-      viewBox="0 0 16 16"
+    <a
+      className="event-details__link event-details__link--facebook"
+      href="https://www.facebook.com/Fizz-Swing-Dancing-73706742234/"
+      target="_blank"
     >
-      <path
-        d="M8 3 L1 3 L1 15 L13 15 L13 8"
-      />
-      <path
-        d="M10 1 L15 1 L15 6"
-      />
-      <line
-        x1="7"
-        x2="15"
-        y1="9"
-        y2="1"
-      />
-    </svg>
-  </a>
-  <a
-    className="event-details__link event-details__link--gcal"
-    href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Fizz&dates=20170704T010000Z/20170704T050000Z&details=Occurs every Monday.%0D%0AAll ages event.&location=Lion Head Pub, 2251 N Lincoln Ave 2nd Floor,+Chicago,+IL 60614#eventpage_6"
-    target="_blank"
-  >
-    <span>
-      Google Calendar
-    </span>
-    <svg
-      className="event-details__link-icon"
-      fill="transparent"
-      stroke="white"
-      viewBox="0 0 16 16"
+      <span
+        className="event-details__link-text"
+      >
+        Facebook
+      </span>
+      <svg
+        className="event-details__link-icon"
+        fill="transparent"
+        stroke="white"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8 3 L1 3 L1 15 L13 15 L13 8"
+        />
+        <path
+          d="M10 1 L15 1 L15 6"
+        />
+        <line
+          x1="7"
+          x2="15"
+          y1="9"
+          y2="1"
+        />
+      </svg>
+    </a>
+    <a
+      className="event-details__link event-details__link--gcal"
+      href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Fizz&dates=20170704T010000Z/20170704T050000Z&details=Occurs every Monday.%0D%0AAll ages event.&location=Lion Head Pub, 2251 N Lincoln Ave 2nd Floor,+Chicago,+IL 60614#eventpage_6"
+      target="_blank"
     >
-      <path
-        d="M8 3 L1 3 L1 15 L13 15 L13 8"
-      />
-      <path
-        d="M10 1 L15 1 L15 6"
-      />
-      <line
-        x1="7"
-        x2="15"
-        y1="9"
-        y2="1"
-      />
-    </svg>
-  </a>
+      <span
+        className="event-details__link-text"
+      >
+        Google Calendar
+      </span>
+      <svg
+        className="event-details__link-icon"
+        fill="transparent"
+        stroke="white"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8 3 L1 3 L1 15 L13 15 L13 8"
+        />
+        <path
+          d="M10 1 L15 1 L15 6"
+        />
+        <line
+          x1="7"
+          x2="15"
+          y1="9"
+          y2="1"
+        />
+      </svg>
+    </a>
+  </div>
   <span
     className="event-details__header"
   >
