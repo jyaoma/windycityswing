@@ -9,7 +9,8 @@ class IndexPage extends React.Component {
                 <span>Pick one of the sites below:</span>
                 <br/>
                 <Link to="/WindyCitySwing">Windy City Swing</Link><br/>
-                <Link to="/vday2017">Valentines Day 2017</Link>
+                <Link to="/vday2017">Valentines Day 2017</Link><br/>
+                <Link to="/jerissatothemoon">Jerissa To The Moon</Link>
             </div>
         );
     }
