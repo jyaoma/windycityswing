@@ -1,7 +1,7 @@
 jest.unmock('..\\..\\src\\scripts\\components\\home\\HomePage');
 
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 import moment from 'moment';
 
 import HomePage from '..\\..\\src\\scripts\\components\\home\\HomePage';
@@ -18,12 +18,11 @@ const testEvent = {
     }
 };
 
-const daysInEachMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const monthFromMoment = Number(moment().format('M'));
 
 beforeEach(() => {
-    tree = mount(<HomePage/>);
+    tree = shallow(<HomePage/>);
 });
 
 describe('event table', () => {
@@ -43,7 +42,7 @@ describe('event table', () => {
     it('has a link to the previous month', () => {
         const previousMonth = eventTable.find('.event-calendar__navigator');
 
-        expect(previousMonth.at(0).text()).toEqual('Previous');
+        expect(previousMonth.at(0).text()).toEqual('< Previous');
     });
 
     it('has the weekdays listed in the second row', () => {
@@ -63,19 +62,16 @@ describe('event table', () => {
             events: []
         });
 
+        eventTable = tree.find('.event-calendar');
+
         const firstWeek = eventTable.find('.event-calendar__week-one');
         const dayOfTheWeekOfTheFirstDayOfTheMonth = moment(moment().format('YYYY') + '-' + moment().format('MM') + '-01').format('d');
 
-        expect(firstWeek.children().at(dayOfTheWeekOfTheFirstDayOfTheMonth).text()).toEqual('1');
+        expect(firstWeek.children().at(dayOfTheWeekOfTheFirstDayOfTheMonth).props().day).toEqual(1);
     });
 
     it('has at least four weeks rendered with the headers', () => {
         expect(eventTable.find('tr').length).toBeGreaterThan(5);
-    });
-
-    it('has the exact number of days shown', () => {
-        const numberOfDaysInCurrentMonth = daysInEachMonth[monthFromMoment - 1];
-        expect(eventTable.find('.calendar-day').length).toEqual(numberOfDaysInCurrentMonth);
     });
 
     it('can go to the previous month', () => {
@@ -87,13 +83,11 @@ describe('event table', () => {
             year--;
         }
         const previousMonthName = monthNames[previousMonth - 1];
-        const numberOfDaysInPreviousMonth = daysInEachMonth[previousMonth - 1];
 
         tree.find('.event-calendar__navigator').at(0).props().onClick();
 
         expect(tree.instance().state.currentMonth).toEqual(previousMonth);
         expect(tree.find('.event-calendar__month').text()).toEqual(previousMonthName + ' ' + year.toString());
-        expect(tree.find('.calendar-day').length).toEqual(numberOfDaysInPreviousMonth);
     });
 
     it('can go to the next month', () => {
@@ -105,13 +99,11 @@ describe('event table', () => {
             year++;
         }
         const nextMonthName = monthNames[nextMonth - 1];
-        const numberOfDaysInNextMonth = daysInEachMonth[nextMonth - 1];
 
         tree.find('.event-calendar__navigator').at(1).props().onClick();
 
         expect(tree.instance().state.currentMonth).toEqual(nextMonth);
         expect(tree.find('.event-calendar__month').text()).toEqual(nextMonthName + ' ' + year.toString());
-        expect(tree.find('.calendar-day').length).toEqual(numberOfDaysInNextMonth);
     });
 
     describe('handling event placement', () => {
@@ -374,6 +366,7 @@ describe('event table', () => {
             tree.instance().setState({
                 currentYear: 2017,
                 currentMonth: 5,
+                currentMonthString: '2017-05-01',
                 events: [testEvent]
             });
 

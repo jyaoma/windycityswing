@@ -18,8 +18,8 @@
     font-weight: bold;
     font-size: 9pt;
     color: gray;
-    margin-top: 10pt;
-    margin-bottom: 2pt;
+    margin-top: 20pt;
+    margin-bottom: 5pt;
 }
 
 .event-details__schedule {
@@ -162,7 +162,7 @@
 
 @media (min-width: 480px) and (max-width: 769px) {
     .event-details {
-        width: 400pt;
+        width: 80%;
     }
 
     .event-details__title {
@@ -176,14 +176,30 @@
 
 @media (min-width: 769px) {
     .event-details {
-        width: 500pt;
+        width: 80%;
+    }
+
+    .event-details__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .event-details__title {
         font-size: 30pt;
     }
 
+    .event-details__text-content {
+        flex-grow: 1;
+    }
+
+    .event-details__map-container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+    }
+
     .event-details__map {
-        height: 400pt;
+        flex-grow: 1;
     }
 }

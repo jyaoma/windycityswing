@@ -190,34 +190,40 @@ const EventPage = ({match}) => {
     <div className='event-details'>
         <span className='event-details__title'>{event.title}</span>
 
-        <span className='event-details__header'>LINKS</span>
-        <div className='event-details__links'>
-            {eventLinks(event, match.params.date)}
+        <div className='event-details__content'>
+            <div className='event-details__text-content'>
+                <span className='event-details__header'>LINKS</span>
+                <div className='event-details__links'>
+                    {eventLinks(event, match.params.date)}
+                </div>
+
+                <span className='event-details__header'>DESCRIPTION</span>
+                {eventDescription(event)}
+
+                <span className='event-details__header'>LOCATION</span>
+                <span className='event-details__address-name'>{event.location.addressName}</span>
+                <span className='event-details__address-street'>{event.location.addressOne + (event.location.addressTwo ? ', ' + event.location.addressTwo : '')}</span>
+                <span className='event-details__address-city'>{event.location.city + ', ' + event.location.state + ' ' + event.location.zip}</span>
+
+                <span className='event-details__header'>PRICE</span>
+                <span className='event-details__price'>{event.price}</span>
+
+                <span className='event-details__header'>SCHEDULE</span>
+                {eventDate(match.params.date)}
+                <table>
+                    <tbody>
+                        {eventTimeline(event)}
+                    </tbody>
+                </table>
+
+                <span className='event-details__header'>DRESS CODE</span>
+                <span className='event-details__dress-code'>{event.dressCode}</span>
+            </div>
+            <div className='event-details__map-container'>
+                <span className='event-details__header'>MAP</span>
+                {eventMap(event)}
+            </div>
         </div>
-
-        <span className='event-details__header'>DESCRIPTION</span>
-        {eventDescription(event)}
-
-        <span className='event-details__header'>LOCATION</span>
-        <span className='event-details__address-name'>{event.location.addressName}</span>
-        <span className='event-details__address-street'>{event.location.addressOne + (event.location.addressTwo ? ', ' + event.location.addressTwo : '')}</span>
-        <span className='event-details__address-city'>{event.location.city + ', ' + event.location.state + ' ' + event.location.zip}</span>
-
-        <span className='event-details__header'>PRICE</span>
-        <span className='event-details__price'>{event.price}</span>
-
-        <span className='event-details__header'>SCHEDULE</span>
-        {eventDate(match.params.date)}
-        <table>
-            <tbody>
-                {eventTimeline(event)}
-            </tbody>
-        </table>
-
-        <span className='event-details__header'>DRESS CODE</span>
-        <span className='event-details__dress-code'>{event.dressCode}</span>
-        <span className='event-details__header'>MAP</span>
-        {eventMap(event)}
     </div>);
 }
 

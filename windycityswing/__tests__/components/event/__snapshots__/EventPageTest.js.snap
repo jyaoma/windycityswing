@@ -9,213 +9,225 @@ exports[`renders correctly 1`] = `
   >
     Fizz
   </span>
-  <span
-    className="event-details__header"
-  >
-    LINKS
-  </span>
   <div
-    className="event-details__links"
+    className="event-details__content"
   >
-    <a
-      className="event-details__link event-details__link--facebook"
-      href="https://www.facebook.com/Fizz-Swing-Dancing-73706742234/"
-      target="_blank"
+    <div
+      className="event-details__text-content"
     >
       <span
-        className="event-details__link-text"
+        className="event-details__header"
       >
-        Facebook
+        LINKS
       </span>
-      <svg
-        className="event-details__link-icon"
-        fill="transparent"
-        stroke="white"
-        viewBox="0 0 16 16"
+      <div
+        className="event-details__links"
       >
-        <path
-          d="M8 3 L1 3 L1 15 L13 15 L13 8"
-        />
-        <path
-          d="M10 1 L15 1 L15 6"
-        />
-        <line
-          x1="7"
-          x2="15"
-          y1="9"
-          y2="1"
-        />
-      </svg>
-    </a>
-    <a
-      className="event-details__link event-details__link--gcal"
-      href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Fizz&dates=20170704T010000Z/20170704T050000Z&details=Occurs every Monday.%0D%0AAll ages event.&location=Lion Head Pub, 2251 N Lincoln Ave 2nd Floor,+Chicago,+IL 60614#eventpage_6"
-      target="_blank"
+        <a
+          className="event-details__link event-details__link--facebook"
+          href="https://www.facebook.com/Fizz-Swing-Dancing-73706742234/"
+          target="_blank"
+        >
+          <span
+            className="event-details__link-text"
+          >
+            Facebook
+          </span>
+          <svg
+            className="event-details__link-icon"
+            fill="transparent"
+            stroke="white"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 3 L1 3 L1 15 L13 15 L13 8"
+            />
+            <path
+              d="M10 1 L15 1 L15 6"
+            />
+            <line
+              x1="7"
+              x2="15"
+              y1="9"
+              y2="1"
+            />
+          </svg>
+        </a>
+        <a
+          className="event-details__link event-details__link--gcal"
+          href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Fizz&dates=20170704T010000Z/20170704T050000Z&details=Occurs every Monday.%0D%0AAll ages event.&location=Lion Head Pub, 2251 N Lincoln Ave 2nd Floor,+Chicago,+IL 60614#eventpage_6"
+          target="_blank"
+        >
+          <span
+            className="event-details__link-text"
+          >
+            Google Calendar
+          </span>
+          <svg
+            className="event-details__link-icon"
+            fill="transparent"
+            stroke="white"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 3 L1 3 L1 15 L13 15 L13 8"
+            />
+            <path
+              d="M10 1 L15 1 L15 6"
+            />
+            <line
+              x1="7"
+              x2="15"
+              y1="9"
+              y2="1"
+            />
+          </svg>
+        </a>
+      </div>
+      <span
+        className="event-details__header"
+      >
+        DESCRIPTION
+      </span>
+      <span
+        className="event-details__description"
+      >
+        Occurs every Monday.
+      </span>
+      <span
+        className="event-details__description"
+      >
+        All ages event.
+      </span>
+      <span
+        className="event-details__header"
+      >
+        LOCATION
+      </span>
+      <span
+        className="event-details__address-name"
+      >
+        Lion Head Pub
+      </span>
+      <span
+        className="event-details__address-street"
+      >
+        2251 N Lincoln Ave, 2nd Floor
+      </span>
+      <span
+        className="event-details__address-city"
+      >
+        Chicago, IL 60614
+      </span>
+      <span
+        className="event-details__header"
+      >
+        PRICE
+      </span>
+      <span
+        className="event-details__price"
+      >
+        $7/person for general public, $5/person for students
+      </span>
+      <span
+        className="event-details__header"
+      >
+        SCHEDULE
+      </span>
+      <div
+        className="event-details__date--container"
+      >
+        <span
+          className="event-details__date"
+        >
+          Monday, July 3rd
+        </span>
+        <span
+          className="event-details__date--relative"
+        >
+          
+        </span>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td
+              className="event-details__schedule__time"
+            >
+              8:00 PM
+            </td>
+            <td
+              className="event-details__schedule__event"
+            >
+              Swing lesson
+            </td>
+          </tr>
+          <tr>
+            <td />
+            <td
+              className="event-details__schedule__duration event-details__schedule__duration-one"
+            >
+              1 hr
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="event-details__schedule__time"
+            >
+              9:00 PM
+            </td>
+            <td
+              className="event-details__schedule__event"
+            >
+              Dancing
+            </td>
+          </tr>
+          <tr>
+            <td />
+            <td
+              className="event-details__schedule__duration event-details__schedule__duration-three"
+            >
+              3 hr
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="event-details__schedule__time"
+            >
+              Midnight
+            </td>
+            <td
+              className="event-details__schedule__event"
+            >
+              End
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span
+        className="event-details__header"
+      >
+        DRESS CODE
+      </span>
+      <span
+        className="event-details__dress-code"
+      >
+        Casual
+      </span>
+    </div>
+    <div
+      className="event-details__map-container"
     >
       <span
-        className="event-details__link-text"
+        className="event-details__header"
       >
-        Google Calendar
+        MAP
       </span>
-      <svg
-        className="event-details__link-icon"
-        fill="transparent"
-        stroke="white"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M8 3 L1 3 L1 15 L13 15 L13 8"
-        />
-        <path
-          d="M10 1 L15 1 L15 6"
-        />
-        <line
-          x1="7"
-          x2="15"
-          y1="9"
-          y2="1"
-        />
-      </svg>
-    </a>
+      <iframe
+        className="event-details__map"
+        src="https://maps.google.com/maps?q=Lion%20Head%20Pub%2C%202251%20N%20Lincoln%20Ave%2C%20Chicago%2C%20IL&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&output=embed"
+      />
+    </div>
   </div>
-  <span
-    className="event-details__header"
-  >
-    DESCRIPTION
-  </span>
-  <span
-    className="event-details__description"
-  >
-    Occurs every Monday.
-  </span>
-  <span
-    className="event-details__description"
-  >
-    All ages event.
-  </span>
-  <span
-    className="event-details__header"
-  >
-    LOCATION
-  </span>
-  <span
-    className="event-details__address-name"
-  >
-    Lion Head Pub
-  </span>
-  <span
-    className="event-details__address-street"
-  >
-    2251 N Lincoln Ave, 2nd Floor
-  </span>
-  <span
-    className="event-details__address-city"
-  >
-    Chicago, IL 60614
-  </span>
-  <span
-    className="event-details__header"
-  >
-    PRICE
-  </span>
-  <span
-    className="event-details__price"
-  >
-    $7/person for general public, $5/person for students
-  </span>
-  <span
-    className="event-details__header"
-  >
-    SCHEDULE
-  </span>
-  <div
-    className="event-details__date--container"
-  >
-    <span
-      className="event-details__date"
-    >
-      Monday, July 3rd
-    </span>
-    <span
-      className="event-details__date--relative"
-    >
-      
-    </span>
-  </div>
-  <table>
-    <tbody>
-      <tr>
-        <td
-          className="event-details__schedule__time"
-        >
-          8:00 PM
-        </td>
-        <td
-          className="event-details__schedule__event"
-        >
-          Swing lesson
-        </td>
-      </tr>
-      <tr>
-        <td />
-        <td
-          className="event-details__schedule__duration event-details__schedule__duration-one"
-        >
-          1 hr
-        </td>
-      </tr>
-      <tr>
-        <td
-          className="event-details__schedule__time"
-        >
-          9:00 PM
-        </td>
-        <td
-          className="event-details__schedule__event"
-        >
-          Dancing
-        </td>
-      </tr>
-      <tr>
-        <td />
-        <td
-          className="event-details__schedule__duration event-details__schedule__duration-three"
-        >
-          3 hr
-        </td>
-      </tr>
-      <tr>
-        <td
-          className="event-details__schedule__time"
-        >
-          Midnight
-        </td>
-        <td
-          className="event-details__schedule__event"
-        >
-          End
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <span
-    className="event-details__header"
-  >
-    DRESS CODE
-  </span>
-  <span
-    className="event-details__dress-code"
-  >
-    Casual
-  </span>
-  <span
-    className="event-details__header"
-  >
-    MAP
-  </span>
-  <iframe
-    className="event-details__map"
-    src="https://maps.google.com/maps?q=Lion%20Head%20Pub%2C%202251%20N%20Lincoln%20Ave%2C%20Chicago%2C%20IL&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&output=embed"
-  />
 </div>
 `;

@@ -2,6 +2,9 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import {shallow} from 'enzyme';
 
+import { Router } from 'react-router';
+import createHistory from 'history/createBrowserHistory';
+
 import CalendarDay from '..\\..\\..\\src\\scripts\\components\\home\\CalendarDay';
 
 describe('CalendarDay', () => {
@@ -18,11 +21,11 @@ describe('CalendarDay', () => {
     let tree;
 
     beforeEach(() => {
-        tree = shallow(<CalendarDay day={1} events={[testEvent]}/>);
+        tree = shallow(<CalendarDay day={1} events={[testEvent]} month={5}/>);
     });
 
     it('renders correctly', () => {
-        expect(renderer.create(<CalendarDay day={1} events={[testEvent]}/>).toJSON()).toMatchSnapshot();
+        expect(renderer.create(<Router history={createHistory()}><CalendarDay day={1} events={[testEvent]} month={5}/></Router>).toJSON()).toMatchSnapshot();
     });
 
     describe('rendering logic', () => {

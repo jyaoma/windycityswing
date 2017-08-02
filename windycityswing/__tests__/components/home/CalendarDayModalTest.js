@@ -91,6 +91,6 @@ describe('instructions', () => {
 
 describe('events', () => {
     it('leads to the event detail page', () => {
-        expect(tree.find('.calendar-day-modal__event').at(0).props().to).toEqual('/WindyCitySwing.test-event.2017-05-01');
+        expect(tree.find('.calendar-day-modal__event').at(0).props().to).toEqual('/WindyCitySwing__test-event--2017-05-01');
     });
 });

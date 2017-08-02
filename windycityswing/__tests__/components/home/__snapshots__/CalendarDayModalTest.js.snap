@@ -35,7 +35,7 @@ exports[`should render correctly 1`] = `
     </span>
     <a
       className="calendar-day-modal__event event--test-event"
-      href="/WindyCitySwing.test-event.2017-05-01"
+      href="/WindyCitySwing__test-event--2017-05-01"
       onClick={[Function]}
     >
       <span
