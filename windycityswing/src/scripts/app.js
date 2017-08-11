@@ -13,6 +13,9 @@ import EventPage from './components/event/EventPage';
 import Vday2017 from '../../../vday2017/src/scripts/Vday2017';
 import JerissaIndex from '../../../jerissatothemoon/src/scripts/JerissaIndex';
 import JerissaGuestSearch from '../../../jerissatothemoon/src/scripts/GuestSearch';
+import JerissaRSVP from '../../../jerissatothemoon/src/scripts/RSVP';
+import JerissaRecords from '../../../jerissatothemoon/src/scripts/Records';
+import JerissaSubmit from '../../../jerissatothemoon/src/scripts/Submit';
 
 ReactDOM.render(
     <Router history={createHistory()}>
@@ -21,6 +24,9 @@ ReactDOM.render(
             <Route path="/vday2017" component={Vday2017}/>
             <Route path="/jerissatothemoon" component={JerissaIndex}/>
             <Route path="/jerissatothemoon-guestsearch" component={JerissaGuestSearch}/>
+            <Route path="/jerissatothemoon-rsvp-:groupNumber" component={JerissaRSVP}/>
+            <Route path="/jerissatothemoon-records-:groupNumber" component={JerissaRecords}/>
+            <Route path="/jerissatothemoon-submit" component={JerissaSubmit}/>
             <WindyCitySwing>
                 <Route exact path="/WindyCitySwing" component={HomePage}/>
                 <Route path="/WindyCitySwing__:eventName--:date" component={EventPage}/>
