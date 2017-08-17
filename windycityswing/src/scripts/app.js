@@ -16,18 +16,23 @@ import JerissaGuestSearch from '../../../jerissatothemoon/src/scripts/GuestSearc
 import JerissaRSVP from '../../../jerissatothemoon/src/scripts/RSVP';
 import JerissaRecords from '../../../jerissatothemoon/src/scripts/Records';
 import JerissaSubmit from '../../../jerissatothemoon/src/scripts/Submit';
+import JerissaMenu from '../../../jerissatothemoon/src/scripts/Menu';
+import JerissaToTheMoon from '../../../jerissatothemoon/src/scripts/JerissaToTheMoon';
 
 ReactDOM.render(
     <Router history={createHistory()}>
         <Switch>
             <Route exact path="/" component={IndexPage}/>
             <Route path="/vday2017" component={Vday2017}/>
-            <Route path="/jerissatothemoon" component={JerissaIndex}/>
-            <Route path="/jerissatothemoon-guestsearch" component={JerissaGuestSearch}/>
-            <Route path="/jerissatothemoon-rsvp-:groupNumber" component={JerissaRSVP}/>
-            <Route path="/jerissatothemoon-records-:groupNumber" component={JerissaRecords}/>
-            <Route path="/jerissatothemoon-submit" component={JerissaSubmit}/>
-            <WindyCitySwing>
+            <JerissaToTheMoon path='/jerissatothemoon*'>
+                <Route path="/jerissatothemoon" component={JerissaIndex}/>
+                <Route path="/jerissatothemoon-guestsearch" component={JerissaGuestSearch}/>
+                <Route path="/jerissatothemoon-rsvp-:groupNumber" component={JerissaRSVP}/>
+                <Route path="/jerissatothemoon-records-:groupNumber" component={JerissaRecords}/>
+                <Route path="/jerissatothemoon-submit" component={JerissaSubmit}/>
+                <Route path="/jerissatothemoon-menu" component={JerissaMenu}/>
+            </JerissaToTheMoon>
+            <WindyCitySwing path='/WindyCitySwing*'>
                 <Route exact path="/WindyCitySwing" component={HomePage}/>
                 <Route path="/WindyCitySwing__:eventName--:date" component={EventPage}/>
             </WindyCitySwing>
