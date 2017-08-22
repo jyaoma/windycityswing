@@ -111,13 +111,13 @@ const createConfig = () => {
                     NODE_ENV: JSON.stringify('production')
                 }
             }),
-            new webpack.optimize.UglifyJsPlugin(),
-            new CompressionPlugin({
-                asset: "[path].gz[query]",
-                algorithm: "gzip",
-                test: /\.(js|html)$/,
-                minRatio: 0.1
-            })
+            // new webpack.optimize.UglifyJsPlugin(),
+            // new CompressionPlugin({
+            //     asset: "[path].gz[query]",
+            //     algorithm: "gzip",
+            //     test: /\.(js|html)$/,
+            //     minRatio: 0.1
+            // })
         ]
     };
 
