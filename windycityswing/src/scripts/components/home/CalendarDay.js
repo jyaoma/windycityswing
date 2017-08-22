@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import moment from 'moment-timezone';
 
 const events = (eventList, componentProps) => {
     if (!eventList || eventList.length === 0) {
@@ -8,23 +9,25 @@ const events = (eventList, componentProps) => {
     } else {
         const renderedEventList = [];
         for (let i = 0; i < eventList.length; i++) {
-            const event = eventList[i];
+            const event = eventList[i];;
 
-            let date = event.date.year.toString();
+            let date = moment(event.timezone.startTimestamp, 'YYYYMMDDTHHmmss').format('YYYY-MM-DD');
+            if (event.recurrence && event.recurrence.rule !== 'None') {
+                date = event.date.year.toString();
+                let monthString = componentProps.month.toString();
+                if (componentProps.month < 10) {
+                    monthString = '0' + monthString;
+                }
 
-            let monthString = componentProps.month.toString();
-            if (componentProps.month < 10) {
-                monthString = '0' + monthString;
+                date = date + '-' + monthString;
+
+                let dayString = componentProps.day.toString();
+                if (componentProps.day < 10) {
+                    dayString = '0' + dayString;
+                }
+
+                date = date + '-' + dayString;
             }
-
-            date = date + '-' + monthString;
-
-            let dayString = componentProps.day.toString();
-            if (componentProps.day < 10) {
-                dayString = '0' + dayString;
-            }
-
-            date = date + '-' + dayString;
 
             renderedEventList.push(<div className={'mdHidden calendar-day__event event--'+event.className} key={i*2}>{event.title}</div>);
             renderedEventList.push(<Link to={'/WindyCitySwing__'+event.className+'--'+date} className={'xsHidden calendar-day__event event--'+event.className} key={i*2+1}>{event.title}</Link>);

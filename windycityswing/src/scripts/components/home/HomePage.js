@@ -37,7 +37,7 @@ class HomePage extends React.Component {
             dayString = '-' + dayString;
             const exceptionString = this.state.currentMonthString.replace('-01', dayString);
             const exceptionFinder = (exception) => {return exception === exceptionString}
-            return !!event.recurrence.exceptions.find(exceptionFinder)
+            return event.recurrence.exceptions.filter(exceptionFinder).length > 0
         }
         return false;
     }
@@ -86,7 +86,7 @@ class HomePage extends React.Component {
             const event = this.state.events[i];
             if (event.date.year === this.state.currentYear && event.date.month === this.state.currentMonth && (!event.recurrence || !event.recurrence.rule || event.recurrence.rule === 'none')) {
                 eventMap[event.date.day].push(event);
-            }
+        }
             if (event.recurrence) {
                 if (event.recurrence.rule === 'dayOfWeek') {
                     let currentDayOfEvent = event.recurrence.dayOfWeek - dayOfTheWeekOfTheFirstDayOfTheMonth + 1;
@@ -125,6 +125,14 @@ class HomePage extends React.Component {
                     if (!this.isAnException(event, dayOfEvent)) {
                         eventMap[dayOfEvent].push(event);
                     }
+                }
+            }
+
+            const startTimestamp = moment(event.timezone.startTimestamp, 'YYYYMMDDTHHmmss');
+            const endTimestamp = moment(event.timezone.endTimestamp, 'YYYYMMDDTHHmmss');
+            if (startTimestamp.format('YYYYMMDD') !== endTimestamp.format('YYYYMMDD') && endTimestamp.from(startTimestamp).indexOf('days') !== -1) {
+                for (let i = 1; i <= Number(endTimestamp.from(startTimestamp).substr(3, 1)); i++) {
+                    eventMap[event.date.day + i].push(event);
                 }
             }
         }

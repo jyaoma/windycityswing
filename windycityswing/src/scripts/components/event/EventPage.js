@@ -76,7 +76,7 @@ const eventTimeline = (event) => {
             }
 
             const durationCellHeights = ["one", "one", "two", "three", "four", "five"];
-            const durationCellHeight = durationCellHeights[hoursUntilNextEvent];
+            const durationCellHeight = durationCellHeights[heightIndicator];
 
             result.push(
             <tr key={i*2}>
