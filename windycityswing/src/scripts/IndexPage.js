@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import history from './history.js';
 
 class IndexPage extends React.Component {
     render () {
@@ -8,9 +8,9 @@ class IndexPage extends React.Component {
                 <span>Welcome to Jeremy's Web Host!</span>
                 <span>Pick one of the sites below:</span>
                 <br/>
-                <Link to="/WindyCitySwing">Windy City Swing</Link><br/>
-                <Link to="/vday2017">Valentines Day 2017</Link><br/>
-                <Link to="/jerissatothemoon">Jerissa To The Moon</Link>
+                <a onClick={() => {history.push('/WindyCitySwing')}}>Windy City Swing</a><br/>
+                <a onClick={() => {history.push('/vday2017')}}>Valentines Day 2017</a><br/>
+                <a onClick={() => {history.push('/jerissatothemoon')}}>Jerissa To The Moon</a>
             </div>
         );
     }

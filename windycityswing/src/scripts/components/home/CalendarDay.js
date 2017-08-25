@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import moment from 'moment-timezone';
+
+import history from '../../history';
 
 const events = (eventList, componentProps) => {
     if (!eventList || eventList.length === 0) {
@@ -9,7 +10,7 @@ const events = (eventList, componentProps) => {
     } else {
         const renderedEventList = [];
         for (let i = 0; i < eventList.length; i++) {
-            const event = eventList[i];;
+            const event = eventList[i];
 
             let date = moment(event.timezone.startTimestamp, 'YYYYMMDDTHHmmss').format('YYYY-MM-DD');
             if (event.recurrence && event.recurrence.rule !== 'None') {
@@ -29,8 +30,8 @@ const events = (eventList, componentProps) => {
                 date = date + '-' + dayString;
             }
 
-            renderedEventList.push(<div className={'mdHidden calendar-day__event event--'+event.className} key={i*2}>{event.title}</div>);
-            renderedEventList.push(<Link to={'/WindyCitySwing__'+event.className+'--'+date} className={'xsHidden calendar-day__event event--'+event.className} key={i*2+1}>{event.title}</Link>);
+            renderedEventList.push(<div className={'mdHidden calendar-day__event event--'+event.className} key={i*2}/>);
+            renderedEventList.push(<span onClick={() => {history.push('/WindyCitySwing__'+event.className+'--'+date)}} className={'xsHidden calendar-day__event event--'+event.className} key={i*2+1}>{event.title}</span>);
         }
         return renderedEventList;
     }

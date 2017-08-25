@@ -4,7 +4,7 @@ import '../../../vday2017/src/less/vday2017.less';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, Switch } from 'react-router';
-import createHistory from 'history/createBrowserHistory';
+import history from './history';
 
 import IndexPage from './IndexPage';
 import WindyCitySwing from './components/WindyCitySwing';
@@ -20,7 +20,7 @@ import JerissaMenu from '../../../jerissatothemoon/src/scripts/Menu';
 import JerissaToTheMoon from '../../../jerissatothemoon/src/scripts/JerissaToTheMoon';
 
 ReactDOM.render(
-    <Router history={createHistory()}>
+    <Router history={history}>
         <Switch>
             <Route exact path="/" component={IndexPage}/>
             <Route path="/vday2017" component={Vday2017}/>

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Link} from 'react-router-dom';
+import history from '../../history';
 
 const monthNames = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 const weekdayNames = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
@@ -31,10 +31,10 @@ const events = (eventList, props) => {
         date = date + '-' + dayString;
 
         result.push(
-            <Link to={'/WindyCitySwing__'+event.className+'--'+date} className={'calendar-day-modal__event event--'+event.className} key={i}>
+            <div onClick={() => {history.push('/WindyCitySwing__'+event.className+'--'+date)}} className={'calendar-day-modal__event event--'+event.className} key={i}>
                 <span className='calendar-day-modal__event-title'>{event.title}</span>
                 <span className='calendar-day-modal__event-address'>{event.location.addressName + ', ' + event.location.addressOne + ', ' + event.location.city + ', ' + event.location.state}</span>
-            </Link>);
+            </div>);
     }
 
     return result;

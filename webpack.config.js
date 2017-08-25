@@ -20,7 +20,7 @@ const createConfig = () => {
                     include: path.join(__dirname, 'windycityswing', 'src', 'scripts'),
                     loader: 'babel-loader',
                     query: {
-                        presets: ['es2015', 'react']
+                        presets: ['react', 'env']
                     }
                 },
                 {
@@ -28,7 +28,7 @@ const createConfig = () => {
                     include: path.join(__dirname, 'vday2017', 'src', 'scripts'),
                     loader: 'babel-loader',
                     query: {
-                        presets: ['es2015', 'react']
+                        presets: ['react', 'env']
                     }
                 },
                 {
@@ -36,7 +36,7 @@ const createConfig = () => {
                     include: path.join(__dirname, 'jerissatothemoon', 'src', 'scripts'),
                     loader: 'babel-loader',
                     query: {
-                        presets: ['es2015', 'react']
+                        presets: ['react', 'env']
                     }
                 },
                 {
