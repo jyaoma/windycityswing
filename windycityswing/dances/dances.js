@@ -1,20 +1,8 @@
-import AlanGresikGreenMill from './alan-gresik-green-mill.json';
-import DanceTheBix2017 from './dance-the-bix-2017.json';
-import DanceTheBix2017Lite from './dance-the-bix-2017-lite.json';
-import DanceTheBix2017Rhythm from './dance-the-bix-2017-rhythm.json';
-import FatBabiesGreenMill from './fat-babies-green-mill.json';
-import FatBabiesHonkyTonk from './fat-babies-honky-tonk.json';
-import FirstFridays from './first-fridays.json';
-import Fizz from './fizz.json';
-import GalleryDance20170531 from './gallery20170531.json';
+import weekly from './weekly/dances';
+import monthly from './monthly/dances';
+import dances2017 from './2017/dances';
 
-export default [
-    AlanGresikGreenMill,
-    DanceTheBix2017,
-    DanceTheBix2017Lite,
-    DanceTheBix2017Rhythm,
-    FatBabiesGreenMill,
-    FatBabiesHonkyTonk,
-    FirstFridays,
-    Fizz,
-    GalleryDance20170531];
+export default [].concat(
+    weekly,
+    monthly,
+    dances2017);

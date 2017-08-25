@@ -1,0 +1,73 @@
+{
+    "title": "Swinging at the Sands",
+    "className": "swinging-at-sands",
+    "siteTitle": "Swinging at the Sands",
+    "date": {
+        "year": 2017,
+        "month": 8,
+        "day": 1,
+        "weekday": 2
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20170801T190000",
+        "endTimestamp": "20170801T233000"
+    },
+    "recurrence": {
+        "rule": "dayOfWeek",
+        "dayOfWeek": 2,
+        "exceptions": []
+    },
+    "facebookUrl": "",
+    "organizer": "Swinging at the Sands",
+    "instructor": "Several",
+    "schedule": {
+        "1": {
+            "hour": 19,
+            "minute": 0,
+            "event": "Beginner Lesson"
+        },
+        "2": {
+            "hour": 19,
+            "minute": 45,
+            "event": "Intermediate Lesson"
+        },
+        "3": {
+            "hour": 20,
+            "minute": 30,
+            "event": "Dancing"
+        },
+        "4": {
+            "hour": 23,
+            "minute": 30,
+            "event": "End"
+        }
+    },
+    "info": [
+        "Occurs every Tuesday.",
+        "All ages event.",
+        "Instructors, lessons, and music vary per week"
+    ],
+    "infoUrl": "http://www.swingingatthesands.com/",
+    "attendance": "10-50",
+    "music": {
+        "type": "Varies",
+        "url": "",
+        "by": ""
+    },
+    "floorSize": "Large",
+    "location": {
+        "addressName": "Downers Sand Club Sports Bar & Grill",
+        "addressOne": "1211 Butterfield Rd",
+        "addressTwo": "Suite B",
+        "city": "Downer's Grove",
+        "state": "IL",
+        "zip": "60515"
+    },
+    "dressCode": "Casual",
+    "danceStyles": [
+        "East coast swing"
+    ],
+    "parking": "Venue parking",
+    "price": "$5/person for each lesson, $7/person to dance ($17 for the whole night)"
+}
