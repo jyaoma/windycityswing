@@ -86,7 +86,7 @@ class HomePage extends React.Component {
             const event = this.state.events[i];
             if (event.date.year === this.state.currentYear && event.date.month === this.state.currentMonth && (!event.recurrence || !event.recurrence.rule || event.recurrence.rule === 'none')) {
                 eventMap[event.date.day].push(event);
-        }
+            }
             if (event.recurrence) {
                 if (event.recurrence.rule === 'dayOfWeek') {
                     let currentDayOfEvent = event.recurrence.dayOfWeek - dayOfTheWeekOfTheFirstDayOfTheMonth + 1;

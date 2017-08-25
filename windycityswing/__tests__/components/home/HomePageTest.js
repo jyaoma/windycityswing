@@ -15,6 +15,10 @@ const testEvent = {
         "month": 5,
         "day": 30,
         "weekday": 3
+    },
+    "timezone": {
+        "startTimestamp": "20170530T210000",
+        "endTimestamp": "20170530T220000"
     }
 };
 
@@ -132,6 +136,10 @@ describe('event table', () => {
                     "month": 5,
                     "day": 1,
                     "weekday": 3
+                },
+                "timezone": {
+                    "startTimestamp": "20170502T210000",
+                    "endTimestamp": "20170502T220000"
                 }
             };
 
@@ -155,6 +163,10 @@ describe('event table', () => {
                     "month": 5,
                     "day": 31,
                     "weekday": 3
+                },
+                "timezone": {
+                    "startTimestamp": "20170502T210000",
+                    "endTimestamp": "20170502T220000"
                 }
             };
 
@@ -178,6 +190,10 @@ describe('event table', () => {
                     "month": 5,
                     "day": 1,
                     "weekday": 3
+                },
+                "timezone": {
+                    "startTimestamp": "20170502T210000",
+                    "endTimestamp": "20170502T220000"
                 }
             };
 
@@ -218,6 +234,10 @@ describe('event table', () => {
                 "recurrence": {
                     "rule": "dayOfWeek",
                     "dayOfWeek": 2
+                },
+                "timezone": {
+                    "startTimestamp": "20170502T210000",
+                    "endTimestamp": "20170502T220000"
                 }
             }
 
@@ -250,6 +270,10 @@ describe('event table', () => {
                     "rule": "dayOfWeek",
                     "dayOfWeek": 2,
                     "exceptions": ["2017-05-23"]
+                },
+                "timezone": {
+                    "startTimestamp": "20170502T210000",
+                    "endTimestamp": "20170502T220000"
                 }
             }
 
@@ -281,6 +305,10 @@ describe('event table', () => {
                 "recurrence": {
                     "rule": "dayOfMonth",
                     "dayOfMonth": 2
+                },
+                "timezone": {
+                    "startTimestamp": "20170502T210000",
+                    "endTimestamp": "20170502T220000"
                 }
             }
 
@@ -307,6 +335,10 @@ describe('event table', () => {
                     "rule": "dayOfMonth",
                     "dayOfMonth": 2,
                     "exceptions": ["2017-05-02"]
+                },
+                "timezone": {
+                    "startTimestamp": "20170502T210000",
+                    "endTimestamp": "20170502T220000"
                 }
             }
 
@@ -333,6 +365,10 @@ describe('event table', () => {
                     "rule": "dayOfWeekOfMonth",
                     "dayOfWeek": 2,
                     "weekOfMonth": 2
+                },
+                "timezone": {
+                    "startTimestamp": "20170502T210000",
+                    "endTimestamp": "20170502T220000"
                 }
             }
 
@@ -360,6 +396,10 @@ describe('event table', () => {
                     "dayOfWeek": 2,
                     "weekOfMonth": 2,
                     "exceptions": ["2017-05-16"]
+                },
+                "timezone": {
+                    "startTimestamp": "20170502T210000",
+                    "endTimestamp": "20170502T220000"
                 }
             }
 
@@ -371,6 +411,36 @@ describe('event table', () => {
             });
 
             expect(tree.find('CalendarDay').at(16).props().events).not.toContainEqual(testEvent);
+        });
+
+        it('places an event on multiple days if it is a multiple day event', () => {
+            const testEvent = {
+                "title": "Test Event",
+                "date": {
+                    "year": 2017,
+                    "month": 5,
+                    "day": 2,
+                    "weekday": 2
+                },
+                "recurrence": {
+                    "rule": "none"
+                },
+                "timezone": {
+                    "startTimestamp": "20170502T210000",
+                    "endTimestamp": "20170504T220000"
+                }
+            }
+
+            tree.instance().setState({
+                currentYear: 2017,
+                currentMonth: 5,
+                currentMonthString: '2017-05-01',
+                events: [testEvent]
+            });
+
+            expect(tree.find('CalendarDay').at(2).props().events).toContain(testEvent);
+            expect(tree.find('CalendarDay').at(3).props().events).toContain(testEvent);
+            expect(tree.find('CalendarDay').at(4).props().events).toContain(testEvent);
         });
     });
 });

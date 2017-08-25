@@ -16,6 +16,10 @@ describe('CalendarDay', () => {
             "month": 5,
             "day": 1,
             "weekday": 3
+        },
+        "timezone": {
+            "startTimestamp": "20170501T210000",
+            "endTimestamp": "20170501T220000"
         }
     };
     let tree;
