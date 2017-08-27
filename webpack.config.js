@@ -2,7 +2,6 @@ const webpack = require('webpack');
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CompressionPlugin = require("compression-webpack-plugin");
 
 const createConfig = () => {
     const config = {
@@ -110,14 +109,7 @@ const createConfig = () => {
                 'process.env': {
                     NODE_ENV: JSON.stringify('production')
                 }
-            }),
-            // new webpack.optimize.UglifyJsPlugin(),
-            // new CompressionPlugin({
-            //     asset: "[path].gz[query]",
-            //     algorithm: "gzip",
-            //     test: /\.(js|html)$/,
-            //     minRatio: 0.1
-            // })
+            })
         ]
     };
 
