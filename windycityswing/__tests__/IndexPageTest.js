@@ -19,11 +19,11 @@ describe('Index Page', () => {
 
     describe('links', () => {
         it('has a link to Windy City Swing', () => {
-            expect(tree.find('Link').at(0).props().children).toEqual('Windy City Swing');
+            expect(tree.find('a').at(0).props().children).toEqual('Windy City Swing');
         });
 
         it('has a link to the 2017 valentines day website', () => {
-            expect(tree.find('Link').at(1).props().children).toEqual('Valentines Day 2017');
+            expect(tree.find('a').at(1).props().children).toEqual('Valentines Day 2017');
         });
     });
 });

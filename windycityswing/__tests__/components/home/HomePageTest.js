@@ -413,6 +413,37 @@ describe('event table', () => {
             expect(tree.find('CalendarDay').at(16).props().events).not.toContainEqual(testEvent);
         });
 
+        it('places an event on the last day of week of month', () => {
+            const testEvent = {
+                "title": "Test Event",
+                "date": {
+                    "year": 2017,
+                    "month": 4,
+                    "day": 29,
+                    "weekday": 6
+                },
+                "recurrence": {
+                    "rule": "dayOfWeekOfMonth",
+                    "dayOfWeek": 6,
+                    "weekOfMonth": -1,
+                    "exceptions": ["2017-05-16"]
+                },
+                "timezone": {
+                    "startTimestamp": "20170429T210000",
+                    "endTimestamp": "20170429T220000"
+                }
+            }
+
+            tree.instance().setState({
+                currentYear: 2017,
+                currentMonth: 5,
+                currentMonthString: '2017-05-01',
+                events: [testEvent]
+            });
+
+            expect(tree.find('CalendarDay').at(27).props().events).toContainEqual(testEvent);
+        });
+
         it('places an event on multiple days if it is a multiple day event', () => {
             const testEvent = {
                 "title": "Test Event",

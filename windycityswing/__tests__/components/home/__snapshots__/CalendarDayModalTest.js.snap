@@ -33,9 +33,8 @@ exports[`should render correctly 1`] = `
     >
       Select an event to see its details
     </span>
-    <a
+    <div
       className="calendar-day-modal__event event--test-event"
-      href="/WindyCitySwing__test-event--2017-05-01"
       onClick={[Function]}
     >
       <span
@@ -48,7 +47,7 @@ exports[`should render correctly 1`] = `
       >
         Test Locaiton, undefined, undefined, undefined
       </span>
-    </a>
+    </div>
   </div>
 </div>
 `;

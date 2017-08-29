@@ -43,7 +43,7 @@ class HomePage extends React.Component {
     }
 
     renderCalendar () {
-        const dayOfTheWeekOfTheFirstDayOfTheMonth = moment(this.state.currentMonthString).format('d');
+        const dayOfTheWeekOfTheFirstDayOfTheMonth = Number(moment(this.state.currentMonthString).format('d'));
         const daysInEachMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
         const maxDaysInCurrentMonth = daysInEachMonth[this.state.currentMonth - 1];
         let currentDay = 1;
@@ -120,7 +120,14 @@ class HomePage extends React.Component {
                     if (dayOfEvent <= 0) {
                         dayOfEvent += 7;
                     }
-                    dayOfEvent += (7 * event.recurrence.weekOfMonth);
+
+                    if (event.recurrence.weekOfMonth === -1) {
+                        while (dayOfEvent + 7 <= maxDaysInCurrentMonth) {
+                            dayOfEvent += 7;
+                        }
+                    } else {
+                        dayOfEvent += (7 * event.recurrence.weekOfMonth);
+                    }
 
                     if (!this.isAnException(event, dayOfEvent)) {
                         eventMap[dayOfEvent].push(event);
@@ -130,7 +137,7 @@ class HomePage extends React.Component {
 
             const startTimestamp = moment(event.timezone.startTimestamp, 'YYYYMMDDTHHmmss');
             const endTimestamp = moment(event.timezone.endTimestamp, 'YYYYMMDDTHHmmss');
-            if (startTimestamp.format('YYYYMMDD') !== endTimestamp.format('YYYYMMDD') && endTimestamp.from(startTimestamp).indexOf('days') !== -1) {
+            if (startTimestamp.format('YYYYMMDD') !== endTimestamp.format('YYYYMMDD') && endTimestamp.from(startTimestamp).indexOf('days') !== -1 && event.date.month === this.state.currentMonth) {
                 for (let i = 1; i <= Number(endTimestamp.from(startTimestamp).substr(3, 1)); i++) {
                     eventMap[event.date.day + i].push(event);
                 }

@@ -1,7 +1,10 @@
+jest.mock('history');
+jest.mock('../../../src/scripts/history');
+
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { Router } from 'react-router';
-import { createBrowserHistory as createHistory } from 'history';
+import history from '../../../src/scripts/history'
 import { shallow } from 'enzyme';
 
 import CalendarDayModal from '..\\..\\..\\src\\scripts\\components\\home\\CalendarDayModal';
@@ -50,7 +53,7 @@ beforeEach(() => {
 });
 
 it('should render correctly', () => {
-    expect(renderer.create(<Router history={createHistory()}><CalendarDayModal
+    expect(renderer.create(<Router history={history}><CalendarDayModal
                                 day={1}
                                 events={[testEvent]}
                                 hidden={false}
@@ -91,6 +94,8 @@ describe('instructions', () => {
 
 describe('events', () => {
     it('leads to the event detail page', () => {
-        expect(tree.find('.calendar-day-modal__event').at(0).props().to).toEqual('/WindyCitySwing__test-event--2017-05-01');
+        history.push = jest.fn();
+        tree.find('.calendar-day-modal__event').at(0).props().onClick();
+        expect(history.push).toBeCalledWith('/WindyCitySwing__test-event--2017-05-01');
     });
 });

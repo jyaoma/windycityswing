@@ -13,16 +13,13 @@ exports[`CalendarDay renders correctly 1`] = `
   >
     <div
       className="mdHidden calendar-day__event event--test-event"
-    >
-      Test Event
-    </div>
-    <a
+    />
+    <span
       className="xsHidden calendar-day__event event--test-event"
-      href="/WindyCitySwing__test-event--2017-05-01"
       onClick={[Function]}
     >
       Test Event
-    </a>
+    </span>
   </div>
 </td>
 `;

@@ -40,6 +40,7 @@
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.24.0",
     "jest": "^19.0.2",
+    "jest-cli": "^20.0.4",
     "less": "^2.7.2",
     "less-loader": "^4.0.3",
     "nsp": "^2.3.3",
