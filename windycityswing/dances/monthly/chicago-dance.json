@@ -1,0 +1,66 @@
+{
+    "title": "3rd Friday Swing Night",
+    "className": "chicago-dance",
+    "siteTitle": "3rd Friday Swing Night",
+    "date": {
+        "year": 2017,
+        "month": 8,
+        "day": 18,
+        "weekday": 5
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20170818T200000",
+        "endTimestamp": "20170818T230000"
+    },
+    "recurrence": {
+        "rule": "dayOfWeekOfMonth",
+        "dayOfWeek": 5,
+        "weekOfMonth": 2
+    },
+    "facebookUrl": "",
+    "organizer": "Chicago Dance",
+    "instructor": "",
+    "schedule": {
+        "1": {
+            "hour": 20,
+            "minute": 0,
+            "event": "Beginning Swing lesson"
+        },
+        "2": {
+            "hour": 20,
+            "minute": 45,
+            "event": "Dancing"
+        },
+        "3": {
+            "hour": 23,
+            "minute": 0,
+            "event": "End"
+        }
+    },
+    "info": [
+        "Occurs on the third Friday of each month",
+        "BYOB event"
+    ],
+    "infoUrl": "http://www.chicagodance.com/",
+    "attendance": "20-50",
+    "music": {
+        "type": "DJ",
+        "url": "",
+        "by": ""
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Chicago Dance",
+        "addressOne": "309 W Chicago Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60654"
+    },
+    "dressCode": "Casual",
+    "danceStyles": [
+        "East Coast Swing"
+    ],
+    "parking": "Street parking available.",
+    "price": "$8/person"
+}

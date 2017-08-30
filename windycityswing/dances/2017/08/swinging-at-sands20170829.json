@@ -1,26 +1,24 @@
 {
-    "title": "Swinging at the Sands",
+    "title": "Flat Cats at Swinging at the Sands",
     "className": "swinging-at-sands",
-    "siteTitle": "Swinging at the Sands",
+    "siteTitle": "Flat Cats at Swinging at the Sands",
     "date": {
         "year": 2017,
         "month": 8,
-        "day": 1,
+        "day": 29,
         "weekday": 2
     },
     "timezone": {
         "tzid": "America/Chicago",
-        "startTimestamp": "20170801T190000",
-        "endTimestamp": "20170801T233000"
+        "startTimestamp": "20170829T190000",
+        "endTimestamp": "20170829T233000"
     },
     "recurrence": {
-        "rule": "dayOfWeek",
-        "dayOfWeek": 2,
-        "exceptions": ["2017-08-29"]
+        "rule": "none"
     },
-    "facebookUrl": "",
+    "facebookUrl": "https://www.facebook.com/events/1708056356167489/",
     "organizer": "Swinging at the Sands",
-    "instructor": "Several",
+    "instructor": "R.J. Woodworth and Jessica Endres",
     "schedule": {
         "1": {
             "hour": 19,
@@ -51,9 +49,9 @@
     "infoUrl": "http://www.swingingatthesands.com/",
     "attendance": "10-50",
     "music": {
-        "type": "Varies",
-        "url": "",
-        "by": ""
+        "type": "Live",
+        "url": "http://www.flatcatsmusic.com/",
+        "by": "The Flat Cats"
     },
     "floorSize": "Large",
     "location": {
@@ -69,5 +67,5 @@
         "East coast swing"
     ],
     "parking": "Venue parking",
-    "price": "$5/person for each lesson, $7/person to dance ($17 for the whole night). $2 off for students with valid student ID"
+    "price": "$5/person for each lesson, $12/person to dance ($17 for one lesson and open dancing)"
 }

@@ -1,10 +1,9 @@
-jest.mock('history');
-jest.mock('../../../src/scripts/history');
+jest.mock('..\\..\\..\\src\\scripts\\history');
 
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { Router } from 'react-router';
-import history from '../../../src/scripts/history'
+import history from '..\\..\\..\\src\\scripts\\history'
 import { shallow } from 'enzyme';
 
 import CalendarDayModal from '..\\..\\..\\src\\scripts\\components\\home\\CalendarDayModal';
