@@ -1,0 +1,72 @@
+{
+    "title": "Traffic Jam Swing",
+    "className": "traffic-jam",
+    "siteTitle": "Traffic Jam Swing",
+    "date": {
+        "year": 2017,
+        "month": 8,
+        "day": 12,
+        "weekday": 6
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20170812T200000",
+        "endTimestamp": "20170813T000000"
+    },
+    "recurrence": {
+        "rule": "dayOfWeekOfMonth",
+        "dayOfWeek": 6,
+        "weekOfMonth": 1,
+        "exceptions": ["2017-09-09"]
+    },
+    "facebookUrl": "",
+    "organizer": "Traffic Jam Swing",
+    "instructor": "",
+    "schedule": {
+        "1": {
+            "hour": 20,
+            "minute": 15,
+            "event": "Beginner Swing lesson"
+        },
+        "2": {
+            "hour": 21,
+            "minute": 0,
+            "event": "Vintage Swing Music"
+        },
+        "3": {
+            "hour": 23,
+            "minute": 0,
+            "event": "Classic Soul Music"
+        },
+        "4": {
+            "hour": 0,
+            "minute": 0,
+            "event": "End"
+        }
+    },
+    "info": [
+        "Occurs on the second Saturday of each month.",
+        "All ages event."
+    ],
+    "infoUrl": "http://www.trafficjamswing.com/",
+    "attendance": "Unknown",
+    "music": {
+        "type": "DJ",
+        "url": "",
+        "by": ""
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Lillstreet Loft",
+        "addressOne": "4437 N Ravenswood Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60640"
+    },
+    "dressCode": "Casual",
+    "danceStyles": [
+        "East coast swing"
+    ],
+    "parking": "Street parking available.",
+    "price": "$10 per person, cash only. $5 per student with valid ID"
+}

@@ -1,0 +1,67 @@
+{
+    "title": "Monthly Balboa Social",
+    "className": "balboa-social",
+    "siteTitle": "Monthly Balboa Social",
+    "date": {
+        "year": 2017,
+        "month": 8,
+        "day": 9,
+        "weekday": 3
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20170809T200000",
+        "endTimestamp": "20170810T000000"
+    },
+    "recurrence": {
+        "rule": "dayOfWeekOfMonth",
+        "dayOfWeek": 3,
+        "weekOfMonth": 1,
+        "exceptions": []
+    },
+    "facebookUrl": "https://www.facebook.com/groups/1692486754376906/",
+    "organizer": "Chicago Balboa Underground Community",
+    "instructor": "",
+    "schedule": {
+        "1": {
+            "hour": 20,
+            "minute": 0,
+            "event": "Balboa lesson"
+        },
+        "2": {
+            "hour": 21,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        "3": {
+            "hour": 0,
+            "minute": 0,
+            "event": "End"
+        }
+    },
+    "info": [
+        "Occurs on the second Wednesday of each month.",
+        "All ages event."
+    ],
+    "infoUrl": "",
+    "attendance": "",
+    "music": {
+        "type": "DJ",
+        "url": "",
+        "by": ""
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Mrs. Murphy & Sons Irish Bistro",
+        "addressOne": "3905 N Lincoln Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60613"
+    },
+    "dressCode": "Casual",
+    "danceStyles": [
+        "Balboa"
+    ],
+    "parking": "Street parking available.",
+    "price": "$10 per person, $5 per student with valid ID"
+}

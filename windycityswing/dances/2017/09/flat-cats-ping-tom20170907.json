@@ -1,0 +1,73 @@
+{
+    "title": "Flat Cats at Ping Tom Memorial Park",
+    "className": "summerdance",
+    "siteTitle": "Flat Cats at Ping Tom Memorial Park",
+    "date": {
+        "year": 2017,
+        "month": 9,
+        "day": 7,
+        "weekday": 4
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20170907T180000",
+        "endTimestamp": "20170907T210000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "Chicago Summerdance",
+    "instructor": "Fred Astaire Dance Studio",
+    "schedule": {
+        "1": {
+            "hour": 18,
+            "minute": 0,
+            "event": "Jitterbug Lesson"
+        },
+        "2": {
+            "hour": 19,
+            "minute": 0,
+            "event": "Open dancing"
+        },
+        "3": {
+            "hour": 21,
+            "minute": 0,
+            "event": "End"
+        },
+        "4": {
+            "hour": 0,
+            "minute": 0,
+            "event": "End"
+        }
+    },
+    "info": [
+        "Part of Chicago Summerdance.",
+        "All ages event."
+    ],
+    "infoUrl": "https://www.cityofchicago.org/city/en/depts/dca/supp_info/chicago_summerdance3.html",
+    "attendance": "100-150",
+    "music": {
+        "type": "Live",
+        "url": "http://www.flatcatsmusic.com/",
+        "by": "The Flat Cats"
+    },
+    "floorSize": "Large",
+    "location": {
+        "addressName": "Ping Tom Memorial Park",
+        "addressOne": "300 W 19th St.",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60616"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy Hop",
+        "Charleston",
+        "Balboa",
+        "Salsa"
+    ],
+    "parking": "Nearby garage parking available.",
+    "price": "Free"
+}
