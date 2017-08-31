@@ -1,0 +1,61 @@
+{
+    "title": "John Bany Quintet at Glendora House",
+    "className": "glendora",
+    "siteTitle": "John Bany Quintet at Glendora House",
+    "date": {
+        "year": 2017,
+        "month": 9,
+        "day": 17,
+        "weekday": 0
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20170917T140000",
+        "endTimestamp": "20170917T170000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "Glendora Banquets",
+    "instructor": "",
+    "schedule": {
+        "1": {
+            "hour": 14,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        "2": {
+            "hour": 17,
+            "minute": 0,
+            "event": "End"
+        }
+    },
+    "info": [
+        "All ages event."
+    ],
+    "infoUrl": "http://www.illianajazz.com/",
+    "attendance": "",
+    "music": {
+        "type": "Live",
+        "url": "",
+        "by": "John Bany Quintet"
+    },
+    "floorSize": "Large",
+    "location": {
+        "addressName": "Glendora Banquets",
+        "addressOne": "10225 S Harlem Ave",
+        "city": "Chicago Ridge",
+        "state": "IL",
+        "zip": "60415"
+    },
+    "dressCode": "Dressy",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Venue parking available.",
+    "price": "$18 per person in advance, $20 at the door for general public. $10 per dancer at the door who say they're a dancer"
+}
