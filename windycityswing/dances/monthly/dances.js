@@ -6,6 +6,7 @@ import OutcastHackneys from './outcast-hackneys.json';
 import RhythmRocketsUntitled from './rhythm-rockets-untitled.json';
 import ThirdFridays from './chicago-dance.json';
 import TrafficJam from './traffic-jam.json';
+import VioletHour from './violet-hour.json';
 
 export default [
     BalboaSocial,
@@ -15,5 +16,6 @@ export default [
     OutcastHackneys,
     RhythmRocketsUntitled,
     ThirdFridays,
-    TrafficJam
+    TrafficJam,
+    VioletHour
 ];

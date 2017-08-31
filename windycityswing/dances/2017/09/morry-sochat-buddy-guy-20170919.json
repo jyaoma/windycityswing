@@ -1,0 +1,59 @@
+{
+    "title": "Morry Sochat and the Special 20's at Buddy Guy Legends",
+    "className": "morry-sochat-buddy-guy",
+    "siteTitle": "Morry Sochat and the Special 20's at Buddy Guy Legends",
+    "date": {
+        "year": 2017,
+        "month": 9,
+        "day": 19,
+        "weekday": 2
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20170919T213000",
+        "endTimestamp": "20170920T010000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "Morry Sochat and the Special 20's",
+    "instructor": "",
+    "schedule": {
+        "1": {
+            "hour": 21,
+            "minute": 30,
+            "event": "Dancing"
+        },
+        "2": {
+            "hour": 1,
+            "minute": 0,
+            "event": "End"
+        }
+    },
+    "info": [
+        "21+ event"
+    ],
+    "infoUrl": "http://special20s.com/shows/upcoming/",
+    "attendance": "",
+    "music": {
+        "type": "Live",
+        "url": "",
+        "by": "Morry Sochat and the Special 20s"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Buddy Guy's Legends",
+        "addressOne": "700 S Wabash Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60605"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Blues"
+    ],
+    "parking": "Street parking available.",
+    "price": "$10 per person"
+}

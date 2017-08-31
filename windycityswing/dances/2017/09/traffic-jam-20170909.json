@@ -56,6 +56,7 @@
     "location": {
         "addressName": "Lillstreet Loft",
         "addressOne": "4437 N Ravenswood Ave",
+        "addressTwo": "2nd Floor",
         "city": "Chicago",
         "state": "IL",
         "zip": "60640"
