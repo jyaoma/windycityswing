@@ -1,5 +1,6 @@
 hello
 
+<html>
 <script>
 console.log(document.getElementsByClassName('code')[0].innerHTML)
 </script>
@@ -20,5 +21,6 @@ console.log(document.getElementsByClassName('code')[0].innerHTML)
 <div class="code">
     <span class="keyword">let</span> thisVariable;
 </div>
+</html>
 
 goodbye
