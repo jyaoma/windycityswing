@@ -1,6 +1,6 @@
 import React from 'react';
 
-import dances from '../../../../dances/dances';
+import dances from '../../../../../dances/dances';
 import moment from 'moment-timezone';
 
 const eventDescription = (event) => {
