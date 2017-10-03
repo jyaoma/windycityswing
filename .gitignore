@@ -22,6 +22,7 @@ bundle.js*
 
 # Generated
 dist/
+windycityswing/backend/bin/
 
 # Clarissa
 vday2017/
@@ -32,3 +33,8 @@ mocks/
 
 #nginx
 nginx-1.12.0/
+
+#STS workspace
+windycityswing/RemoteSystemsTempFiles/
+windycityswing/Servers/
+windycityswing/.recommenders
