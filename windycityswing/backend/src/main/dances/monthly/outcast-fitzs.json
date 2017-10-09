@@ -1,0 +1,65 @@
+{
+    "title": "Outcast Jazz Band at Fitz's Spare Keys",
+    "className": "outcast-fitzs",
+    "siteTitle": "Outcast Jazz Band at Fitz's Spare Keys",
+    "date": {
+        "year": 2017,
+        "month": 8,
+        "day": 20,
+        "weekday": 0
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20170820T180000",
+        "endTimestamp": "20170807T210000"
+    },
+    "recurrence": {
+        "rule": "dayOfWeekOfMonth",
+        "dayOfWeek": 0,
+        "weekOfMonth": 2,
+        "exceptions": []
+    },
+    "facebookUrl": "",
+    "organizer": "Fitz's Spare Keys",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 18,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 21,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "Occurs on the third Sunday of each month.",
+        "All ages event."
+    ],
+    "infoUrl": "http://fitzs.publishpath.com/",
+    "attendance": "",
+    "music": {
+        "type": "Live",
+        "url": "",
+        "by": "Outcast Jazz Band"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Fitz's Spare Keys",
+        "addressOne": "119 N York St.",
+        "city": "Elmhurst",
+        "state": "IL",
+        "zip": "60126"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Venue parking available.",
+    "price": "$10 per person"
+}

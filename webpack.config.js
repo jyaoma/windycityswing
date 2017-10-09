@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const createConfig = () => {
     const config = {
-        entry: './windycityswing/src/scripts/app.js',
+        entry: './windycityswing/web/src/scripts/app.js',
 
         output: {
             path: path.join(__dirname, 'dist'),
@@ -16,7 +16,7 @@ const createConfig = () => {
             rules: [
                 {
                     test: /\.js$/,
-                    include: path.join(__dirname, 'windycityswing', 'src', 'scripts'),
+                    include: path.join(__dirname, 'windycityswing', 'web', 'src', 'scripts'),
                     loader: 'babel-loader',
                     query: {
                         presets: ['react', 'env']
@@ -40,7 +40,7 @@ const createConfig = () => {
                 },
                 {
                     test: /\.less$/,
-                    include: path.join(__dirname, 'windycityswing', 'src', 'less'),
+                    include: path.join(__dirname, 'windycityswing', 'web', 'src', 'less'),
                     loaders: ['style-loader', 'css-loader', 'resolve-url-loader', 'less-loader']
                 },
                 {
@@ -55,7 +55,7 @@ const createConfig = () => {
                 },
                 {
                     test: /\.(eot|woff|woff2|ttf|svg|otf)$/,
-                    include: path.join(__dirname, 'windycityswing', 'src', 'fonts'),
+                    include: path.join(__dirname, 'windycityswing', 'web', 'src', 'fonts'),
                     loader: 'url-loader?limit=70000&name=fonts/[name]-[hash].[ext]'
                 },
                 {
@@ -71,7 +71,7 @@ const createConfig = () => {
                 {
                     test: /\.(jpg|svg|png)$/,
                     loader: 'url-loader?limit=10000&name=images/[name]-[hash].[ext]',
-                    include: path.join(__dirname, 'windycityswing', 'src', 'images')
+                    include: path.join(__dirname, 'windycityswing', 'web', 'src', 'images')
                 },
                 {
                     test: /\.(jpg|svg|png)$/,

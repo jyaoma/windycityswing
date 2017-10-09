@@ -1,0 +1,66 @@
+{
+    "title": "Starfall Orchestra at Durty Nellies",
+    "className": "starfall-nellies",
+    "siteTitle": "Starfall Orchestra at Durty Nellies",
+    "date": {
+        "year": 2017,
+        "month": 9,
+        "day": 17,
+        "weekday": 0
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20170917T170000",
+        "endTimestamp": "20170917T210000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "Starfall Orchestra",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 17,
+            "minute": 0,
+            "event": "Lessons"
+        },
+        {
+            "hour": 18,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 17,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "All ages event."
+    ],
+    "infoUrl": "",
+    "attendance": "",
+    "music": {
+        "type": "Live",
+        "url": "",
+        "by": "Starfall Orchestra"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Durty Nellie's",
+        "addressOne": "180 N Smith St",
+        "city": "Palatine",
+        "state": "IL",
+        "zip": "60067"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Venue parking available.",
+    "price": "$12 per person, $5 per student with valid ID"
+}

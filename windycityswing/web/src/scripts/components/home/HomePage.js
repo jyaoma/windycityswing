@@ -1,8 +1,9 @@
 import React from 'react';
+import axios from 'axios';
 
 const moment = require('moment');
 
-import dances from '../../../../../dances/dances';
+// import dances from '../../../../../dances/dances';
 
 import CalendarDay from './CalendarDay';
 import CalendarDayModal from './CalendarDayModal';
@@ -15,7 +16,7 @@ class HomePage extends React.Component {
             currentMonth: Number(moment().format('M')),
             currentYear: Number(moment().format('YYYY')),
             currentMonthString: moment().format('YYYY') + '-' + moment().format('MM') + '-01',
-            events: dances,
+            events: [],
             modalHidden: true,
             modalDay: 0,
             modalEvents: [],
@@ -26,6 +27,14 @@ class HomePage extends React.Component {
         this.closeModal = this.closeModal.bind(this);
         this.goToPreviousMonth = this.goToPreviousMonth.bind(this);
         this.goToNextMonth = this.goToNextMonth.bind(this);
+    }
+
+    componentWillMount() {
+        axios.get(`http://${window.location.hostname}:8080/dances`).then((response) => {
+            this.setState({
+                events: response.data
+            });
+        });
     }
 
     isAnException(event, day) {

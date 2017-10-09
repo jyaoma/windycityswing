@@ -1,0 +1,54 @@
+{
+    "title": "Gallery Dance",
+    "className": "gallery-dance",
+    "siteTitle": "Lockport",
+    "date": {
+        "year": 2017,
+        "month": 5,
+        "day": 31,
+        "weekday": 3
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20170531T193000",
+        "endTimestamp": "20170531T220000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/events/1361062103977058/",
+    "organizer": "Gallery Cafe",
+    "instructor": null,
+    "schedule": [
+        {
+            "hour": 19,
+            "minute": 30,
+            "event": "Dancing"
+        },
+        {
+            "hour": 22,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [],
+    "infoUrl": null,
+    "attendance": "1-50",
+    "music": {
+        "type": "Live music",
+        "url": "https://www.facebook.com/magnoliajassband/",
+        "by": "Magnolia Jass Band"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Gallery Cafe",
+        "addressOne": "1760 W North Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60622"
+    },
+    "dressCode": "Casual",
+    "danceStyles": [],
+    "parking": "Street parking available.",
+    "price": "$7/person"
+}

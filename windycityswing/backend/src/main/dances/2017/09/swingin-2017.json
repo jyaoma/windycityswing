@@ -1,0 +1,140 @@
+{
+    "title": "SwingIN 2017",
+    "className": "swingin",
+    "siteTitle": "SwingIN 2017",
+    "date": {
+        "year": 2017,
+        "month": 9,
+        "day": 22,
+        "weekday": 5
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20170922T200000",
+        "endTimestamp": "20170924T230000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/events/868858636583314/",
+    "organizer": "Naptown Stomp",
+    "instructor": "Several",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Dancing with DJ music"
+        },
+        {
+            "hour": 21,
+            "minute": 0,
+            "event": "Russ Wilson Swingtet begins"
+        },
+        {
+            "hour": 1,
+            "minute": 0,
+            "event": "End of Night"
+        },
+        {
+            "hour": 10,
+            "minute": 0,
+            "event": "Saturday Morning Classes"
+        },
+        {
+            "hour": 12,
+            "minute": 0,
+            "event": "Lunch Break"
+        },
+        {
+            "hour": 13,
+            "minute": 30,
+            "event": "Auditions"
+        },
+        {
+            "hour": 14,
+            "minute": 50,
+            "event": "Saturday Afternoon Classes"
+        },
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Dancing to DJ music"
+        },
+        {
+            "hour": 21,
+            "minute": 0,
+            "event": "Russ Wilson Swingtet"
+        },
+        {
+            "hour": 0,
+            "minute": 0,
+            "event": "Break"
+        },
+        {
+            "hour": 1,
+            "minute": 0,
+            "event": "Riolo Dance"
+        },
+        {
+            "hour": 4,
+            "minute": 0,
+            "event": "End of Night"
+        },
+        {
+            "hour": 10,
+            "minute": 30,
+            "event": "Morning Classes"
+        },
+        {
+            "hour": 12,
+            "minute": 30,
+            "event": "Lunch Break"
+        },
+        {
+            "hour": 14,
+            "minute": 0,
+            "event": "Afternoon Classes"
+        },
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "DJ Dancing"
+        },
+        {
+            "hour": 20,
+            "minute": 30,
+            "event": "Moonshine Rhythm Club"
+        },
+        {
+            "hour": 23,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "This will be the 10th anniversary of SwingIN and it will be the biggest!"
+    ],
+    "infoUrl": "http://www.swingin.org",
+    "attendance": "Many",
+    "music": {
+        "type": "Live music",
+        "url": null,
+        "by": "Several"
+    },
+    "floorSize": "Several",
+    "location": {
+        "addressName": "",
+        "addressOne": "Several Venues",
+        "city": "Indianapolis",
+        "state": "IN",
+        "zip": ""
+    },
+    "dressCode": "Dressy Casual - Dressy",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston"
+    ],
+    "parking": "",
+    "price": "See http://www.swingin.org/registration/pricing/"
+}

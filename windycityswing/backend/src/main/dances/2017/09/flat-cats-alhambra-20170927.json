@@ -1,0 +1,69 @@
+{
+    "title": "Flat Cats and Miss Jubilee at Alhambra Palace",
+    "className": "flat-cats-alhambra",
+    "siteTitle": "Flat Cats and  Miss Jubilee at Alhambra Palace",
+    "date": {
+        "year": 2017,
+        "month": 9,
+        "day": 27,
+        "weekday": 3
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20170927T200000",
+        "endTimestamp": "20170927T233000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "The Flat Cats",
+    "instructor": "Big City Swing",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Lesson"
+        },
+        {
+            "hour": 20,
+            "minute": 30,
+            "event": "Live music and open dancing"
+        },
+        {
+            "hour": 21,
+            "minute": 30,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "All ages event.",
+        "Happens on the last Wednesday of each month."
+    ],
+    "infoUrl": "http://www.flatcatsmusic.com/",
+    "attendance": "20-50",
+    "music": {
+        "type": "Live",
+        "url": "http://www.flatcatsmusic.com/",
+        "by": "The Flat Cats and Miss Jubilee"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Alhambra Palace",
+        "addressOne": "1240 W Randolph St",
+        "addressTwo": "",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60607"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Charleston",
+        "Balboa",
+        "Lindy Hop",
+        "Salsa"
+    ],
+    "parking": "Street parking",
+    "price": "$15 per person"
+}

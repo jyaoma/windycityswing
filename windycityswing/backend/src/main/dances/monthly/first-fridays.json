@@ -1,0 +1,70 @@
+{
+    "title": "First Fridays",
+    "className": "first-fridays",
+    "siteTitle": "First Fridays",
+    "date": {
+        "year": 2017,
+        "month": 5,
+        "day": 5,
+        "weekday": 5
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20170711T200000",
+        "endTimestamp": "20170712T000000"
+    },
+    "recurrence": {
+        "rule": "dayOfWeekOfMonth",
+        "dayOfWeek": 5,
+        "weekOfMonth": 0
+    },
+    "facebookUrl": "",
+    "organizer": "Big City Swing",
+    "instructor": "Big City Swing Staff",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Swing lesson"
+        },
+        {
+            "hour": 20,
+            "minute": 45,
+            "event": "Dancing"
+        },
+        {
+            "hour": 0,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "Occurs on the first Friday of each month.",
+        "Snacks and water provided.",
+        "All ages event."
+    ],
+    "infoUrl": "http://www.bigcityswing.com/first-fridays",
+    "attendance": "50-100",
+    "music": {
+        "type": "DJ",
+        "url": "",
+        "by": "Big City Swing Staff"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Big City Swing",
+        "addressOne": "1012 W Randolph Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60607"
+    },
+    "dressCode": "Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Free street parking available.",
+    "price": "$10 per person, cash only."
+}

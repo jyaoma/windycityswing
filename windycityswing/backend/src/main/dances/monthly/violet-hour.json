@@ -1,0 +1,63 @@
+{
+    "title": "Violet Hour at the Loft",
+    "className": "violet-hour",
+    "siteTitle": "Violet Hour at the Loft",
+    "date": {
+        "year": 2017,
+        "month": 8,
+        "day": 16,
+        "weekday": 3
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20170816T190000",
+        "endTimestamp": "20170816T220000"
+    },
+    "recurrence": {
+        "rule": "dayOfWeekOfMonth",
+        "dayOfWeek": 3,
+        "weekOfMonth": 2,
+        "exceptions": []
+    },
+    "facebookUrl": "https://www.facebook.com/groups/393410651017591/",
+    "organizer": "Galaxie Chicago",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 19,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 22,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "Occurs on the third Wednesday of each month.",
+        "All ages event."
+    ],
+    "infoUrl": "",
+    "attendance": "",
+    "music": {
+        "type": "DJ",
+        "url": "",
+        "by": ""
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Lillstreet Loft",
+        "addressOne": "4437 N Ravenswood Ave",
+        "addressTwo": "2nd Floor",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60640"
+    },
+    "dressCode": "Casual",
+    "danceStyles": [
+        "East coast swing"
+    ],
+    "parking": "Street parking available.",
+    "price": "$8 per person"
+}
