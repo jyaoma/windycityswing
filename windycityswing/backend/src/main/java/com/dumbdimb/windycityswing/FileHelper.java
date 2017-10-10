@@ -1,10 +1,12 @@
 package com.dumbdimb.windycityswing;
 
 import org.apache.commons.lang3.ArrayUtils;
+import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 
+@Component
 public class FileHelper {
     public File[] getShallowListOfFilesIn(String directory) throws FileNotFoundException {
         File file = new File(directory);

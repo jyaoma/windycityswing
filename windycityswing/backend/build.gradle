@@ -22,6 +22,14 @@ repositories {
 	mavenCentral()
 }
 
+sourceSets {
+    test {
+        java {
+            srcDirs = ["src\\test"]
+        }
+    }
+}
+
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
 	compile('org.springframework.boot:spring-boot-starter-web')
@@ -29,4 +37,8 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok:1.16.18'
 	compile 'com.google.code.gson:gson:2.8.2'
 	compile 'org.apache.commons:commons-lang3:3.4'
+}
+
+test {
+	include 'src\\test'
 }

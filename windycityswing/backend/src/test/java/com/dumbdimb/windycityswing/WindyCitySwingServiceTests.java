@@ -70,4 +70,19 @@ public class WindyCitySwingServiceTests {
             fail();
         }
     }
+
+    @Test
+    public void getDancesInMonth__queriesForAllDancesInAMonth() {
+        FileHelper realFileHelper = new FileHelper();
+        try {
+            File[] allSeptember2017Dances = realFileHelper.getAllFilesIn("src\\main\\dances\\2017\\09\\");
+            when(fileHelper.getAllFilesIn(anyString())).thenReturn(allSeptember2017Dances);
+            service.getDancesInMonth(2017, 9);
+            verify(fileHelper).getAllFilesIn(eq("src\\main\\dances\\weekly"));
+            verify(fileHelper).getAllFilesIn(eq("src\\main\\dances\\monthly"));
+            verify(fileHelper).getAllFilesIn(eq("src\\main\\dances\\2017\\09"));
+        } catch (FileNotFoundException e) {
+            fail();
+        }
+    }
 }

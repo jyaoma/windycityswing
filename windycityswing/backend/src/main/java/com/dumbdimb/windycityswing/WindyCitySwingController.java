@@ -34,6 +34,19 @@ public class WindyCitySwingController {
         return windyCitySwingService.getAllDances();
     }
 
+    @RequestMapping (
+            value="/dances",
+            params = {"year", "month"},
+            method=RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
+    @ResponseStatus(HttpStatus.OK)
+    @ResponseBody
+    ArrayList<Dance> getDancesInMonth(@RequestParam(value = "year") Integer year,
+                                      @RequestParam(value = "month") Integer month) throws FileNotFoundException {
+        return windyCitySwingService.getDancesInMonth(year, month);
+    }
+
     public static void main(String[] args) throws Exception {
         SpringApplication.run(WindyCitySwingController.class, args);
     }
