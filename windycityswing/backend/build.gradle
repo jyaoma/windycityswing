@@ -25,7 +25,7 @@ repositories {
 sourceSets {
     test {
         java {
-            srcDirs = ["src\\test"]
+            srcDirs = ["src/test"]
         }
     }
 }
@@ -37,8 +37,4 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok:1.16.18'
 	compile 'com.google.code.gson:gson:2.8.2'
 	compile 'org.apache.commons:commons-lang3:3.4'
-}
-
-test {
-	include 'src\\test'
 }
