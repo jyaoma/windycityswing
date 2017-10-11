@@ -3,6 +3,7 @@ jest.unmock('..\\..\\src\\scripts\\components\\home\\HomePage');
 import React from 'react';
 import { shallow } from 'enzyme';
 import moment from 'moment';
+import moxios from 'moxios';
 
 import HomePage from '..\\..\\src\\scripts\\components\\home\\HomePage';
 
@@ -22,12 +23,16 @@ const testEvent = {
     }
 };
 
-const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const monthFromMoment = Number(moment().format('M'));
 
 beforeEach(() => {
     tree = shallow(<HomePage/>);
+    moxios.install();
 });
+
+afterEach(() => {
+    moxios.uninstall();
+})
 
 describe('event table', () => {
     let eventTable;
@@ -78,7 +83,7 @@ describe('event table', () => {
         expect(eventTable.find('tr').length).toBeGreaterThan(5);
     });
 
-    it('can go to the previous month', () => {
+    it('can go to the previous month', (done) => {
         let previousMonth = monthFromMoment - 1;
         let year = Number(moment().format('YYYY'));
 
@@ -86,15 +91,28 @@ describe('event table', () => {
             previousMonth = 12;
             year--;
         }
-        const previousMonthName = monthNames[previousMonth - 1];
 
         tree.find('.event-calendar__navigator').at(0).props().onClick();
 
-        expect(tree.instance().state.currentMonth).toEqual(previousMonth);
-        expect(tree.find('.event-calendar__month').text()).toEqual(previousMonthName + ' ' + year.toString());
+        moxios.wait(() => {
+            const request = moxios.requests.mostRecent();
+            request.respondWith({
+                status: 200,
+                response: [{
+                    title: "previous month's dances"
+                }]
+            }).then(() => {
+                expect(tree.instance().state.currentMonth).toEqual(previousMonth);
+                expect(tree.instance().state.currentYear).toEqual(year);
+                expect(tree.instance().state.events[0].title).toEqual("previous month's dances");
+                done();
+            }, () => {
+                fail();
+            });
+        });
     });
 
-    it('can go to the next month', () => {
+    it('can go to the next month', (done) => {
         let nextMonth = monthFromMoment + 1;
         let year = Number(moment().format('YYYY'));
 
@@ -102,12 +120,25 @@ describe('event table', () => {
             nextMonth = 1;
             year++;
         }
-        const nextMonthName = monthNames[nextMonth - 1];
+
+        moxios.wait(() => {
+            const request = moxios.requests.mostRecent();
+            request.respondWith({
+                status: 200,
+                response: [{
+                    title: "next month's dances"
+                }]
+            }).then(() => {
+                expect(tree.instance().state.currentMonth).toEqual(nextMonth);
+                expect(tree.instance().state.currentYear).toEqual(year);
+                expect(tree.instance().state.events[0].title).toEqual("next month's dances");
+                done();
+            }, () => {
+                fail();
+            });
+        });
 
         tree.find('.event-calendar__navigator').at(1).props().onClick();
-
-        expect(tree.instance().state.currentMonth).toEqual(nextMonth);
-        expect(tree.find('.event-calendar__month').text()).toEqual(nextMonthName + ' ' + year.toString());
     });
 
     describe('handling event placement', () => {

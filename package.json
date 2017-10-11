@@ -43,6 +43,7 @@
     "jest-cli": "^20.0.4",
     "less": "^2.7.2",
     "less-loader": "^4.0.3",
+    "moxios": "^0.4.0",
     "nsp": "^2.3.3",
     "prop-types": "^15.5.10",
     "react-router": "^4.1.1",

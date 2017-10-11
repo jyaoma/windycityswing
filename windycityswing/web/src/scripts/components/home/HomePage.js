@@ -30,7 +30,7 @@ class HomePage extends React.Component {
     }
 
     componentWillMount() {
-        axios.get(`http://${window.location.hostname}:8080/dances`).then((response) => {
+        axios.get(`http://${window.location.hostname}:8080/dances?year=${this.state.currentYear}&month=${this.state.currentMonth}`).then((response) => {
             this.setState({
                 events: response.data
             });
@@ -343,10 +343,13 @@ class HomePage extends React.Component {
             previousYear--;
         }
 
-        this.setState({
-            currentMonth: previousMonth,
-            currentYear: previousYear,
-            currentMonthString: previousYear.toString() + '-' + (previousMonth < 10 ? '0' : '') + previousMonth.toString() + '-01'
+        axios.get(`http://${window.location.hostname}:8080/dances?year=${previousYear}&month=${previousMonth}`).then((response) => {
+            this.setState({
+                events: response.data,
+                currentMonth: previousMonth,
+                currentYear: previousYear,
+                currentMonthString: previousYear.toString() + '-' + (previousMonth < 10 ? '0' : '') + previousMonth.toString() + '-01'
+            });
         });
     }
 
@@ -359,10 +362,13 @@ class HomePage extends React.Component {
             nextYear++;
         }
 
-        this.setState({
-            currentMonth: nextMonth,
-            currentYear: nextYear,
-            currentMonthString: nextYear.toString() + '-' + (nextMonth < 10 ? '0' : '') + nextMonth.toString() + '-01'
+        axios.get(`http://${window.location.hostname}:8080/dances?year=${nextYear}&month=${nextMonth}`).then((response) => {
+            this.setState({
+                events: response.data,
+                currentMonth: nextMonth,
+                currentYear: nextYear,
+                currentMonthString: nextYear.toString() + '-' + (nextMonth < 10 ? '0' : '') + nextMonth.toString() + '-01'
+            });
         });
     }
 
