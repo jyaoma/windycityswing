@@ -62,5 +62,9 @@
         "Balboa"
     ],
     "parking": "Venue parking available.",
-    "price": "Free"
+    "price": "Free",
+    "colors": {
+        "bg": "#225915",
+        "text": "white"
+    }
 }

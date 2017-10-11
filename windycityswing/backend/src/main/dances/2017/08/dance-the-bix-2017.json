@@ -196,5 +196,9 @@
         "Fusion"
     ],
     "parking": "",
-    "price": "Whole Weekend: $50/person; Whole Weekend Lite (w/o Rhythm City): $35/person; Rhythm City Only: $20/person; Personal Workshop: $8/person"
+    "price": "Whole Weekend: $50/person; Whole Weekend Lite (w/o Rhythm City): $35/person; Rhythm City Only: $20/person; Personal Workshop: $8/person",
+    "colors": {
+        "bg": "#B8C1C0",
+        "text": "black"
+    }
 }

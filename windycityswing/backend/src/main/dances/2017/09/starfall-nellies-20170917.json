@@ -62,5 +62,9 @@
         "Balboa"
     ],
     "parking": "Venue parking available.",
-    "price": "$12 per person, $5 per student with valid ID"
+    "price": "$12 per person, $5 per student with valid ID",
+    "colors": {
+        "bg": "#16003C",
+        "text": "white"
+    }
 }

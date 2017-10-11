@@ -65,5 +65,9 @@
         "Salsa"
     ],
     "parking": "Street parking",
-    "price": "$15 per person"
+    "price": "$15 per person",
+    "colors": {
+        "bg": "#F50F1A",
+        "text": "black"
+    }
 }

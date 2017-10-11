@@ -57,5 +57,9 @@
         "Balboa"
     ],
     "parking": "Venue parking available.",
-    "price": "$18 per person in advance, $20 at the door for general public. $10 per dancer at the door who say they're a dancer"
+    "price": "$18 per person in advance, $20 at the door for general public. $10 per dancer at the door who say they're a dancer",
+    "colors": {
+        "bg": "#979731",
+        "text": "white"
+    }
 }

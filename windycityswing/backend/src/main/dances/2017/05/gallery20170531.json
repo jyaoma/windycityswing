@@ -50,5 +50,9 @@
     "dressCode": "Casual",
     "danceStyles": [],
     "parking": "Street parking available.",
-    "price": "$7/person"
+    "price": "$7/person",
+    "colors": {
+        "bg": "#3DD3EE",
+        "text": "black"
+    }
 }

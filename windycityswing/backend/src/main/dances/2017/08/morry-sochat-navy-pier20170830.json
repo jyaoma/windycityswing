@@ -63,5 +63,9 @@
         "Lindy Hop"
     ],
     "parking": "Public parking near Navy Pier",
-    "price": "Free"
+    "price": "Free",
+    "colors": {
+        "bg": "#0097AB",
+        "text": "white"
+    }
 }

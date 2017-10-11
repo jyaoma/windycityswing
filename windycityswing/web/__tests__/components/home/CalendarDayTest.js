@@ -20,6 +20,10 @@ describe('CalendarDay', () => {
         "timezone": {
             "startTimestamp": "20170501T210000",
             "endTimestamp": "20170501T220000"
+        },
+        "colors": {
+            "bg": "#AAAAAA",
+            "text": "black"
         }
     };
     let tree;
@@ -67,10 +71,6 @@ describe('CalendarDay', () => {
         describe('when event is specified', () => {
             it('renders the event', () => {
                 expect(tree.find('.calendar-day__event').length).not.toEqual(0);
-            });
-
-            it('should have the className specified', () => {
-                expect(tree.find('.calendar-day__event').at(0).props().className.indexOf(testEvent.className)).not.toEqual(-1);
             });
         })
     });

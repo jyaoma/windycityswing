@@ -68,5 +68,9 @@
         "Balboa"
     ],
     "parking": "Free street parking available.",
-    "price": "$10 per person, cash only."
+    "price": "$10 per person, cash only.",
+    "colors": {
+        "bg": "#0A0A0A",
+        "text": "black"
+    }
 }

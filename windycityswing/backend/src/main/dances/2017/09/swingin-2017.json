@@ -136,5 +136,9 @@
         "Charleston"
     ],
     "parking": "",
-    "price": "See http://www.swingin.org/registration/pricing/"
+    "price": "See http://www.swingin.org/registration/pricing/",
+    "colors": {
+        "bg": "#D19540",
+        "text": "white"
+    }
 }

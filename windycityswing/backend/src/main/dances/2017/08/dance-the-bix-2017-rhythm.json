@@ -76,5 +76,9 @@
         "Fusion"
     ],
     "parking": "",
-    "price": "Rhythm City Only: $20/person;"
+    "price": "Rhythm City Only: $20/person;",
+    "colors": {
+        "bg": "#B8C1C0",
+        "text": "black"
+    }
 }

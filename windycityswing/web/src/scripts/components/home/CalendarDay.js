@@ -30,8 +30,13 @@ const events = (eventList, componentProps) => {
                 date = date + '-' + dayString;
             }
 
-            renderedEventList.push(<div className={'mdHidden calendar-day__event event--'+event.className} key={i*2}/>);
-            renderedEventList.push(<span onClick={() => {history.push('/WindyCitySwing__'+event.className+'--'+date)}} className={'xsHidden calendar-day__event event--'+event.className} key={i*2+1}>{event.title}</span>);
+            renderedEventList.push(<div className='mdHidden calendar-day__event' style={{backgroundColor: event.colors.bg}} key={i*2}/>);
+            renderedEventList.push(<span onClick={() => {history.push('/WindyCitySwing__'+event.className+'--'+date)}} className='xsHidden calendar-day__event' style={{backgroundColor: event.colors.bg, color: event.colors.text}} key={i*2+1}>
+            {event.title}
+            <div className='calendar-day__event-hover-layer'>
+            {event.title}
+            </div>
+            </span>);
         }
         return renderedEventList;
     }

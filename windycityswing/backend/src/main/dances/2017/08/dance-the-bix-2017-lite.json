@@ -186,5 +186,9 @@
         "Fusion"
     ],
     "parking": "",
-    "price": "Whole Weekend Lite (w/o Rhythm City): $35/person"
+    "price": "Whole Weekend Lite (w/o Rhythm City): $35/person",
+    "colors": {
+        "bg": "#B8C1C0",
+        "text": "black"
+    }
 }

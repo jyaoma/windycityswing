@@ -63,6 +63,23 @@
     display: block;
     text-decoration: none;
     box-shadow: 0px 2px 3px 1px #7F7F7F;
+    position: relative;
+}
+
+.calendar-day-modal__event-hover-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: transparent;
+}
+
+.calendar-day-modal__event-hover-layer:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: inherit;
+    padding: inherit;
+    border-radius: inherit;
     cursor: pointer;
 }
 

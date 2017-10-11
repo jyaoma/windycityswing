@@ -64,5 +64,9 @@
         "Blues"
     ],
     "parking": "Street parking available.",
-    "price": "$10/person, cash only. $9/student with valid ID"
+    "price": "$10/person, cash only. $9/student with valid ID",
+    "colors": {
+        "bg": "#366DB0",
+        "text": "white"
+    }
 }

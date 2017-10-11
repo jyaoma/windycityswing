@@ -30,4 +30,5 @@ public class Dance {
     private String[] danceStyles;
     private String parking;
     private String price;
+    private DanceColorScheme colors;
 }

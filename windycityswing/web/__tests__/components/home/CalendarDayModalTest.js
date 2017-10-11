@@ -21,6 +21,10 @@ const testEvent = {
     },
     "location": {
         "addressName": "Test Locaiton"
+    },
+    "colors": {
+        "bg": "#AAAAAA",
+        "text": "black"
     }
 };
 
@@ -35,6 +39,10 @@ const testEventTwo = {
     },
     "location": {
         "addressName": "Test Locaiton"
+    },
+    "colors": {
+        "bg": "#3F3F3F",
+        "text": "black"
     }
 };
 

@@ -66,5 +66,9 @@
         "Balboa"
     ],
     "parking": "Street parking",
-    "price": "$7/person for general public, $5/person for students"
+    "price": "$7/person for general public, $5/person for students",
+    "colors": {
+        "bg": "#654639",
+        "text": "white"
+    }
 }

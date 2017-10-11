@@ -61,5 +61,9 @@
         "Balboa"
     ],
     "parking": "Street parking",
-    "price": "$7/person"
+    "price": "$7/person",
+    "colors": {
+        "bg": "#480000",
+        "text": "white"
+    }
 }

@@ -66,5 +66,9 @@
         "East coast swing"
     ],
     "parking": "Street parking available.",
-    "price": "$10 per person, cash only. $5 per student with valid ID"
+    "price": "$10 per person, cash only. $5 per student with valid ID",
+    "colors": {
+        "bg": "#779EA9",
+        "text": "white"
+    }
 }

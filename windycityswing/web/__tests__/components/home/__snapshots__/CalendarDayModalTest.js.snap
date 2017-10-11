@@ -34,8 +34,14 @@ exports[`should render correctly 1`] = `
       Select an event to see its details
     </span>
     <div
-      className="calendar-day-modal__event event--test-event"
+      className="calendar-day-modal__event"
       onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#AAAAAA",
+          "color": "black",
+        }
+      }
     >
       <span
         className="calendar-day-modal__event-title"
@@ -47,6 +53,20 @@ exports[`should render correctly 1`] = `
       >
         Test Locaiton, undefined, undefined, undefined
       </span>
+      <div
+        className="calendar-day-modal__event-hover-layer"
+      >
+        <span
+          className="calendar-day-modal__event-title"
+        >
+          Test Event
+        </span>
+        <span
+          className="calendar-day-modal__event-address"
+        >
+          Test Locaiton, undefined, undefined, undefined
+        </span>
+      </div>
     </div>
   </div>
 </div>

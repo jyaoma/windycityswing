@@ -62,5 +62,9 @@
         "East Coast Swing"
     ],
     "parking": "Street parking available.",
-    "price": "$8/person"
+    "price": "$8/person",
+    "colors": {
+        "bg": "#CCCCCC",
+        "text": "black"
+    }
 }

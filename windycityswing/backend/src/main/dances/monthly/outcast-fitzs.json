@@ -61,5 +61,9 @@
         "Balboa"
     ],
     "parking": "Venue parking available.",
-    "price": "$10 per person"
+    "price": "$10 per person",
+    "colors": {
+        "bg": "#92133E",
+        "text": "white"
+    }
 }

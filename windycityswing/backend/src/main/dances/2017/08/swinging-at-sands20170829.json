@@ -67,5 +67,9 @@
         "East coast swing"
     ],
     "parking": "Venue parking",
-    "price": "$5/person for each lesson, $12/person to dance ($17 for one lesson and open dancing)"
+    "price": "$5/person for each lesson, $12/person to dance ($17 for one lesson and open dancing)",
+    "colors": {
+        "bg": "#38B5AD",
+        "text": "black"
+    }
 }

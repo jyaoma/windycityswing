@@ -69,5 +69,9 @@
         "Salsa"
     ],
     "parking": "Nearby garage parking available.",
-    "price": "Free"
+    "price": "Free",
+    "colors": {
+        "bg": "#C6E9FC",
+        "text": "black"
+    }
 }

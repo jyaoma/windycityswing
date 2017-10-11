@@ -12,13 +12,29 @@ exports[`CalendarDay renders correctly 1`] = `
     className="calendar-day__events"
   >
     <div
-      className="mdHidden calendar-day__event event--test-event"
+      className="mdHidden calendar-day__event"
+      style={
+        Object {
+          "backgroundColor": "#AAAAAA",
+        }
+      }
     />
     <span
-      className="xsHidden calendar-day__event event--test-event"
+      className="xsHidden calendar-day__event"
       onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#AAAAAA",
+          "color": "black",
+        }
+      }
     >
       Test Event
+      <div
+        className="calendar-day__event-hover-layer"
+      >
+        Test Event
+      </div>
     </span>
   </div>
 </td>

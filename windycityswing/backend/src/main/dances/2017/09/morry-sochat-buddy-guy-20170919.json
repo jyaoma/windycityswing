@@ -55,5 +55,9 @@
         "Blues"
     ],
     "parking": "Street parking available.",
-    "price": "$10 per person"
+    "price": "$10 per person",
+    "colors": {
+        "bg": "#EA3A3D",
+        "text": "white"
+    }
 }
