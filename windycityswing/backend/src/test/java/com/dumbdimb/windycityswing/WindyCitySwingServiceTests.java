@@ -85,4 +85,20 @@ public class WindyCitySwingServiceTests {
             fail();
         }
     }
+
+    @Test
+    public void getDancesInMonth__danceDoesNotOccurThisMonth__isNotInList() {
+        File firstFriday = new File("src\\main\\dances\\monthly\\first-fridays-randolph.json");
+        File[] justFirstFriday = new File[1];
+        justFirstFriday[0] = firstFriday;
+        try {
+            when(fileHelper.getAllFilesIn(eq("src\\main\\dances\\monthly"))).thenReturn(justFirstFriday);
+            when(fileHelper.getAllFilesIn(eq("src\\main\\dances\\weekly"))).thenReturn(new File[0]);
+            when(fileHelper.getAllFilesIn(eq("src\\main\\dances\\2017\\11"))).thenReturn(new File[0]);
+            ArrayList<Dance> returnedDances = service.getDancesInMonth(2017, 11);
+            assertEquals(0, returnedDances.size());
+        } catch (FileNotFoundException e) {
+            fail();
+        }
+    }
 }

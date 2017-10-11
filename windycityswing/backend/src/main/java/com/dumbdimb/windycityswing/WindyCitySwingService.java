@@ -40,13 +40,17 @@ public class WindyCitySwingService {
         for (File danceFile : weeklyDances) {
             FileReader fileReader = new FileReader(danceFile);
             Dance dance = new Gson().fromJson(fileReader, Dance.class);
-            dances.add(dance);
+            if (dance.getRecurrence().doesOccurInThisMonth(year, month)) {
+                dances.add(dance);
+            }
         }
 
         for (File danceFile : monthlyDances) {
             FileReader fileReader = new FileReader(danceFile);
             Dance dance = new Gson().fromJson(fileReader, Dance.class);
-            dances.add(dance);
+            if (dance.getRecurrence().doesOccurInThisMonth(year, month)) {
+                dances.add(dance);
+            }
         }
 
         try {

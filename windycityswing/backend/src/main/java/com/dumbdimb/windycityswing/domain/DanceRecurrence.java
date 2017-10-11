@@ -14,4 +14,29 @@ public class DanceRecurrence {
     private Integer dayOfWeek;
     private Integer weekOfMonth;
     private String[] exceptions;
+    private Integer startYear;
+    private Integer startMonth;
+    private Integer endYear;
+    private Integer endMonth;
+
+    public boolean doesOccurInThisMonth (Integer year, Integer month) {
+        Integer nonNullStartYear = startYear;
+        if (startYear == null) {
+            nonNullStartYear = 0;
+        }
+        Integer nonNullStartMonth = startMonth;
+        if (startMonth == null) {
+            nonNullStartMonth = 0;
+        }
+        Integer nonNullEndYear = endYear;
+        if (endYear == null) {
+            nonNullEndYear = Integer.MAX_VALUE;
+        }
+        Integer nonNullEndMonth = endMonth;
+        if (endMonth == null) {
+            nonNullEndMonth = 13;
+        }
+
+        return nonNullStartYear <= year && year <= nonNullEndYear && nonNullStartMonth <= month && month <= nonNullEndMonth;
+    }
 }

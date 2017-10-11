@@ -16,7 +16,9 @@
     "recurrence": {
         "rule": "dayOfWeekOfMonth",
         "dayOfWeek": 5,
-        "weekOfMonth": 0
+        "weekOfMonth": 0,
+        "startYear": 2018,
+        "startMonth": 1
     },
     "facebookUrl": "",
     "organizer": "Big City Swing",
