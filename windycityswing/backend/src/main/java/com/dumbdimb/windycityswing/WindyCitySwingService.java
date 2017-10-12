@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 
 @Service
@@ -17,18 +18,19 @@ public class WindyCitySwingService {
         this.fileHelper = fileHelper;
     }
 
-    public ArrayList<Dance> getAllDances() throws FileNotFoundException{
+    public ArrayList<Dance> getAllDances() throws IOException {
         ArrayList<Dance> dances = new ArrayList<>();
         File[] allDances = fileHelper.getAllFilesIn("src\\main\\dances\\");
         for (File danceFile : allDances) {
             FileReader fileReader = new FileReader(danceFile);
             Dance dance = new Gson().fromJson(fileReader, Dance.class);
             dances.add(dance);
+            fileReader.close();
         }
         return dances;
     }
 
-    public ArrayList<Dance> getDancesInMonth(Integer year, Integer month) throws FileNotFoundException {
+    public ArrayList<Dance> getDancesInMonth(Integer year, Integer month) throws IOException {
         String monthString = month.toString();
         if (month < 10) {
             monthString = "0" + month.toString();
@@ -43,6 +45,7 @@ public class WindyCitySwingService {
             if (dance.getRecurrence().doesOccurInThisMonth(year, month)) {
                 dances.add(dance);
             }
+            fileReader.close();
         }
 
         for (File danceFile : monthlyDances) {
@@ -51,6 +54,7 @@ public class WindyCitySwingService {
             if (dance.getRecurrence().doesOccurInThisMonth(year, month)) {
                 dances.add(dance);
             }
+            fileReader.close();
         }
 
         try {
@@ -60,10 +64,64 @@ public class WindyCitySwingService {
                 FileReader fileReader = new FileReader(danceFile);
                 Dance dance = new Gson().fromJson(fileReader, Dance.class);
                 dances.add(dance);
+                fileReader.close();
             }
         } catch (FileNotFoundException e) {
             System.out.println("No month specific events found.");
         }
         return dances;
+    }
+
+    public Dance getDance(String id, Integer year, Integer month) throws FileNotFoundException {
+        String monthString = month.toString();
+        if (month < 10) {
+            monthString = "0" + month.toString();
+        }
+
+        try {
+            File[] monthDances = fileHelper.getAllFilesIn("src\\main\\dances\\" + year.toString() + "\\" + monthString);
+
+            for (File danceFile : monthDances) {
+                FileReader fileReader = new FileReader(danceFile);
+                Dance dance = new Gson().fromJson(fileReader, Dance.class);
+                fileReader.close();
+                if (dance.getClassName().equals(id)) {
+                    return dance;
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("No month specific events found.");
+        }
+
+        File[] monthlyDances = fileHelper.getAllFilesIn("src\\main\\dances\\monthly");
+        File[] weeklyDances = fileHelper.getAllFilesIn("src\\main\\dances\\weekly");
+
+        try {
+            for (File danceFile : monthlyDances) {
+                FileReader fileReader = new FileReader(danceFile);
+                Dance dance = new Gson().fromJson(fileReader, Dance.class);
+                fileReader.close();
+                if (dance.getRecurrence().doesOccurInThisMonth(year, month) && dance.getClassName().equals(id)) {
+                    return dance;
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            for (File danceFile : weeklyDances) {
+                FileReader fileReader = new FileReader(danceFile);
+                Dance dance = new Gson().fromJson(fileReader, Dance.class);
+                fileReader.close();
+                if (dance.getRecurrence().doesOccurInThisMonth(year, month) && dance.getClassName().equals(id)) {
+                    return dance;
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
 }

@@ -11,6 +11,7 @@ import org.junit.Test;
 import org.mockito.Mock;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class WindyCitySwingControllerTests {
 
@@ -32,7 +33,7 @@ public class WindyCitySwingControllerTests {
             controller.getAllDances();
 
             verify(service).getAllDances();
-        } catch (FileNotFoundException e) {
+        } catch (IOException e) {
             fail();
         }
     }
@@ -43,7 +44,18 @@ public class WindyCitySwingControllerTests {
             controller.getDancesInMonth(2016, 10);
 
             verify(service).getDancesInMonth(eq(2016), eq(10));
-        } catch (FileNotFoundException e) {
+        } catch (IOException e) {
+            fail();
+        }
+    }
+
+    @Test
+    public void getDance_callsService() {
+        try {
+            controller.getDance("dance-id", 2017, 10);
+
+            verify(service).getDance(eq("dance-id"), eq(2017), eq(10));
+        } catch (IOException e) {
             fail();
         }
     }

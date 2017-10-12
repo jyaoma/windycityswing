@@ -55,10 +55,10 @@
     "floorSize": "Medium",
     "location": {
         "addressName": "Big City Swing",
-        "addressOne": "1012 W Randolph Ave",
+        "addressOne": "1850 N Western Ave.",
         "city": "Chicago",
         "state": "IL",
-        "zip": "60607"
+        "zip": "60647"
     },
     "dressCode": "Casual",
     "danceStyles": [

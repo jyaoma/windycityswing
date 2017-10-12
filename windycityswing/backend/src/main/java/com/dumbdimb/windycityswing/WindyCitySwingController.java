@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import com.dumbdimb.windycityswing.domain.Dance;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 
 @CrossOrigin(origins="*")
@@ -30,7 +31,7 @@ public class WindyCitySwingController {
     )
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
-    ArrayList<Dance> getAllDances() throws FileNotFoundException {
+    ArrayList<Dance> getAllDances() throws IOException {
         return windyCitySwingService.getAllDances();
     }
 
@@ -43,8 +44,22 @@ public class WindyCitySwingController {
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     ArrayList<Dance> getDancesInMonth(@RequestParam(value = "year") Integer year,
-                                      @RequestParam(value = "month") Integer month) throws FileNotFoundException {
+                                      @RequestParam(value = "month") Integer month) throws IOException {
         return windyCitySwingService.getDancesInMonth(year, month);
+    }
+
+    @RequestMapping (
+            value="/dances",
+            params = {"id", "year", "month"},
+            method=RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
+    @ResponseStatus(HttpStatus.OK)
+    @ResponseBody
+    public Dance getDance(@RequestParam(value="id") String id,
+                          @RequestParam(value="year") Integer year,
+                          @RequestParam(value="month") Integer month) throws FileNotFoundException {
+        return windyCitySwingService.getDance(id, year, month);
     }
 
     public static void main(String[] args) throws Exception {
