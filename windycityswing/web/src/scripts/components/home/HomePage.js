@@ -3,8 +3,6 @@ import axios from 'axios';
 
 const moment = require('moment');
 
-// import dances from '../../../../../dances/dances';
-
 import CalendarDay from './CalendarDay';
 import CalendarDayModal from './CalendarDayModal';
 
