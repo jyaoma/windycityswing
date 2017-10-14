@@ -12,7 +12,7 @@ class EventPage extends React.Component {
         };
     }
 
-    componentDidMount() {
+    componentWillMount() {
         const dateParts = this.props.match.params.date.split('-');
         const year = Number(dateParts[0]);
         const month = Number(dateParts[1]);
