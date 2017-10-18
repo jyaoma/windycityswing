@@ -50,7 +50,7 @@ public class WindyCitySwingController {
 
     @RequestMapping (
             value="/dances",
-            params = {"id", "year", "month"},
+            params = {"id", "year", "month", "day"},
             method=RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE
     )
@@ -58,8 +58,9 @@ public class WindyCitySwingController {
     @ResponseBody
     public Dance getDance(@RequestParam(value="id") String id,
                           @RequestParam(value="year") Integer year,
-                          @RequestParam(value="month") Integer month) throws FileNotFoundException {
-        return windyCitySwingService.getDance(id, year, month);
+                          @RequestParam(value="month") Integer month,
+                          @RequestParam(value="day") Integer day) throws FileNotFoundException {
+        return windyCitySwingService.getDance(id, year, month, day);
     }
 
     public static void main(String[] args) throws Exception {

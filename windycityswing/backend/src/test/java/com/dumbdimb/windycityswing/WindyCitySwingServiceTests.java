@@ -115,8 +115,8 @@ public class WindyCitySwingServiceTests {
         try {
             when(fileHelper.getAllFilesIn(eq("src\\main\\dances\\monthly"))).thenReturn(justFirstFriday);
             when(fileHelper.getAllFilesIn(eq("src\\main\\dances\\weekly"))).thenReturn(new File[0]);
-            when(fileHelper.getAllFilesIn(eq("src\\main\\dances\\2017\\11"))).thenReturn(justFirstFridayTwo);
-            Dance returnedDance = service.getDance("first-fridays",2017, 11);
+            when(fileHelper.getAllFilesIn(eq("src\\main\\dances\\2018\\01"))).thenReturn(justFirstFridayTwo);
+            Dance returnedDance = service.getDance("first-fridays",2018, 1, 5);
             assertEquals("1850 N Western Ave.", returnedDance.getLocation().getAddressOne());
         } catch (FileNotFoundException e) {
             fail();
@@ -135,8 +135,20 @@ public class WindyCitySwingServiceTests {
             when(fileHelper.getAllFilesIn(eq("src\\main\\dances\\monthly"))).thenReturn(justFirstFriday);
             when(fileHelper.getAllFilesIn(eq("src\\main\\dances\\weekly"))).thenReturn(new File[0]);
             when(fileHelper.getAllFilesIn(eq("src\\main\\dances\\2017\\09"))).thenReturn(justSomeOtherDance);
-            Dance returnedDance = service.getDance("first-fridays",2017, 9);
+            Dance returnedDance = service.getDance("first-fridays",2017, 9, 1);
             assertEquals("1012 W Randolph Ave", returnedDance.getLocation().getAddressOne());
+        } catch (FileNotFoundException e) {
+            fail();
+        }
+    }
+
+    @Test
+    public void getDance_whenAskedForExceptionToADance_returnsTheCorrectDance() {
+        FileHelper realFileHelper = new FileHelper();
+        service = new WindyCitySwingService(realFileHelper);
+        try {
+            Dance returnedDance = service.getDance("fizz", 2017, 10, 16);
+            assertEquals("Fizz Band Night w/ Moonshine Rhythm Club", returnedDance.getTitle());
         } catch (FileNotFoundException e) {
             fail();
         }
@@ -146,7 +158,7 @@ public class WindyCitySwingServiceTests {
     public void getDance_returnsNullIfNotFound() {
         try {
             when(fileHelper.getAllFilesIn(anyString())).thenReturn(new File[0]);
-            Dance returnedDance = service.getDance("first-fridays",2017, 11);
+            Dance returnedDance = service.getDance("first-fridays",2017, 11, 4);
             assertNull(returnedDance);
         } catch (FileNotFoundException e) {
             fail();

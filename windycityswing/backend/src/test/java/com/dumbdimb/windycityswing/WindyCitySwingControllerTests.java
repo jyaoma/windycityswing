@@ -52,9 +52,9 @@ public class WindyCitySwingControllerTests {
     @Test
     public void getDance_callsService() {
         try {
-            controller.getDance("dance-id", 2017, 10);
+            controller.getDance("dance-id", 2017, 10, 25);
 
-            verify(service).getDance(eq("dance-id"), eq(2017), eq(10));
+            verify(service).getDance(eq("dance-id"), eq(2017), eq(10), eq(25));
         } catch (IOException e) {
             fail();
         }

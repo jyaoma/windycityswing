@@ -16,7 +16,8 @@ class EventPage extends React.Component {
         const dateParts = this.props.match.params.date.split('-');
         const year = Number(dateParts[0]);
         const month = Number(dateParts[1]);
-        axios.get(`http://${window.location.hostname}:8080/dances?year=${year.toString()}&month=${month.toString()}&id=${this.props.match.params.eventName}`).then((response) => {
+        const day = Number(dateParts[2])
+        axios.get(`http://${window.location.hostname}:8080/dances?year=${year.toString()}&month=${month.toString()}&day=${day.toString()}&id=${this.props.match.params.eventName}`).then((response) => {
             this.setState({
                 event: response.data
             });

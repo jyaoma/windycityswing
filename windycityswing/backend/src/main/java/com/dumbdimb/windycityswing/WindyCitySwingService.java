@@ -72,7 +72,7 @@ public class WindyCitySwingService {
         return dances;
     }
 
-    public Dance getDance(String id, Integer year, Integer month) throws FileNotFoundException {
+    public Dance getDance(String id, Integer year, Integer month, Integer day) throws FileNotFoundException {
         String monthString = month.toString();
         if (month < 10) {
             monthString = "0" + month.toString();
@@ -85,7 +85,7 @@ public class WindyCitySwingService {
                 FileReader fileReader = new FileReader(danceFile);
                 Dance dance = new Gson().fromJson(fileReader, Dance.class);
                 fileReader.close();
-                if (dance.getClassName().equals(id)) {
+                if (dance.getClassName().equals(id) && dance.getDate().getDay().equals(day)) {
                     return dance;
                 }
             }
