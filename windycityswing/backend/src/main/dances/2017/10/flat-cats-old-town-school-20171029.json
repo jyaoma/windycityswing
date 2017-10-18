@@ -1,0 +1,72 @@
+{
+    "title": "Halloween Special with Flat Cats",
+    "className": "flat-cats-old-town",
+    "date": {
+        "year": 2017,
+        "month": 10,
+        "day": 29,
+        "weekday": 0
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20171029T190000",
+        "endTimestamp": "20171029T210000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "Old Town School of Folk Music",
+    "instructor": "Louis Stallone",
+    "schedule": [
+        {
+            "hour": 21,
+            "minute": 30,
+            "event": "Lesson"
+        },
+        {
+            "hour": 22,
+            "minute": 0,
+            "event": "Live music and open dancing"
+        },
+        {
+            "hour": 23,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "All ages event.",
+        "Come dressed to scare for the Halloween costume contest!"
+    ],
+    "infoUrl": "http://www.oldtownschool.org/concerts/2017/10-29-2017-flat-cats-halloween-special/",
+    "attendance": "50-100",
+    "music": {
+        "type": "Live",
+        "url": "http://www.flatcatsmusic.com/",
+        "by": "The Flat Cats"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Old Town School of Folk Music",
+        "addressOne": "4545 N Lincoln Ave",
+        "addressTwo": "",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60625"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Charleston",
+        "Balboa",
+        "Lindy Hop",
+        "Salsa"
+    ],
+    "parking": "Street parking",
+    "price": "$18 per person. $16 per member of Old Town School of Folk Music",
+    "colors": {
+        "bg": "#303030",
+        "text": "white"
+    }
+}

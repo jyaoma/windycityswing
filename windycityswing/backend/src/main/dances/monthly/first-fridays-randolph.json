@@ -1,7 +1,6 @@
 {
     "title": "First Fridays",
     "className": "first-fridays",
-    "siteTitle": "First Fridays",
     "date": {
         "year": 2017,
         "month": 5,
@@ -71,6 +70,6 @@
     "price": "$10 per person, cash only.",
     "colors": {
         "bg": "#0A0A0A",
-        "text": "black"
+        "text": "white"
     }
 }

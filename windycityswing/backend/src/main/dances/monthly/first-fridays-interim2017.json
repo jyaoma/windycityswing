@@ -3,8 +3,8 @@
     "className": "first-fridays",
     "date": {
         "year": 2017,
-        "month": 5,
-        "day": 5,
+        "month": 11,
+        "day": 3,
         "weekday": 5
     },
     "timezone": {
@@ -16,8 +16,10 @@
         "rule": "dayOfWeekOfMonth",
         "dayOfWeek": 5,
         "weekOfMonth": 0,
-        "startYear": 2018,
-        "startMonth": 1
+        "startYear": 2017,
+        "startMonth": 11,
+        "endYear": 2017,
+        "endMonth": 12
     },
     "facebookUrl": "",
     "organizer": "Big City Swing",
@@ -53,11 +55,12 @@
     },
     "floorSize": "Medium",
     "location": {
-        "addressName": "Big City Swing",
-        "addressOne": "1850 N Western Ave.",
+        "addressName": "Dance Center Chicago",
+        "addressOne": "3868 N Lincoln Ave",
+        "addressTwo": "Floor 2",
         "city": "Chicago",
         "state": "IL",
-        "zip": "60647"
+        "zip": "60613"
     },
     "dressCode": "Casual",
     "danceStyles": [

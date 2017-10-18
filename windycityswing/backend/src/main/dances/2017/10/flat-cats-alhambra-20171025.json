@@ -1,23 +1,23 @@
 {
-    "title": "Flat Cats and Gina DeGregorio at Alhambra Palace",
+    "title": "Halloween Swing Bash with Flat Cats at Alhambra Palace",
     "className": "flat-cats-alhambra",
     "date": {
         "year": 2017,
-        "month": 8,
-        "day": 30,
+        "month": 10,
+        "day": 25,
         "weekday": 3
     },
     "timezone": {
         "tzid": "America/Chicago",
-        "startTimestamp": "20170830T200000",
-        "endTimestamp": "20170830T233000"
+        "startTimestamp": "20171025T200000",
+        "endTimestamp": "20171025T233000"
     },
     "recurrence": {
         "rule": "none"
     },
     "facebookUrl": "",
     "organizer": "The Flat Cats",
-    "instructor": "",
+    "instructor": "Big City Swing",
     "schedule": [
         {
             "hour": 20,
@@ -40,11 +40,11 @@
         "Happens on the last Wednesday of each month."
     ],
     "infoUrl": "http://www.flatcatsmusic.com/",
-    "attendance": "20-50",
+    "attendance": "50-100",
     "music": {
         "type": "Live",
         "url": "http://www.flatcatsmusic.com/",
-        "by": "The Flat Cats and Gina Degregorio"
+        "by": "The Flat Cats and Morry Sochat & The Special 20s"
     },
     "floorSize": "Medium",
     "location": {

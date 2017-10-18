@@ -1,0 +1,67 @@
+{
+    "title": "NSDS Welcome Back Dance",
+    "className": "northwestern-u",
+    "date": {
+        "year": 2017,
+        "month": 10,
+        "day": 8,
+        "weekday": 0
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20171008T183000",
+        "endTimestamp": "20171008T220000"
+    },
+    "facebookUrl": "https://www.facebook.com/events/1953969661485682/",
+    "organizer": "Northwestern Swing Dance Syndicate",
+    "instructor": "Big City Swing Staff",
+    "schedule": [
+        {
+            "hour": 18,
+            "minute": 30,
+            "event": "Swing lesson"
+        },
+        {
+            "hour": 19,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 22,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "Northwestern Swing Dance Syndicate (NSDS) is kicking off a new school year with our Welcome Back Dance on Sunday, October 8th!",
+        "The dance will be in the Louis Room on the second floor of the Norris Center"
+    ],
+    "infoUrl": "http://www.tgs.northwestern.edu/about/news-events/stories/2017/northwestern-swing-dance-syndicates-open-dance.html",
+    "attendance": "50-100",
+    "music": {
+        "type": "DJ",
+        "url": "",
+        "by": "Northwestern Swing Dance Syndicate"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Norris Center",
+        "addressOne": "1999 Campus Dr",
+        "city": "Evanston",
+        "state": "IL",
+        "zip": "60208"
+    },
+    "dressCode": "Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Free street parking available.",
+    "price": "$4 per person, cash only. Free for students.",
+    "colors": {
+        "bg": "#401F68",
+        "text": "white"
+    }
+}

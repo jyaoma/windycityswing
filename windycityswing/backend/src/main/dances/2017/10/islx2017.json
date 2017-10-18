@@ -1,0 +1,118 @@
+{
+    "title": "Illinois State Lindy Exchange (ISLX)",
+    "className": "islx2017",
+    "date": {
+        "year": 2017,
+        "month": 10,
+        "day": 13,
+        "weekday": 0
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20171013T193000",
+        "endTimestamp": "20171015T160000"
+    },
+    "facebookUrl": "https://www.facebook.com/events/116259155700950/",
+    "organizer": "Illinois State University",
+    "instructor": "Various",
+    "schedule": [
+        {
+            "hour": 19,
+            "minute": 30,
+            "event": "DJ Dancing"
+        },
+        {
+            "hour": 24,
+            "minute": 0,
+            "event": "Late Night Blues"
+        },
+        {
+            "hour": 4,
+            "minute": 0,
+            "event": "End of Night"
+        },
+        {
+            "hour": 10,
+            "minute": 0,
+            "event": "Balboa with April and Bethany"
+        },
+        {
+            "hour": 12,
+            "minute": 0,
+            "event": "BBQ/competitions"
+        },
+        {
+            "hour": 13,
+            "minute": 0,
+            "event": "Lindy with Cecelia"
+        },
+        {
+            "hour": 15,
+            "minute": 0,
+            "event": "Blues with instructors from Blues Central"
+        },
+        {
+            "hour": 17,
+            "minute": 0,
+            "event": "Break"
+        },
+        {
+            "hour": 19,
+            "minute": 30,
+            "event": "Dancing with Roya and the High-Time Jazzers"
+        },
+        {
+            "hour": 24,
+            "minute": 0,
+            "event": "Late Night Blues at Next Step Dance Studio"
+        },
+        {
+            "hour": 4,
+            "minute": 0,
+            "event": "End of Night"
+        },
+        {
+            "hour": 12,
+            "minute": 0,
+            "event": "See-Ya Dancing"
+        },
+        {
+            "hour": 16,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "Grab your dancing shoes and swing on by to our annual Illinois State Lindy Exchange!",
+        "Schedule subject to change.",
+        "The venues and event is alcohol-free, those with such beverages will be asked to leave without warning."
+    ],
+    "infoUrl": null,
+    "attendance": "100-1000",
+    "music": {
+        "type": "Various",
+        "url": "",
+        "by": ""
+    },
+    "floorSize": "Various",
+    "location": {
+        "addressName": "",
+        "addressOne": "",
+        "city": "Normal",
+        "state": "IL",
+        "zip": ""
+    },
+    "dressCode": "Dressy",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Free street parking available.",
+    "price": "$25 per person. $20 per student. Free for students of ISU.",
+    "colors": {
+        "bg": "#FF0000",
+        "text": "white"
+    }
+}

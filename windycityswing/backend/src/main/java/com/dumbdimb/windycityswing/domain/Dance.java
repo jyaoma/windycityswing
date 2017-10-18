@@ -12,7 +12,6 @@ import lombok.NoArgsConstructor;
 public class Dance {
 	private String title;
 	private String className;
-	private String siteTitle;
 	private DanceDate date;
     private DanceTimezone timezone;
     private DanceRecurrence recurrence;

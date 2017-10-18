@@ -1,16 +1,16 @@
 {
-    "title": "John Bany Quintet at Glendora House",
+    "title": "Chicago Cellar Boys at Glendora House",
     "className": "glendora",
     "date": {
         "year": 2017,
-        "month": 9,
-        "day": 17,
+        "month": 10,
+        "day": 15,
         "weekday": 0
     },
     "timezone": {
         "tzid": "America/Chicago",
-        "startTimestamp": "20170917T140000",
-        "endTimestamp": "20170917T170000"
+        "startTimestamp": "20171015T140000",
+        "endTimestamp": "20171015T170000"
     },
     "recurrence": {
         "rule": "none"
@@ -37,8 +37,8 @@
     "attendance": "",
     "music": {
         "type": "Live",
-        "url": "",
-        "by": "John Bany Quintet"
+        "url": "https://www.facebook.com/chicagocellarboys/",
+        "by": "Chicago Cellar Boys"
     },
     "floorSize": "Large",
     "location": {
@@ -56,7 +56,7 @@
         "Balboa"
     ],
     "parking": "Venue parking available.",
-    "price": "$18 per person in advance, $20 at the door for general public. $10 per dancer at the door who say they're a dancer",
+    "price": "$18 per person in advance, $20 at the door for general public. $10 per dancer at the door who say they're a dancer.",
     "colors": {
         "bg": "#979731",
         "text": "white"

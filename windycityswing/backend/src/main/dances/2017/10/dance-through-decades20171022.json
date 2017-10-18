@@ -1,0 +1,63 @@
+{
+    "title": "Dance Through The Decades",
+    "className": "dance-through-decades",
+    "date": {
+        "year": 2017,
+        "month": 10,
+        "day": 22,
+        "weekday": 0
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20171022T170000",
+        "endTimestamp": "20171022T183000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/events/1991206201111422/",
+    "organizer": "Studio5 Performing Arts Center",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 17,
+            "minute": 0,
+            "event": "Lesson"
+        },
+        {
+            "hour": 18,
+            "minute": 30,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "All ages event.",
+        "This is not the musical event on the following Saturday. This is a dance class."
+    ],
+    "infoUrl": "http://www.studio5.dance/calendar/",
+    "attendance": "Unknown",
+    "music": {
+        "type": "DJ",
+        "url": "",
+        "by": "Studio5 Performing Arts Center"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Dance Center Evanston",
+        "addressOne": "1934 W Dempster St.",
+        "addressTwo": "",
+        "city": "Evanston",
+        "state": "IL",
+        "zip": "60202"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "Swing"
+    ],
+    "parking": "Venue parking",
+    "price": "$15 per person, $25 per couple",
+    "colors": {
+        "bg": "#FB621F",
+        "text": "white"
+    }
+}

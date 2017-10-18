@@ -1,7 +1,6 @@
 {
-    "title": "Fat Babies at Honky Tonk",
-    "className": "fat-babies-honky-tonk",
-    "siteTitle": "Fat Babies at Honky Tonk",
+    "title": "Chicago Cellar Boys at Honky Tonk",
+    "className": "chicago-cellar-boys-honky-tonk",
     "date": {
         "year": 2017,
         "month": 7,
@@ -41,8 +40,8 @@
     "attendance": "10-50",
     "music": {
         "type": "Live",
-        "url": "http://www.thefatbabies.com/",
-        "by": "The Fat Babies"
+        "url": "https://www.facebook.com/chicagocellarboys/",
+        "by": "Chicago Cellar Boys"
     },
     "floorSize": "Small",
     "location": {
@@ -63,7 +62,7 @@
     "parking": "Street parking",
     "price": "Free",
     "colors": {
-        "bg": "#200D07",
-        "text": "white"
+        "bg": "#AE8955",
+        "text": "black"
     }
 }

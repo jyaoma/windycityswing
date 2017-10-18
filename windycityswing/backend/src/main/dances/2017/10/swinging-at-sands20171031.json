@@ -1,23 +1,20 @@
 {
-    "title": "Flat Cats at Swinging at the Sands",
+    "title": "Halloween Swinging at the Sands",
     "className": "swinging-at-sands",
     "date": {
         "year": 2017,
-        "month": 8,
-        "day": 29,
+        "month": 10,
+        "day": 31,
         "weekday": 2
     },
     "timezone": {
         "tzid": "America/Chicago",
-        "startTimestamp": "20170829T190000",
-        "endTimestamp": "20170829T233000"
+        "startTimestamp": "20171031T190000",
+        "endTimestamp": "20171031T233000"
     },
-    "recurrence": {
-        "rule": "none"
-    },
-    "facebookUrl": "https://www.facebook.com/events/1708056356167489/",
+    "facebookUrl": "",
     "organizer": "Swinging at the Sands",
-    "instructor": "R.J. Woodworth and Jessica Endres",
+    "instructor": "Several",
     "schedule": [
         {
             "hour": 19,
@@ -48,9 +45,9 @@
     "infoUrl": "http://www.swingingatthesands.com/",
     "attendance": "10-50",
     "music": {
-        "type": "Live",
-        "url": "http://www.flatcatsmusic.com/",
-        "by": "The Flat Cats"
+        "type": "DJ",
+        "url": "",
+        "by": "Swinging at the Sands Staff"
     },
     "floorSize": "Large",
     "location": {
@@ -61,12 +58,12 @@
         "state": "IL",
         "zip": "60515"
     },
-    "dressCode": "Casual",
+    "dressCode": "Dressy Casual",
     "danceStyles": [
         "East coast swing"
     ],
     "parking": "Venue parking",
-    "price": "$5/person for each lesson, $12/person to dance ($17 for one lesson and open dancing)",
+    "price": "$5/person for each lesson, $7/person to dance ($17 for the whole night). $2 off for students with valid student ID",
     "colors": {
         "bg": "#38B5AD",
         "text": "black"

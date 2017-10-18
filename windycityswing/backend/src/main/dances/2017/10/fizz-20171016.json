@@ -1,23 +1,21 @@
 {
-    "title": "Fizz",
+    "title": "Fizz Band Night w/ Moonshine Rhythm Club",
     "className": "fizz",
     "date": {
         "year": 2017,
-        "month": 5,
-        "day": 1,
+        "month": 10,
+        "day": 16,
         "weekday": 1
     },
     "timezone": {
         "tzid": "America/Chicago",
-        "startTimestamp": "20170502T200000",
-        "endTimestamp": "20170503T000000"
+        "startTimestamp": "20171016T200000",
+        "endTimestamp": "20171017T000000"
     },
     "recurrence": {
-        "rule": "dayOfWeek",
-        "dayOfWeek": 1,
-        "exceptions": ["2017-05-29", "2017-10-02", "2017-10-16", "2017-10-30"]
+        "rule": "none"
     },
-    "facebookUrl": "https://www.facebook.com/Fizz-Swing-Dancing-73706742234/",
+    "facebookUrl": "https://www.facebook.com/events/741947889326130/",
     "organizer": "Fizz Staff",
     "instructor": "Fizz Staff",
     "schedule": [
@@ -39,14 +37,14 @@
     ],
     "info": [
         "Occurs every Monday.",
-        "Must be 18 years or older to attend."
+        "18+ event."
     ],
     "infoUrl": "",
     "attendance": "50-100",
     "music": {
-        "type": "DJ",
-        "url": "",
-        "by": "Fizz Staff"
+        "type": "Live",
+        "url": "http://moonshinerhythmclub.com/",
+        "by": "Moonshine Rhythm Club"
     },
     "floorSize": "Medium",
     "location": {
@@ -64,8 +62,8 @@
         "Charleston",
         "Balboa"
     ],
-    "parking": "Street parking",
-    "price": "$7/person for general public, $5/person for students",
+    "parking": "Metered street parking",
+    "price": "$10/person for general public, $7/person for students",
     "colors": {
         "bg": "#654639",
         "text": "white"

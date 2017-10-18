@@ -1,23 +1,16 @@
 {
-    "title": "First Fridays",
+    "title": "First Fridays (RSVP only)",
     "className": "first-fridays",
     "date": {
         "year": 2017,
-        "month": 5,
-        "day": 5,
+        "month": 10,
+        "day": 6,
         "weekday": 5
     },
     "timezone": {
         "tzid": "America/Chicago",
-        "startTimestamp": "20170711T200000",
-        "endTimestamp": "20170712T000000"
-    },
-    "recurrence": {
-        "rule": "dayOfWeekOfMonth",
-        "dayOfWeek": 5,
-        "weekOfMonth": 0,
-        "startYear": 2018,
-        "startMonth": 1
+        "startTimestamp": "20171006T200000",
+        "endTimestamp": "20171006T000000"
     },
     "facebookUrl": "",
     "organizer": "Big City Swing",
@@ -40,6 +33,7 @@
         }
     ],
     "info": [
+        "As this is the last dance before closing down this location, guests will need to RSVP.",
         "Occurs on the first Friday of each month.",
         "Snacks and water provided.",
         "All ages event."
@@ -54,10 +48,10 @@
     "floorSize": "Medium",
     "location": {
         "addressName": "Big City Swing",
-        "addressOne": "1850 N Western Ave.",
+        "addressOne": "1012 W Randolph Ave",
         "city": "Chicago",
         "state": "IL",
-        "zip": "60647"
+        "zip": "60607"
     },
     "dressCode": "Casual",
     "danceStyles": [

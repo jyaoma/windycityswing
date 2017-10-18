@@ -1,0 +1,76 @@
+{
+    "title": "Java Jive",
+    "className": "java-jive",
+    "date": {
+        "year": 2017,
+        "month": 10,
+        "day": 7,
+        "weekday": 6
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20171007T193000",
+        "endTimestamp": "20171007T230000"
+    },
+    "recurrence": {
+        "rule": "dayOfWeek",
+        "dayOfWeek": 6,
+        "exceptions": ["2017-10-28"],
+        "startYear": 2017,
+        "startMonth": 10,
+        "endYear": 2017,
+        "endMonth": 10
+    },
+    "facebookUrl": "",
+    "organizer": "Chicago Swing Dance Society",
+    "instructor": "Various",
+    "schedule": [
+        {
+            "hour": 19,
+            "minute": 30,
+            "event": "Lesson"
+        },
+        {
+            "hour": 20,
+            "minute": 30,
+            "event": "Dancing"
+        },
+        {
+            "hour": 23,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "Occurs every Saturday during the school year",
+        "The venue is usually on the top floor of Ida Noyes Hall"
+    ],
+    "infoUrl": "",
+    "attendance": "50-100",
+    "music": {
+        "type": "DJ",
+        "url": "",
+        "by": "Chicago Swing Dance Society"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Ida Noyes Hall",
+        "addressOne": "E 59th St",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60637"
+    },
+    "dressCode": "Dressy casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Street parking",
+    "price": "Free",
+    "colors": {
+        "bg": "#781726",
+        "text": "white"
+    }
+}

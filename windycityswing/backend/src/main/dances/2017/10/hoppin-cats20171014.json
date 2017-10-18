@@ -1,0 +1,73 @@
+{
+    "title": "Hoppin' Cats",
+    "className": "hoppin-cats",
+    "date": {
+        "year": 2017,
+        "month": 10,
+        "day": 14,
+        "weekday": 6
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20171014T183000",
+        "endTimestamp": "20171014T220000"
+    },
+    "facebookUrl": "https://www.facebook.com/events/273955426405150/",
+    "organizer": "Northwestern Swing Dance Syndicate",
+    "instructor": "Big City Swing Staff",
+    "schedule": [
+        {
+            "hour": 18,
+            "minute": 0,
+            "event": "Doors Open"
+        },
+        {
+            "hour": 18,
+            "minute": 30,
+            "event": "Swing lesson"
+        },
+        {
+            "hour": 19,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 22,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "Join us for Hoppin' Cats: A swing dance fundraiser to benefit the cats of Grassroots Animal Rescue",
+        "There is a silent auction. All proceeds raised will go directly to benefit the medical care of cats and kittens.",
+        "21+ only"
+    ],
+    "infoUrl": "",
+    "attendance": "50-100",
+    "music": {
+        "type": "Live",
+        "url": "https://www.facebook.com/magnoliajassband",
+        "by": "Magnolia Jass Band"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Second Unitarian Church of Chicago",
+        "addressOne": "656 W Barry Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60657"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Privately owned parking lots nearby.",
+    "price": "By October 2 at midnight, $30 per person and $55 for a couple. By October 14 at 3pm, $40 per person and $70 per couple. $50 per person at the door.",
+    "colors": {
+        "bg": "#BBD7E3",
+        "text": "black"
+    }
+}

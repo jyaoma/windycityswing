@@ -1,7 +1,6 @@
 {
     "title": "Swinging at the Sands",
     "className": "swinging-at-sands",
-    "siteTitle": "Swinging at the Sands",
     "date": {
         "year": 2017,
         "month": 8,
@@ -16,7 +15,7 @@
     "recurrence": {
         "rule": "dayOfWeek",
         "dayOfWeek": 2,
-        "exceptions": ["2017-08-29"]
+        "exceptions": ["2017-08-29", "2017-10-17", "2017-10-31"]
     },
     "facebookUrl": "",
     "organizer": "Swinging at the Sands",
