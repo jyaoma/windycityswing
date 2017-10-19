@@ -1,0 +1,64 @@
+{
+    "title": "Dance Through The Decades",
+    "className": "dance-through-decades",
+    "date": {
+        "year": 2017,
+        "month": 11,
+        "day": 11,
+        "weekday": 6
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20171111T200000",
+        "endTimestamp": "20171111T223000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/events/135545177057305/",
+    "organizer": "Studio5 Performing Arts Center",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 22,
+            "minute": 30,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "All ages event.",
+        "This is the third installment of Studio5's Dance Through the Decades series.",
+        "This week spotlights the 1940s."
+    ],
+    "infoUrl": "http://www.studio5.dance/calendar/",
+    "attendance": "Unknown",
+    "music": {
+        "type": "Live",
+        "url": "http://infullswing.us/",
+        "by": "In Full Swing Big Band"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Dance Center Evanston",
+        "addressOne": "1934 W Dempster St.",
+        "addressTwo": "",
+        "city": "Evanston",
+        "state": "IL",
+        "zip": "60202"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "Swing"
+    ],
+    "parking": "Venue parking",
+    "price": "$15 per person",
+    "colors": {
+        "bg": "#FB621F",
+        "text": "white"
+    }
+}

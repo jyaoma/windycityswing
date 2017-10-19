@@ -1,0 +1,140 @@
+{
+    "title": "Whistle Stop",
+    "className": "whistle-stop",
+    "date": {
+        "year": 2017,
+        "month": 11,
+        "day": 17,
+        "weekday": 5
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20171117T210000",
+        "endTimestamp": "20171119T180000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/events/1341429099305497/",
+    "organizer": "Purdue Night Train Swing Dance Club",
+    "instructor": "Several",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Lessons (Beginner and Experienced)"
+        },
+        {
+            "hour": 21,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 0,
+            "minute": 0,
+            "event": "End of Night"
+        },
+        {
+            "hour": 9,
+            "minute": 0,
+            "event": "Auditions"
+        },
+        {
+            "hour": 10,
+            "minute": 0,
+            "event": "Track Lessons"
+        },
+        {
+            "hour": 12,
+            "minute": 15,
+            "event": "Lunch"
+        },
+        {
+            "hour": 13,
+            "minute": 45,
+            "event": "Track Lessons"
+        },
+        {
+            "hour": 16,
+            "minute": 0,
+            "event": "Dinner"
+        },
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Elective Lesson"
+        },
+        {
+            "hour": 21,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 0,
+            "minute": 30,
+            "event": "Late night dancing"
+        },
+        {
+            "hour": 3,
+            "minute": 0,
+            "event": "End of Night"
+        },
+        {
+            "hour": 10,
+            "minute": 0,
+            "event": "Office Hours"
+        },
+        {
+            "hour": 12,
+            "minute": 15,
+            "event": "Lunch"
+        },
+        {
+            "hour": 13,
+            "minute": 45,
+            "event": "Track Lessons"
+        },
+        {
+            "hour": 16,
+            "minute": 0,
+            "event": "Farewell Dance"
+        },
+        {
+            "hour": 18,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "All ages event.",
+        "Registration starts October 19, 2017 at 7pm."
+    ],
+    "infoUrl": "http://web.ics.purdue.edu/~nghtrain//whistlestop/index.html",
+    "attendance": "",
+    "music": {
+        "type": "Several",
+        "url": "",
+        "by": "Several"
+    },
+    "floorSize": "Several",
+    "location": {
+        "addressName": "",
+        "addressOne": "",
+        "city": "West Lafayette",
+        "state": "IN",
+        "zip": ""
+    },
+    "dressCode": "Dressy",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Venue parking available.",
+    "price": "$49 for the general public for the full weekend. $29 for the whole weekend for students and Night Train members. $25 for students just for the dances. Free for Purdue Students",
+    "colors": {
+        "bg": "#D4AB4D",
+        "text": "white"
+    }
+}

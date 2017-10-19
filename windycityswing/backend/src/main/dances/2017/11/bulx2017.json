@@ -1,0 +1,56 @@
+{
+    "title": "BULX 2017",
+    "className": "bulx",
+    "date": {
+        "year": 2017,
+        "month": 11,
+        "day": 17,
+        "weekday": 5
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20171117T190000",
+        "endTimestamp": "20171119T170000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/events/267469173736185/",
+    "organizer": "Bradley University",
+    "instructor": "Several",
+    "schedule": [
+        {
+            "hour": 12,
+            "minute": 0,
+            "event": "Details to come"
+        }
+    ],
+    "info": [
+        "Details pending."
+    ],
+    "infoUrl": "",
+    "attendance": "",
+    "music": {
+        "type": "Several",
+        "url": "",
+        "by": "Several"
+    },
+    "floorSize": "Several",
+    "location": {
+        "addressName": "Bradley University",
+        "addressOne": "",
+        "city": "Peoria",
+        "state": "IL",
+        "zip": "61625"
+    },
+    "dressCode": "Dressy",
+    "danceStyles": [
+        "Lindy hop"
+    ],
+    "parking": "Venue parking available.",
+    "price": "",
+    "colors": {
+        "bg": "#A50000",
+        "text": "white"
+    }
+}

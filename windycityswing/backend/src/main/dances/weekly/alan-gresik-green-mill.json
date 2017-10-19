@@ -15,7 +15,7 @@
     "recurrence": {
         "rule": "dayOfWeek",
         "dayOfWeek": 4,
-        "exceptions": []
+        "exceptions": ["2017-11-23"]
     },
     "facebookUrl": "",
     "organizer": "Green Mill Jazz Lounge",

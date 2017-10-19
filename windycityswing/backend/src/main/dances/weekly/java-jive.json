@@ -15,11 +15,11 @@
     "recurrence": {
         "rule": "dayOfWeek",
         "dayOfWeek": 6,
-        "exceptions": ["2017-10-28"],
+        "exceptions": ["2017-10-28", "2017-11-18"],
         "startYear": 2017,
         "startMonth": 10,
         "endYear": 2017,
-        "endMonth": 10
+        "endMonth": 11
     },
     "facebookUrl": "",
     "organizer": "Chicago Swing Dance Society",
