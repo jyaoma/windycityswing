@@ -155,6 +155,18 @@ public class WindyCitySwingServiceTests {
     }
 
     @Test
+    public void getDance_whenAskedForSecondDayInMultiDayEvent_returnsTheCorrectDance() {
+        FileHelper realFileHelper = new FileHelper();
+        service = new WindyCitySwingService(realFileHelper);
+        try {
+            Dance returnedDance = service.getDance("bulx", 2017, 11, 18);
+            assertEquals("BULX 2017", returnedDance.getTitle());
+        } catch (FileNotFoundException e) {
+            fail();
+        }
+    }
+
+    @Test
     public void getDance_returnsNullIfNotFound() {
         try {
             when(fileHelper.getAllFilesIn(anyString())).thenReturn(new File[0]);

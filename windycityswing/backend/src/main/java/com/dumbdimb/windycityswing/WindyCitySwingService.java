@@ -85,7 +85,9 @@ public class WindyCitySwingService {
                 FileReader fileReader = new FileReader(danceFile);
                 Dance dance = new Gson().fromJson(fileReader, Dance.class);
                 fileReader.close();
-                if (dance.getClassName().equals(id) && dance.getDate().getDay().equals(day)) {
+                Integer endDay = new Integer(dance.getTimezone().getEndTimestamp().substring(6, 8));
+                if (dance.getClassName().equals(id) && dance.getDate().getDay() <= day && day <= endDay) {
+//                if (dance.getClassName().equals(id) && dance.getDate().getDay().equals(day)) {
                     return dance;
                 }
             }
