@@ -1,11 +1,13 @@
-jest.unmock('..\\..\\src\\scripts\\components\\home\\HomePage');
+jest.unmock('../../../src/scripts/components/home/HomePage');
+jest.mock('../../../src/scripts/history');
 
 import React from 'react';
 import { shallow } from 'enzyme';
 import moment from 'moment';
 import moxios from 'moxios';
 
-import HomePage from '..\\..\\src\\scripts\\components\\home\\HomePage';
+import HomePage from '../../../src/scripts/components/home/HomePage';
+import history from '../../../src/scripts/history';
 
 let tree;
 
@@ -24,8 +26,10 @@ const testEvent = {
 };
 
 const monthFromMoment = Number(moment().format('M'));
+const mockPushHistory = jest.fn();
 
 beforeEach(() => {
+    history.push = mockPushHistory;
     tree = shallow(<HomePage/>);
     moxios.install();
 });
@@ -112,6 +116,33 @@ describe('event table', () => {
         });
     });
 
+    it('changes the url when going to the previous month', (done) => {
+        let previousMonth = monthFromMoment - 1;
+        let year = Number(moment().format('YYYY'));
+
+        if (previousMonth === 0) {
+            previousMonth = 12;
+            year--;
+        }
+
+        tree.find('.event-calendar__navigator').at(0).props().onClick();
+
+        moxios.wait(() => {
+            const request = moxios.requests.mostRecent();
+            request.respondWith({
+                status: 200,
+                response: [{
+                    title: "previous month's dances"
+                }]
+            }).then(() => {
+                expect(mockPushHistory).toBeCalledWith(`/WindyCitySwing-${year.toString()}-${previousMonth.toString()}`)
+                done();
+            }, () => {
+                fail();
+            });
+        });
+    });
+
     it('can go to the next month', (done) => {
         let nextMonth = monthFromMoment + 1;
         let year = Number(moment().format('YYYY'));
@@ -139,6 +170,33 @@ describe('event table', () => {
         });
 
         tree.find('.event-calendar__navigator').at(1).props().onClick();
+    });
+
+    it('changes the url when going to the next month', (done) => {
+        let nextMonth = monthFromMoment + 1;
+        let year = Number(moment().format('YYYY'));
+
+        if (nextMonth === 13) {
+            nextMonth = 1;
+            year++;
+        }
+
+        tree.find('.event-calendar__navigator').at(0).props().onClick();
+
+        moxios.wait(() => {
+            const request = moxios.requests.mostRecent();
+            request.respondWith({
+                status: 200,
+                response: [{
+                    title: "previous month's dances"
+                }]
+            }).then(() => {
+                expect(mockPushHistory).toBeCalledWith(`/WindyCitySwing-${year.toString()}-${nextMonth.toString()}`)
+                done();
+            }, () => {
+                fail();
+            });
+        });
     });
 
     describe('handling event placement', () => {

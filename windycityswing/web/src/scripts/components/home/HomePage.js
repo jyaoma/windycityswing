@@ -5,15 +5,28 @@ const moment = require('moment');
 
 import CalendarDay from './CalendarDay';
 import CalendarDayModal from './CalendarDayModal';
+import history from '../../history';
 
 class HomePage extends React.Component {
     constructor (props, context) {
         super(props, context);
 
+        let year = moment().format('YYYY');
+        let month = moment().format('M');
+
+        if (!!this.props.match && !!this.props.match.params && !!this.props.match.params.year && !!this.props.match.params.month) {
+            year = this.props.match.params.year;
+            month = this.props.match.params.month;
+        }
+
+        if (month.length === 1) {
+            month = '0' + month;
+        }
+
         this.state = {
-            currentMonth: Number(moment().format('M')),
-            currentYear: Number(moment().format('YYYY')),
-            currentMonthString: moment().format('YYYY') + '-' + moment().format('MM') + '-01',
+            currentMonth: Number(month),
+            currentYear: Number(year),
+            currentMonthString: `${year}-${month}-01`,
             events: [],
             modalHidden: true,
             modalDay: 0,
@@ -349,6 +362,8 @@ class HomePage extends React.Component {
                 currentMonthString: previousYear.toString() + '-' + (previousMonth < 10 ? '0' : '') + previousMonth.toString() + '-01'
             });
         });
+
+        history.push(`/WindyCitySwing-${previousYear.toString()}-${previousMonth.toString()}`);
     }
 
     goToNextMonth () {
@@ -368,6 +383,8 @@ class HomePage extends React.Component {
                 currentMonthString: nextYear.toString() + '-' + (nextMonth < 10 ? '0' : '') + nextMonth.toString() + '-01'
             });
         });
+
+        history.push(`/WindyCitySwing-${nextYear.toString()}-${nextMonth.toString()}`);
     }
 
     render () {

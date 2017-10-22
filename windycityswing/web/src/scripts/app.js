@@ -34,6 +34,7 @@ ReactDOM.render(
             </JerissaToTheMoon>
             <WindyCitySwing path='/WindyCitySwing*'>
                 <Route exact path="/WindyCitySwing" component={HomePage}/>
+                <Route path="/WindyCitySwing-:year-:month" component={HomePage}/>
                 <Route path="/WindyCitySwing__:eventName--:date" component={EventPage}/>
             </WindyCitySwing>
         </Switch>
