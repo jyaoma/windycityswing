@@ -9,8 +9,8 @@
     },
     "timezone": {
         "tzid": "America/Chicago",
-        "startTimestamp": "20171025T200000",
-        "endTimestamp": "20171025T223000"
+        "startTimestamp": "20171028T200000",
+        "endTimestamp": "20171028T223000"
     },
     "recurrence": {
         "rule": "none"
