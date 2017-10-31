@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">WindyCitySwing</string>
+    <string name="title">Windy City Swing</string>
+    <string name="subtitle">THE SWING DANCING INFORMATION IN CHICAGO AND CHICAGOLAND AREA</string>
 </resources>

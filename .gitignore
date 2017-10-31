@@ -39,3 +39,14 @@ windycityswing/RemoteSystemsTempFiles/
 windycityswing/Servers/
 windycityswing/.recommenders
 windycityswing/backend/out/
+
+# Android Studio
+*.iml
+windycityswing/android/WindycitySwing/.gradle
+windycityswing/android/WindycitySwing/local.properties
+windycityswing/android/WindycitySwing/.idea/workspace.xml
+windycityswing/android/WindycitySwing/.idea/libraries
+windycityswing/android/WindycitySwing/.DS_Store
+windycityswing/android/WindycitySwing/buvild
+windycityswing/android/WindycitySwing/captures
+windycityswing/android/WindycitySwing/.externalNativeBuild
