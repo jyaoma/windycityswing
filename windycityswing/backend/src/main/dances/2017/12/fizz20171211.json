@@ -1,23 +1,21 @@
 {
-    "title": "Fizz",
+    "title": "Fizz Band Night with Miss Jubilee",
     "className": "fizz",
     "date": {
         "year": 2017,
-        "month": 5,
-        "day": 1,
+        "month": 12,
+        "day": 11,
         "weekday": 1
     },
     "timezone": {
         "tzid": "America/Chicago",
-        "startTimestamp": "20170502T200000",
-        "endTimestamp": "20170503T000000"
+        "startTimestamp": "20171211T200000",
+        "endTimestamp": "20171212T000000"
     },
     "recurrence": {
-        "rule": "dayOfWeek",
-        "dayOfWeek": 1,
-        "exceptions": ["2017-05-29", "2017-10-02", "2017-10-16", "2017-10-30", "2017-12-11", "2017-12-18", "2017-12-25"]
+        "rule": "none"
     },
-    "facebookUrl": "https://www.facebook.com/Fizz-Swing-Dancing-73706742234/",
+    "facebookUrl": "https://www.facebook.com/events/526250251058540/",
     "organizer": "Fizz Staff",
     "instructor": "Fizz Staff",
     "schedule": [
@@ -44,9 +42,9 @@
     "infoUrl": "",
     "attendance": "50-100",
     "music": {
-        "type": "DJ",
-        "url": "",
-        "by": "Fizz Staff"
+        "type": "Live",
+        "url": "http://miss-jubilee.com/",
+        "by": "Miss Jubilee"
     },
     "floorSize": "Medium",
     "location": {
@@ -65,7 +63,7 @@
         "Balboa"
     ],
     "parking": "Street parking",
-    "price": "$7/person for general public, $5/person for students",
+    "price": "$10/person for general public, $7/person for students",
     "colors": {
         "bg": "#654639",
         "text": "white"

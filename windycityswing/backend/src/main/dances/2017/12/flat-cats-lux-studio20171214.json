@@ -1,0 +1,67 @@
+{
+    "title": "Holiday Party & Open House with the Flat Cats",
+    "className": "flat-cats-lux-studio",
+    "date": {
+        "year": 2017,
+        "month": 12,
+        "day": 14,
+        "weekday": 0
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20171214T193000",
+        "endTimestamp": "20171214T213000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/events/902091316622626/",
+    "organizer": "LUX Dance Studio",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 19,
+            "minute": 30,
+            "event": "Dancing"
+        },
+        {
+            "hour": 21,
+            "minute": 30,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "All ages event.",
+        "Join LUX Dance Studio for our Holiday Party and Open House featuring The Flat Cats!"
+    ],
+    "infoUrl": "",
+    "attendance": "",
+    "music": {
+        "type": "Live",
+        "url": "http://www.flatcatsmusic.com/",
+        "by": "The Flat Cats"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "LUX Dance Studio",
+        "addressOne": "1 Illinois St.",
+        "addressTwo": "Suite 120",
+        "city": "St. Charles",
+        "state": "IL",
+        "zip": "60174"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Charleston",
+        "Balboa",
+        "Lindy Hop",
+        "Salsa"
+    ],
+    "parking": "Venue parking",
+    "price": "Free",
+    "colors": {
+        "bg": "#454545",
+        "text": "white"
+    }
+}

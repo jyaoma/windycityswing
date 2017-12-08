@@ -3,8 +3,8 @@
     "className": "bluetopia",
     "date": {
         "year": 2017,
-        "month": 8,
-        "day": 26,
+        "month": 12,
+        "day": 16,
         "weekday": 6
     },
     "timezone": {
@@ -13,10 +13,7 @@
         "endTimestamp": "20170827T020000"
     },
     "recurrence": {
-        "rule": "dayOfWeekOfMonth",
-        "dayOfWeek": 6,
-        "weekOfMonth": -1,
-        "exceptions": ["2017-12-30"]
+        "rule": "none"
     },
     "facebookUrl": "",
     "organizer": "Bluetopia",

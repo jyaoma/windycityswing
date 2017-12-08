@@ -1,21 +1,19 @@
 {
-    "title": "Chicago Cellar Boys at Honky Tonk",
+    "title": "NYE Party with Chicago Cellar Boys at Honky Tonk",
     "className": "chicago-cellar-boys-honky-tonk",
     "date": {
         "year": 2017,
-        "month": 7,
-        "day": 2,
+        "month": 12,
+        "day": 31,
         "weekday": 0
     },
     "timezone": {
         "tzid": "America/Chicago",
-        "startTimestamp": "20170702T200000",
-        "endTimestamp": "20170702T230000"
+        "startTimestamp": "20171231T200000",
+        "endTimestamp": "20171231T230000"
     },
     "recurrence": {
-        "rule": "dayOfWeek",
-        "dayOfWeek": 0,
-        "exceptions": ["2017-12-24", "2017-12-31"]
+        "rule": "none"
     },
     "facebookUrl": "",
     "organizer": "Honky Tonk BBQ",

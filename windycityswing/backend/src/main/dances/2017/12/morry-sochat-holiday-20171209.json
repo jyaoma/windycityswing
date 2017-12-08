@@ -1,0 +1,65 @@
+{
+    "title": "Jumpin' Holiday Jam with Morry Sochat and the Special 20's",
+    "className": "morry-sochat-holiday",
+    "date": {
+        "year": 2017,
+        "month": 12,
+        "day": 9,
+        "weekday": 6
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20171209T200000",
+        "endTimestamp": "20171210T010000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "Morry Sochat and the Special 20's",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 1,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "All ages event"
+    ],
+    "infoUrl": "https://www.eventbrite.com/e/jumpin-holiday-jam-tickets-40987030311",
+    "attendance": "",
+    "music": {
+        "type": "Live",
+        "url": "",
+        "by": "Several"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Logan Square Auditorium",
+        "addressOne": "2539 N Kedzie Blvd.",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60647"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy",
+        "Balboa",
+        "Charleston",
+        "Blues"
+    ],
+    "parking": "Street parking available.",
+    "price": "$20 per person",
+    "colors": {
+        "bg": "#306549",
+        "text": "white"
+    }
+}

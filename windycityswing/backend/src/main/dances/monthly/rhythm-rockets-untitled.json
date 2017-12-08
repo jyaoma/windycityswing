@@ -16,7 +16,7 @@
         "rule": "dayOfWeekOfMonth",
         "dayOfWeek": 3,
         "weekOfMonth": 1,
-        "exceptions": ["2017-08-09", "2017-10-11"]
+        "exceptions": ["2017-08-09", "2017-10-11", "2017-12-13"]
     },
     "facebookUrl": "",
     "organizer": "Untitled Supper Club",

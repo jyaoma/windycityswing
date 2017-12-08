@@ -1,0 +1,64 @@
+{
+    "title": "Illiana Jazz Christmas Dinner Dance",
+    "className": "illiana-christmas",
+    "date": {
+        "year": 2017,
+        "month": 12,
+        "day": 10,
+        "weekday": 0
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20171210T120000",
+        "endTimestamp": "20171210T170000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "Illiana Jazz",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 12,
+            "minute": 0,
+            "event": "Dinner / Dancing"
+        },
+        {
+            "hour": 17,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "Send money for tickets to Mary Ann Badalli: 14505 77th Ave, Dyer, IN 43611"
+    ],
+    "infoUrl": "http://www.illianajazz.com/",
+    "attendance": "",
+    "music": {
+        "type": "Live",
+        "url": "http://www.thefatbabies.com/",
+        "by": "The Fat Babies"
+    },
+    "floorSize": "Large",
+    "location": {
+        "addressName": "Glendora Banquets",
+        "addressOne": "10225 S Harlem Ave",
+        "city": "Chicago Ridge",
+        "state": "IL",
+        "zip": "60415"
+    },
+    "dressCode": "Dressy",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Venue parking available.",
+    "price": "$45 per person",
+    "colors": {
+        "bg": "#B91806",
+        "text": "white"
+    }
+}

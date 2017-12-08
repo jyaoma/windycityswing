@@ -1,26 +1,23 @@
 {
-    "title": "Traffic Jam Swing",
+    "title": "Holiday Party with Miss Jubilee at Traffic Jam Swing",
     "className": "traffic-jam",
     "date": {
         "year": 2017,
-        "month": 8,
-        "day": 12,
+        "month": 12,
+        "day": 9,
         "weekday": 6
     },
     "timezone": {
         "tzid": "America/Chicago",
-        "startTimestamp": "20170812T200000",
-        "endTimestamp": "20170813T000000"
+        "startTimestamp": "20171209T201500",
+        "endTimestamp": "20171210T003000"
     },
     "recurrence": {
-        "rule": "dayOfWeekOfMonth",
-        "dayOfWeek": 6,
-        "weekOfMonth": 1,
-        "exceptions": ["2017-09-09", "2017-12-09"]
+        "rule": "none"
     },
-    "facebookUrl": "",
+    "facebookUrl": "https://www.facebook.com/events/1965176920408166/",
     "organizer": "Traffic Jam Swing",
-    "instructor": "",
+    "instructor": "John and Jenna",
     "schedule": [
         {
             "hour": 20,
@@ -30,29 +27,30 @@
         {
             "hour": 21,
             "minute": 0,
-            "event": "Vintage Swing Music"
-        },
-        {
-            "hour": 23,
-            "minute": 0,
-            "event": "Classic Soul Music"
+            "event": "Live Music"
         },
         {
             "hour": 0,
             "minute": 0,
+            "event": "Soul Tunes with DJ John H"
+        },
+        {
+            "hour": 0,
+            "minute": 30,
             "event": "End"
         }
     ],
     "info": [
         "Occurs on the second Saturday of each month.",
+        "The location is walking distance from the Brown Line",
         "All ages event."
     ],
     "infoUrl": "http://www.trafficjamswing.com/",
     "attendance": "Unknown",
     "music": {
-        "type": "DJ",
-        "url": "",
-        "by": ""
+        "type": "Live",
+        "url": "http://miss-jubilee.com/",
+        "by": "Miss Jubilee"
     },
     "floorSize": "Medium",
     "location": {
@@ -68,7 +66,7 @@
         "East coast swing"
     ],
     "parking": "Street parking available.",
-    "price": "$10 per person, cash only. $5 per student with valid ID",
+    "price": "$15 per person, cash only. $10 per student with valid ID",
     "colors": {
         "bg": "#779EA9",
         "text": "white"

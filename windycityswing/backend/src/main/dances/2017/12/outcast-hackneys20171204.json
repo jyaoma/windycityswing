@@ -1,10 +1,10 @@
 {
-    "title": "Outcast Jazz Band at Hackney's",
+    "title": "Holiday Party with Outcast Jazz Band at Hackney's",
     "className": "outcast-hackneys",
     "date": {
         "year": 2017,
-        "month": 8,
-        "day": 7,
+        "month": 12,
+        "day": 4,
         "weekday": 1
     },
     "timezone": {
@@ -13,10 +13,7 @@
         "endTimestamp": "20170807T220000"
     },
     "recurrence": {
-        "rule": "dayOfWeekOfMonth",
-        "dayOfWeek": 1,
-        "weekOfMonth": 0,
-        "exceptions": ["2017-09-04", "2017-12-04"]
+        "rule": "none"
     },
     "facebookUrl": "",
     "organizer": "Outcast Jazz Band",
