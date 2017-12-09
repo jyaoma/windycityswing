@@ -15,6 +15,8 @@
 		1AEC6A321F9FB62C003E0D47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEC6A301F9FB62C003E0D47 /* LaunchScreen.storyboard */; };
 		1AEC6A3D1F9FB62C003E0D47 /* WindyCitySwingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC6A3C1F9FB62C003E0D47 /* WindyCitySwingTests.swift */; };
 		1AEC6A481F9FB62C003E0D47 /* WindyCitySwingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC6A471F9FB62C003E0D47 /* WindyCitySwingUITests.swift */; };
+		1AEC6A591FA93FD4003E0D47 /* Rampung.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AEC6A571FA93FD3003E0D47 /* Rampung.ttf */; };
+		1AEC6A5A1FA93FD4003E0D47 /* DancingScript-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1AEC6A581FA93FD4003E0D47 /* DancingScript-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1AEC6A431F9FB62C003E0D47 /* WindyCitySwingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WindyCitySwingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AEC6A471F9FB62C003E0D47 /* WindyCitySwingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindyCitySwingUITests.swift; sourceTree = "<group>"; };
 		1AEC6A491F9FB62C003E0D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AEC6A571FA93FD3003E0D47 /* Rampung.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rampung.ttf; sourceTree = "<group>"; };
+		1AEC6A581FA93FD4003E0D47 /* DancingScript-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		1AEC6A231F9FB62C003E0D47 /* WindyCitySwing */ = {
 			isa = PBXGroup;
 			children = (
+				1AEC6A551FA93F50003E0D47 /* Assets */,
 				1AEC6A241F9FB62C003E0D47 /* AppDelegate.swift */,
 				1AEC6A261F9FB62C003E0D47 /* ViewController.swift */,
 				1AEC6A281F9FB62C003E0D47 /* Main.storyboard */,
@@ -126,6 +131,23 @@
 				1AEC6A491F9FB62C003E0D47 /* Info.plist */,
 			);
 			path = WindyCitySwingUITests;
+			sourceTree = "<group>";
+		};
+		1AEC6A551FA93F50003E0D47 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1AEC6A561FA93F65003E0D47 /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		1AEC6A561FA93F65003E0D47 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1AEC6A581FA93FD4003E0D47 /* DancingScript-Regular.otf */,
+				1AEC6A571FA93FD3003E0D47 /* Rampung.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +258,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AEC6A321F9FB62C003E0D47 /* LaunchScreen.storyboard in Resources */,
+				1AEC6A591FA93FD4003E0D47 /* Rampung.ttf in Resources */,
 				1AEC6A2F1F9FB62C003E0D47 /* Assets.xcassets in Resources */,
 				1AEC6A2A1F9FB62C003E0D47 /* Main.storyboard in Resources */,
+				1AEC6A5A1FA93FD4003E0D47 /* DancingScript-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

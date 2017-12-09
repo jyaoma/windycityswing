@@ -28,9 +28,13 @@ class WindyCitySwingUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func hasTitle() {
         let app = XCUIApplication()
-        XCTAssert(app.staticTexts["Hello World!"].exists)
+        XCTAssert(app.staticTexts["Windy City Swing"].exists)
     }
     
+    func hasSubtitle() {
+        let app = XCUIApplication()
+        XCTAssert(app.staticTexts["THE SWING DANCING INFORMATION IN CHICAGO AND CHICAGOLAND AREA"].exists)
+    }
 }
