@@ -55,8 +55,9 @@ class HomePage extends React.Component {
                 dayString = '0' + dayString;
             }
             dayString = '-' + dayString;
-            const exceptionString = this.state.currentMonthString.replace('-01', dayString);
+            const exceptionString = this.state.currentMonthString.substring(0, this.state.currentMonthString.indexOf('-', 5)) + dayString;
             const exceptionFinder = (exception) => {return exception === exceptionString}
+
             return event.recurrence.exceptions.filter(exceptionFinder).length > 0
         }
         return false;
