@@ -2,9 +2,9 @@
     "title": "Bluetopia",
     "className": "bluetopia",
     "date": {
-        "year": 2017,
-        "month": 8,
-        "day": 26,
+        "year": 2018,
+        "month": 1,
+        "day": 20,
         "weekday": 6
     },
     "timezone": {
@@ -13,10 +13,7 @@
         "endTimestamp": "20170827T020000"
     },
     "recurrence": {
-        "rule": "dayOfWeekOfMonth",
-        "dayOfWeek": 6,
-        "weekOfMonth": -1,
-        "exceptions": ["2017-12-30", "2018-01-27"]
+        "rule": "none"
     },
     "facebookUrl": "",
     "organizer": "Bluetopia",
@@ -39,7 +36,7 @@
         }
     ],
     "info": [
-        "Occurs on the last Saturday of each month.",
+        "Usually occurs on the last Saturday of each month.",
         "Snacks and water provided.",
         "All ages event.",
         "BYOB event; ID check at the door. No underage drinking is allowed"

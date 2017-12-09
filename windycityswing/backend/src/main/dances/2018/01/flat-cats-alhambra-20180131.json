@@ -1,16 +1,16 @@
 {
-    "title": "Holiday Swing with Morry Sochat and Flat Cats at Alhambra Palace",
+    "title": "Flat Cats at Alhambra Palace",
     "className": "flat-cats-alhambra",
     "date": {
-        "year": 2017,
-        "month": 12,
-        "day": 27,
+        "year": 2018,
+        "month": 1,
+        "day": 31,
         "weekday": 3
     },
     "timezone": {
         "tzid": "America/Chicago",
-        "startTimestamp": "20171227T200000",
-        "endTimestamp": "20171227T233000"
+        "startTimestamp": "20180131T200000",
+        "endTimestamp": "20180131T233000"
     },
     "recurrence": {
         "rule": "none"
@@ -44,7 +44,7 @@
     "music": {
         "type": "Live",
         "url": "http://www.flatcatsmusic.com/",
-        "by": "The Flat Cats and Morry Sochat & The Special 20s"
+        "by": "The Flat Cats"
     },
     "floorSize": "Medium",
     "location": {

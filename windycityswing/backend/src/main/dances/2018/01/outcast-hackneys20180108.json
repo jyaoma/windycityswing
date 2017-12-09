@@ -2,21 +2,18 @@
     "title": "Outcast Jazz Band at Hackney's",
     "className": "outcast-hackneys",
     "date": {
-        "year": 2017,
-        "month": 8,
-        "day": 7,
+        "year": 2018,
+        "month": 1,
+        "day": 8,
         "weekday": 1
     },
     "timezone": {
         "tzid": "America/Chicago",
-        "startTimestamp": "20170807T200000",
-        "endTimestamp": "20170807T220000"
+        "startTimestamp": "20180108T200000",
+        "endTimestamp": "20180108T220000"
     },
     "recurrence": {
-        "rule": "dayOfWeekOfMonth",
-        "dayOfWeek": 1,
-        "weekOfMonth": 0,
-        "exceptions": ["2017-09-04", "2017-12-04", "2018-01-01"]
+        "rule": "none"
     },
     "facebookUrl": "",
     "organizer": "Outcast Jazz Band",
