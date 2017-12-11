@@ -22,6 +22,7 @@ bundle.js*
 
 # Generated
 dist/
+windycityswing/.idea/
 windycityswing/backend/bin/
 
 # Clarissa
@@ -42,11 +43,10 @@ windycityswing/backend/out/
 
 # Android Studio
 *.iml
-windycityswing/android/WindycitySwing/.gradle
-windycityswing/android/WindycitySwing/local.properties
-windycityswing/android/WindycitySwing/.idea/workspace.xml
-windycityswing/android/WindycitySwing/.idea/libraries
-windycityswing/android/WindycitySwing/.DS_Store
-windycityswing/android/WindycitySwing/buvild
-windycityswing/android/WindycitySwing/captures
-windycityswing/android/WindycitySwing/.externalNativeBuild
+windycityswing/android/WindyCitySwing/.gradle
+windycityswing/android/WindyCitySwing/local.properties
+windycityswing/android/WindyCitySwing/.idea/
+windycityswing/android/WindyCitySwing/.DS_Store
+windycityswing/android/WindyCitySwing/build
+windycityswing/android/WindyCitySwing/captures
+windycityswing/android/WindyCitySwing/.externalNativeBuild

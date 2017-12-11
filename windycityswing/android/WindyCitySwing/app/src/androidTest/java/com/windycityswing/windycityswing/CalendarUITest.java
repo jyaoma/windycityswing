@@ -48,13 +48,13 @@ public class CalendarUITest {
 
     @Test
     public void titleFontIsChanged() {
-        TextView title = (TextView) activityTestRule.getActivity().findViewById(R.id.title);
+        TextView title = activityTestRule.getActivity().findViewById(R.id.title);
         assertNotNull(title.getTypeface());
     }
 
     @Test
-    public void subtitleFontIschanged() {
-        TextView subtitle = (TextView) activityTestRule.getActivity().findViewById(R.id.subtitle);
+    public void subtitleFontIsChanged() {
+        TextView subtitle = activityTestRule.getActivity().findViewById(R.id.subtitle);
         assertNotNull(subtitle.getTypeface());
     }
 }
