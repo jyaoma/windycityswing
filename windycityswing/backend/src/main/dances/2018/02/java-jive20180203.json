@@ -1,0 +1,71 @@
+{
+    "title": "Petra's Recession Seven at Java Jive",
+    "className": "java-jive",
+    "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 3,
+        "weekday": 6
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180203T184500",
+        "endTimestamp": "20180203T220000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/events/1536971349718296/",
+    "organizer": "Chicago Swing Dance Society",
+    "instructor": "Various",
+    "schedule": [
+        {
+            "hour": 18,
+            "minute": 45,
+            "event": "Lesson"
+        },
+        {
+            "hour": 19,
+            "minute": 30,
+            "event": "Dancing"
+        },
+        {
+            "hour": 22,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "The starting and ending times are a bit different than usual.
+        "Occurs every Saturday during the school year",
+        "The venue is usually on the top floor of Ida Noyes Hall"
+    ],
+    "infoUrl": "",
+    "attendance": "50-100",
+    "music": {
+        "type": "DJ",
+        "url": "",
+        "by": "Chicago Swing Dance Society"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Ida Noyes Hall",
+        "addressOne": "E 59th St",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60637"
+    },
+    "dressCode": "Dressy casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Street parking",
+    "price": "$5 for dancers with a school ID. $8 for the general public.",
+    "colors": {
+        "bg": "#781726",
+        "text": "white"
+    }
+}

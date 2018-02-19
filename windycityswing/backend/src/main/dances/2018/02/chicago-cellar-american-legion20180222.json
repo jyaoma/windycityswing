@@ -1,0 +1,66 @@
+{
+    "title": "Jam Session with the Chicago Cellar Boys",
+    "className": "chicago-cellar-american-legion",
+    "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 22,
+        "weekday": 4
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180222T200000",
+        "endTimestamp": "20180222T220000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/events/393603111101634/",
+    "organizer": "Chicago Cellar Boys",
+    "instructor": "N/A",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 22,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "This is a one time event, but hopefully it can become a monthly event if it is successful.",
+        "All ages event."
+    ],
+    "infoUrl": "https://www.chicagocellarboys.com/",
+    "attendance": "",
+    "music": {
+        "type": "Live",
+        "url": "https://www.facebook.com/chicagocellarboys/",
+        "by": "Chicago Cellar Boys"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "American Legion Post 973 - Tattler Post",
+        "addressOne": "4355 N Western Ave.",
+        "addressTwo": "",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60618"
+    },
+    "dressCode": "Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Street parking",
+    "price": "Free",
+    "colors": {
+        "bg": "#5F0038",
+        "text": "white"
+    }
+}

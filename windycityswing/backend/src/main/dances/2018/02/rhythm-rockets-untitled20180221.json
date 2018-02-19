@@ -2,21 +2,18 @@
     "title": "Rhythm Rockets at Untitled Supper Club",
     "className": "rhythm-rockets-untitled",
     "date": {
-        "year": 2017,
-        "month": 7,
-        "day": 12,
+        "year": 2018,
+        "month": 2,
+        "day": 21,
         "weekday": 3
     },
     "timezone": {
         "tzid": "America/Chicago",
-        "startTimestamp": "20170712T193000",
-        "endTimestamp": "20170712T223000"
+        "startTimestamp": "20180221T193000",
+        "endTimestamp": "20180221T223000"
     },
     "recurrence": {
-        "rule": "dayOfWeekOfMonth",
-        "dayOfWeek": 3,
-        "weekOfMonth": 1,
-        "exceptions": ["2017-08-09", "2017-10-11", "2017-12-13", "2018-02-14"]
+        "rule": "none"
     },
     "facebookUrl": "",
     "organizer": "Untitled Supper Club",

@@ -1,10 +1,10 @@
 {
-    "title": "Monthly Balboa Social",
+    "title": "The Westerlees at Monthly Balboa Social",
     "className": "balboa-social",
     "date": {
-        "year": 2017,
-        "month": 8,
-        "day": 9,
+        "year": 2018,
+        "month": 2,
+        "day": 14,
         "weekday": 3
     },
     "timezone": {
@@ -13,12 +13,9 @@
         "endTimestamp": "20170810T000000"
     },
     "recurrence": {
-        "rule": "dayOfWeekOfMonth",
-        "dayOfWeek": 3,
-        "weekOfMonth": 1,
-        "exceptions": ["2018-02-14"]
+        "rule": "none"
     },
-    "facebookUrl": "https://www.facebook.com/groups/1692486754376906/",
+    "facebookUrl": "https://www.facebook.com/events/1703089356390547/",
     "organizer": "Chicago Balboa Underground Community",
     "instructor": "",
     "schedule": [
@@ -39,15 +36,15 @@
         }
     ],
     "info": [
-        "Occurs on the second Wednesday of each month.",
+        "Usually occurs on the second Wednesday of each month.",
         "All ages event."
     ],
     "infoUrl": "",
     "attendance": "",
     "music": {
-        "type": "DJ",
-        "url": "",
-        "by": ""
+        "type": "Live",
+        "url": "http://thewesterlees.com",
+        "by": "The Westerlees"
     },
     "floorSize": "Medium",
     "location": {
@@ -62,7 +59,7 @@
         "Balboa"
     ],
     "parking": "Street parking available.",
-    "price": "$10 per person, $5 per student with valid ID",
+    "price": "$15 per person, $10 per student with valid ID",
     "colors": {
         "bg": "#441913",
         "text": "white"

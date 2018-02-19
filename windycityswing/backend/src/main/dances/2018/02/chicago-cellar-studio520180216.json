@@ -1,0 +1,67 @@
+{
+    "title": "Chicago Cellar Boys at Studio5",
+    "className": "chicago-cellar-studio5",
+    "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 16,
+        "weekday": 5
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180216T200000",
+        "endTimestamp": "20180216T220000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/events/1438253686319377/",
+    "organizer": "Chicago Cellar Boys",
+    "instructor": "N/A",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 22,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "For the first time, the Chicago Cellar Boys are playing at Studio5!",
+        "If it is successful, this can happen again!",
+        "All ages event."
+    ],
+    "infoUrl": "http://www.studio5.dance/calendar/2018/2/2/live-at-studio5-cellar-boys",
+    "attendance": "20-50",
+    "music": {
+        "type": "Live",
+        "url": "https://www.facebook.com/chicagocellarboys/",
+        "by": "Chicago Cellar Boys"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Dance Center Evanston",
+        "addressOne": "1934 Dempster St.",
+        "addressTwo": "",
+        "city": "Evanston",
+        "state": "IL",
+        "zip": "60203"
+    },
+    "dressCode": "Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Venue parking",
+    "price": "$20 to $25",
+    "colors": {
+        "bg": "#AE8955",
+        "text": "black"
+    }
+}

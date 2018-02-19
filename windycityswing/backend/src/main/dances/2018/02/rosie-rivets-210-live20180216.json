@@ -1,0 +1,65 @@
+{
+    "title": "Rosie and the Rivets at 210 Live",
+    "className": "rosie-rivets-210-live",
+    "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 16,
+        "weekday": 5
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180216T210000",
+        "endTimestamp": "20180217T000000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/events/142573353095148/",
+    "organizer": "Building a Firm Foundation:  One Bra At a Time",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 21,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 24,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "Naomi Parker, aka Rosie the Riveter, has just passed. Let us make tribute to Rosie and to all Women as contributors to our nation and our world.",
+        "Reserve at https://rezku.com/reserve/00-1584/?date=2018-02-16&time=19%3A00%3A00&covers=2&source=restaurateur"
+    ],
+    "infoUrl": "https://210live.com/music-calendar/",
+    "attendance": "",
+    "music": {
+        "type": "Live Music",
+        "url": "https://www.rosieandtherivets.com",
+        "by": "Rosie and the Rivets"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "210 Live",
+        "addressOne": "210 Green Bay Rd",
+        "city": "Highwood",
+        "state": "IL",
+        "zip": "60040"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East Coast Swing",
+        "Charleston",
+        "Lindy Hop",
+        "Balboa"
+    ],
+    "parking": "Venue parking available.",
+    "price": "Free, but donations welcome.",
+    "colors": {
+        "bg": "#FBE92F",
+        "text": "black"
+    }
+}
