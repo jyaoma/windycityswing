@@ -1,0 +1,73 @@
+{
+    "title": "Rick and Debbie's Wedding",
+    "className": "shout-section-american-legion",
+    "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 10,
+        "weekday": 6
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180310T193000",
+        "endTimestamp": "20180310T233000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/events/204595983423522/",
+    "organizer": "The Lockport Swing Thing",
+    "instructor": "Jessica",
+    "schedule": [
+        {
+            "hour": 19,
+            "minute": 30,
+            "event": "Lesson"
+        },
+        {
+            "hour": 20,
+            "minute": 30,
+            "event": "Dancing"
+        },
+        {
+            "hour": 23,
+            "minute": 30,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "Rick and Debbie are getting married and they want YOU to help them celebrate! The ceremony is private, but the reception is free and open to the public!",
+        "There will be a cash bar. Please remember to tip your bartender and keep those drinks off the dance floor.",
+        "The floor is painted concrete.",
+        "All ages event."
+    ],
+    "infoUrl": "",
+    "attendance": "",
+    "music": {
+        "type": "Live",
+        "url": "https://www.shoutsection.com",
+        "by": "Shout Section Big Band"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "American Legion",
+        "addressOne": "15052 Archer Ave.",
+        "addressTwo": "",
+        "city": "Lockport",
+        "state": "IL",
+        "zip": "60441"
+    },
+    "dressCode": "Dressy",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Venue parking",
+    "price": "Free",
+    "colors": {
+        "bg": "#295B42",
+        "text": "white"
+    }
+}
