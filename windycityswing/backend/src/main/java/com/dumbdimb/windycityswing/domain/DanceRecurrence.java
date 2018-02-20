@@ -37,6 +37,6 @@ public class DanceRecurrence {
             nonNullEndMonth = 13;
         }
 
-        return nonNullStartYear <= year && year <= nonNullEndYear && nonNullStartMonth <= month && month <= nonNullEndMonth;
+        return (year > nonNullStartYear || (year.equals(nonNullStartYear) && month >= nonNullStartMonth)) && (year < nonNullEndYear || (year.equals(nonNullEndYear) && month <= nonNullEndMonth));
     }
 }

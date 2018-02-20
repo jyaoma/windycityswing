@@ -40,6 +40,7 @@ public class WindyCitySwingService {
         File[] monthlyDances = fileHelper.getAllFilesIn("src\\main\\dances\\monthly");
 
         for (File danceFile : weeklyDances) {
+            System.out.println(danceFile.getName());
             FileReader fileReader = new FileReader(danceFile);
             Dance dance = new Gson().fromJson(fileReader, Dance.class);
             if (dance.getRecurrence().doesOccurInThisMonth(year, month)) {
@@ -50,6 +51,7 @@ public class WindyCitySwingService {
 
         for (File danceFile : monthlyDances) {
             FileReader fileReader = new FileReader(danceFile);
+            System.out.println(danceFile.getName());
             Dance dance = new Gson().fromJson(fileReader, Dance.class);
             if (dance.getRecurrence().doesOccurInThisMonth(year, month)) {
                 dances.add(dance);
@@ -61,6 +63,7 @@ public class WindyCitySwingService {
             File[] monthDances = fileHelper.getAllFilesIn("src\\main\\dances\\" + year.toString() + "\\" + monthString);
 
             for (File danceFile : monthDances) {
+                System.out.println(danceFile.getName());
                 FileReader fileReader = new FileReader(danceFile);
                 Dance dance = new Gson().fromJson(fileReader, Dance.class);
                 dances.add(dance);
