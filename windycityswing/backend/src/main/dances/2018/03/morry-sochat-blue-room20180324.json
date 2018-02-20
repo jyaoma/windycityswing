@@ -1,0 +1,62 @@
+{
+    "title": "Morry Sochat and the Special 20's at Frankie's Blue Room",
+    "className": "morry-sochat-blue-room",
+    "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 24,
+        "weekday": 6
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180324T200000",
+        "endTimestamp": "20180325T000000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "Morry Sochat and the Special 20's",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 23,
+            "minute": 45,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "21+ event"
+    ],
+    "infoUrl": "http://special20s.com/shows/upcoming/",
+    "attendance": "",
+    "music": {
+        "type": "Live",
+        "url": "",
+        "by": "Morry Sochat and the Special 20s"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Frankie's Blue Room",
+        "addressOne": "16 W Chicago Ave.",
+        "city": "Naperville",
+        "state": "IL",
+        "zip": "60540"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Blues"
+    ],
+    "parking": "Street parking available.",
+    "price": "$10 per person",
+    "colors": {
+        "bg": "#1A2429",
+        "text": "white"
+    }
+}

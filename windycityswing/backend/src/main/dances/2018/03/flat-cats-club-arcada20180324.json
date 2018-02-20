@@ -1,0 +1,68 @@
+{
+    "title": "Flat Cats at Club Arcada",
+    "className": "flat-cats-club-arcada",
+    "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 24,
+        "weekday": 5
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180324T210000",
+        "endTimestamp": "20180325T000000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/pg/ClubArcada/events/",
+    "organizer": "The Flat Cats",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 21,
+            "minute": 0,
+            "event": "Live music and open dancing"
+        },
+        {
+            "hour": 0,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "All ages event.",
+        "Reservations encouraged.",
+        "There is a two drink minimum if no dinner is purchased."
+    ],
+    "infoUrl": "http://www.flatcatsmusic.com/",
+    "attendance": "50-100",
+    "music": {
+        "type": "Live",
+        "url": "http://www.flatcatsmusic.com/",
+        "by": "The Flat Cats"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Arcada Theater",
+        "addressOne": "105 E Main St.",
+        "addressTwo": "",
+        "city": "St. Charles",
+        "state": "IL",
+        "zip": "60174"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Charleston",
+        "Balboa",
+        "Lindy Hop",
+        "Salsa"
+    ],
+    "parking": "Street parking",
+    "price": "$10 per person",
+    "colors": {
+        "bg": "#FFC600",
+        "text": "black"
+    }
+}

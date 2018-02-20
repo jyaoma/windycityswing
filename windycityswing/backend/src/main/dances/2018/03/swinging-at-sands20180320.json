@@ -1,21 +1,19 @@
 {
-    "title": "Swinging at the Sands",
+    "title": "The Rhythm Rockets at Swinging at the Sands",
     "className": "swinging-at-sands",
     "date": {
-        "year": 2017,
-        "month": 8,
-        "day": 1,
+        "year": 2018,
+        "month": 3,
+        "day": 20,
         "weekday": 2
     },
     "timezone": {
         "tzid": "America/Chicago",
-        "startTimestamp": "20170801T190000",
-        "endTimestamp": "20170801T233000"
+        "startTimestamp": "20180320T190000",
+        "endTimestamp": "20180320T233000"
     },
     "recurrence": {
-        "rule": "dayOfWeek",
-        "dayOfWeek": 2,
-        "exceptions": ["2017-08-29", "2017-10-17", "2017-10-31", "2017-12-12", "2018-03-20"]
+        "rule": "none"
     },
     "facebookUrl": "",
     "organizer": "Swinging at the Sands",
@@ -50,9 +48,9 @@
     "infoUrl": "http://www.swingingatthesands.com/",
     "attendance": "10-50",
     "music": {
-        "type": "Varies",
-        "url": "",
-        "by": ""
+        "type": "Live",
+        "url": "http://therhythmrockets.com",
+        "by": "The Rhythm Rockets"
     },
     "floorSize": "Large",
     "location": {
@@ -68,7 +66,7 @@
         "East coast swing"
     ],
     "parking": "Venue parking",
-    "price": "$5/person for each lesson, $7/person to dance ($17 for the whole night). $2 off for students with valid student ID",
+    "price": "$5/person for each lesson, $12/person to dance ($22 for the whole night). $2 off for students with valid student ID",
     "colors": {
         "bg": "#38B5AD",
         "text": "white"

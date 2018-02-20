@@ -1,0 +1,62 @@
+{
+    "title": "Morry Sochat and the Special 20's with Bailey Dee at Ravenswood Loft",
+    "className": "morry-sochat-ravenswood-loft",
+    "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 23,
+        "weekday": 5
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180323T203000",
+        "endTimestamp": "20180323T233000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "Morry Sochat and the Special 20's",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 21,
+            "minute": 30,
+            "event": "Dancing"
+        },
+        {
+            "hour": 1,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "21+ event"
+    ],
+    "infoUrl": "http://special20s.com/shows/upcoming/",
+    "attendance": "",
+    "music": {
+        "type": "Live",
+        "url": "",
+        "by": "Morry Sochat and the Special 20s"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Forteza Fitness",
+        "addressOne": "4437 N Ravenswood Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60640"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Blues"
+    ],
+    "parking": "Street parking available.",
+    "price": "$15 per person",
+    "colors": {
+        "bg": "#EA3A3D",
+        "text": "white"
+    }
+}

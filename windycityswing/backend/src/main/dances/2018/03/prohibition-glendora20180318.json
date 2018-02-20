@@ -1,0 +1,64 @@
+{
+    "title": "Prohibition Orchestra at Glendora House",
+    "className": "glendora",
+    "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 18,
+        "weekday": 0
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180318T140000",
+        "endTimestamp": "20180318T170000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "Glendora Banquets",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 14,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 17,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "All ages event."
+    ],
+    "infoUrl": "http://www.illianajazz.com/",
+    "attendance": "",
+    "music": {
+        "type": "Live",
+        "url": "http://prohibitionorchestra.com/index.html",
+        "by": "Prohibition Orchestra"
+    },
+    "floorSize": "Large",
+    "location": {
+        "addressName": "Glendora Banquets",
+        "addressOne": "10225 S Harlem Ave",
+        "city": "Chicago Ridge",
+        "state": "IL",
+        "zip": "60415"
+    },
+    "dressCode": "Dressy",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Venue parking available.",
+    "price": "$10 per dancer",
+    "colors": {
+        "bg": "#979731",
+        "text": "white"
+    }
+}
