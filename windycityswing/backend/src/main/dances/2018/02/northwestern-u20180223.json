@@ -1,0 +1,66 @@
+{
+    "title": "Peter van Nuis at Winter Swing Dance",
+    "className": "northwestern-u",
+    "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 23,
+        "weekday": 5
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180223T183000",
+        "endTimestamp": "20180223T220000"
+    },
+    "facebookUrl": "https://www.facebook.com/events/821509104703306/",
+    "organizer": "Northwestern Swing Dance Syndicate",
+    "instructor": "Amir Jacob",
+    "schedule": [
+        {
+            "hour": 18,
+            "minute": 30,
+            "event": "Swing lesson"
+        },
+        {
+            "hour": 19,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 22,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "Northwestern Swing Dance Syndicate (NSDS) invites you to dance away your winter blues with us on Friday February 23rd!"
+    ],
+    "infoUrl": "",
+    "attendance": "50-100",
+    "music": {
+        "type": "Live",
+        "url": "http://www.petrasings.com",
+        "by": "Petra van Nuis"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Seabury Hall",
+        "addressOne": "2122 Sheridan Rd.",
+        "city": "Evanston",
+        "state": "IL",
+        "zip": "60208"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Free venue parking available.",
+    "price": "$7 per person, cash only. $5 for students.",
+    "colors": {
+        "bg": "#401F68",
+        "text": "white"
+    }
+}
