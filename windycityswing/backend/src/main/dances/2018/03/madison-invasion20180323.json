@@ -1,0 +1,117 @@
+{
+    "title": "Madison Invasion",
+    "className": "madison-invasion",
+    "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 23,
+        "weekday": 5
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180323T200000",
+        "endTimestamp": "20180325T150000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/events/153884798537187/",
+    "organizer": "Madison Invasion",
+    "instructor": "Laura Glaess and Brooks Prumo",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Registration, Dancing, T-shirt Sales"
+        },
+        {
+            "hour": 23,
+            "minute": 30,
+            "event": "End of Night"
+        },
+        {
+            "hour": 10,
+            "minute": 0,
+            "event": "Registration"
+        },
+        {
+            "hour": 10,
+            "minute": 30,
+            "event": "Class Block 1"
+        },
+        {
+            "hour": 12,
+            "minute": 30,
+            "event": "Lunch Break"
+        },
+        {
+            "hour": 14,
+            "minute": 0,
+            "event": "Class Block 2"
+        },
+        {
+            "hour": 16,
+            "minute": 0,
+            "event": "Dinner Break"
+        },
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 23,
+            "minute": 45,
+            "event": "End of Night"
+        },
+        {
+            "hour": 11,
+            "minute": 0,
+            "event": "Solo Class Block"
+        },
+        {
+            "hour": 13,
+            "minute": 0,
+            "event": "Lunch Break"
+        },
+        {
+            "hour": 14,
+            "minute": 0,
+            "event": "Class Block 4"
+        },
+        {
+            "hour": 15,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "Come invade beautiful Madison, WI for a weekend of swing dancing with Laura Glaess and Brooks Prumo!"
+    ],
+    "infoUrl": "http://themadisoninvasion.com",
+    "attendance": "",
+    "music": {
+        "type": "",
+        "url": "",
+        "by": ""
+    },
+    "floorSize": "Large",
+    "location": {
+        "addressName": "Discovery Building",
+        "addressOne": "330 N Orchard St",
+        "addressTwo": "",
+        "city": "Madison",
+        "state": "WI",
+        "zip": "53715"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing"
+    ],
+    "parking": "Venue parking",
+    "price": "$60/person for the entire weekend, $35/person for only the dances.",
+    "colors": {
+        "bg": "#005260",
+        "text": "white"
+    }
+}
