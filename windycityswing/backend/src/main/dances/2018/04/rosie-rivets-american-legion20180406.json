@@ -1,0 +1,71 @@
+{
+    "title": "Rosie and the Rivets at American Legion",
+    "className": "rosie-rivets-american-legion",
+    "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 6,
+        "weekday": 5
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180406T193000",
+        "endTimestamp": "20180406T233000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "Rosie and the Rivets",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 19,
+            "minute": 30,
+            "event": "Lesson"
+        },
+        {
+            "hour": 20,
+            "minute": 30,
+            "event": "Dancing"
+        },
+        {
+            "hour": 23,
+            "minute": 30,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "The floor is painted concrete.",
+        "All ages event."
+    ],
+    "infoUrl": "",
+    "attendance": "",
+    "music": {
+        "type": "Live",
+        "url": "https://www.rosieandtherivets.com/",
+        "by": "The Lockport Swing Thing"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "American Legion",
+        "addressOne": "15052 Archer Ave.",
+        "addressTwo": "",
+        "city": "Lockport",
+        "state": "IL",
+        "zip": "60441"
+    },
+    "dressCode": "Dressy",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Venue parking",
+    "price": "Free",
+    "colors": {
+        "bg": "#CF3C4C",
+        "text": "black"
+    }
+}
