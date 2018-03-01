@@ -1,0 +1,66 @@
+{
+    "title": "Swing, Soul, and Sinatra",
+    "className": "swing-soul-sinatra",
+    "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 13,
+        "weekday": 5
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180413T200000",
+        "endTimestamp": "20180413T230000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "Evanston Rocks",
+    "instructor": "N/A",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 23,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "The Nick Pontarelli Band has made their mark on the Chicago music scene with a fresh take on all of the greats, including Frank Sinatra, Dean Martin, Frankie Valli, Bobby Darin, Elvis, Neil Diamond and many more.",
+        "All ages event."
+    ],
+    "infoUrl": "https://evanstonrocks.com/events/swing-soul-sinatra-with-nick-knight-starring-nick-pontarelli-gina-knight/",
+    "attendance": "",
+    "music": {
+        "type": "Live",
+        "url": "https://nickpontarelli.com",
+        "by": "The Nick Pontarelli Band"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Evanston Rocks",
+        "addressOne": "1012 Church St.",
+        "addressTwo": "",
+        "city": "Evanston",
+        "state": "IL",
+        "zip": "60201"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Street parking",
+    "price": "$8",
+    "colors": {
+        "bg": "#422611",
+        "text": "white"
+    }
+}
