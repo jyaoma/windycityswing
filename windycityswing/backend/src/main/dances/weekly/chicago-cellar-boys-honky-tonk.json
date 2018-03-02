@@ -15,7 +15,7 @@
     "recurrence": {
         "rule": "dayOfWeek",
         "dayOfWeek": 0,
-        "exceptions": ["2017-12-24", "2017-12-31", "2018-04-01"]
+        "exceptions": ["2017-12-24", "2017-12-31", "2018-04-01"]
     },
     "facebookUrl": "",
     "organizer": "Honky Tonk BBQ",
