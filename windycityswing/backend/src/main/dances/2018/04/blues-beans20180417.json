@@ -1,0 +1,66 @@
+{
+    "title": "Blues in the Beans Gallery",
+    "className": "blues-beans",
+    "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 17,
+        "weekday": 2
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180417T193000",
+        "endTimestamp": "20180417T230000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "",
+    "instructor": "Sarah and Ross",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Lesson"
+        },
+        {
+            "hour": 21,
+            "minute": 0,
+            "event": ""
+        },
+        {
+            "hour": 23,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "All ages event."
+    ],
+    "infoUrl": "",
+    "attendance": "",
+    "music": {
+        "type": "DJ",
+        "url": "",
+        "by": ""
+    },
+    "floorSize": "Small",
+    "location": {
+        "addressName": "Jimmy Beans Coffee",
+        "addressOne": "2553 W Fullerton Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60647"
+    },
+    "dressCode": "Casual",
+    "danceStyles": [
+        "Blues"
+    ],
+    "parking": "Street parking available.",
+    "price": "$8 for students with valid ID, $10 for the general public.",
+    "colors": {
+        "bg": "#C73818",
+        "text": "white"
+    }
+}
