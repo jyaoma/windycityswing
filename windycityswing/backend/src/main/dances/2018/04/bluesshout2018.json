@@ -1,0 +1,239 @@
+{
+    "title": "BluesSHOUT!",
+    "className": "bluesshout",
+    "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 5,
+        "weekday": 4
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180405T203000",
+        "endTimestamp": "20180409T050000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "BluesSHOUT!",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 30,
+            "event": "Pre-party at Vintage Lounge"
+        },
+        {
+            "hour": 0,
+            "minute": 30,
+            "event": "End of Night"
+        },
+        {
+            "hour": 20,
+            "minute": 30,
+            "event": "Dancing with the Cash Box Kings"
+        },
+        {
+            "hour": 21,
+            "minute": 45,
+            "event": "All Star Strictly Prelims"
+        },
+        {
+            "hour": 22,
+            "minute": 45,
+            "event": "All Star Strictly Finals"
+        },
+        {
+            "hour": 0,
+            "minute": 30,
+            "event": "Dancing (DJ)"
+        },
+        {
+            "hour": 1,
+            "minute": 30,
+            "event": "Performances"
+        },
+        {
+            "hour": 4,
+            "minute": 0,
+            "event": "End of Night"
+        },
+        {
+            "hour": 9,
+            "minute": 45,
+            "event": "Class Period 1"
+        },
+        {
+            "hour": 10,
+            "minute": 30,
+            "event": "Level Auditions"
+        },
+        {
+            "hour": 11,
+            "minute": 30,
+            "event": "Assembly"
+        },
+        {
+            "hour": 12,
+            "minute": 15,
+            "event": "Class Period 2"
+        },
+        {
+            "hour": 13,
+            "minute": 15,
+            "event": "Lunch"
+        },
+        {
+            "hour": 14,
+            "minute": 15,
+            "event": "Class Period 3"
+        },
+        {
+            "hour": 15,
+            "minute": 30,
+            "event": "Class Period 4"
+        },
+        {
+            "hour": 16,
+            "minute": 40,
+            "event": "Competition Prelims - Contestant and Judges Meeting"
+        },
+        {
+            "hour": 17,
+            "minute": 0,
+            "event": "Newcomer MnM prelims, Open MnM prelims"
+        },
+        {
+            "hour": 18,
+            "minute": 30,
+            "event": "Solo Cuttin' Prelims"
+        },
+        {
+            "hour": 20,
+            "minute": 30,
+            "event": "Dancing with the Gerry Hundt Trio"
+        },
+        {
+            "hour": 21,
+            "minute": 45,
+            "event": "Newcomer MnM Finals"
+        },
+        {
+            "hour": 23,
+            "minute": 0,
+            "event": "Open MnM Finals"
+        },
+        {
+            "hour": 1,
+            "minute": 10,
+            "event": "Solo Cuttin' Finals"
+        },
+        {
+            "hour": 4,
+            "minute": 0,
+            "event": "End of Day"
+        },
+        {
+            "hour": 11,
+            "minute": 0,
+            "event": "Class Period 1"
+        },
+        {
+            "hour": 12,
+            "minute": 15,
+            "event": "Class Period 2"
+        },
+        {
+            "hour": 13,
+            "minute": 15,
+            "event": "Lunch and Learn"
+        },
+        {
+            "hour": 14,
+            "minute": 15,
+            "event": "Class Period 3"
+        },
+        {
+            "hour": 15,
+            "minute": 30,
+            "event": "Class Period 4"
+        },
+        {
+            "hour": 16,
+            "minute": 40,
+            "event": "Competition Prelims - Contestant and Judges Meeting"
+        },
+        {
+            "hour": 17,
+            "minute": 0,
+            "event": "Open Strictly Prelims"
+        },
+        {
+            "hour": 17,
+            "minute": 30,
+            "event": "All Star MnM Prelims"
+        },
+        {
+            "hour": 20,
+            "minute": 30,
+            "event": "Dancing with the Joel Paterson Quartet"
+        },
+        {
+            "hour": 21,
+            "minute": 45,
+            "event": "Open Strictly Finals"
+        },
+        {
+            "hour": 22,
+            "minute": 45,
+            "event": "All Star MnM Finals"
+        },
+        {
+            "hour": 0,
+            "minute": 30,
+            "event": "Dancing (DJ)"
+        },
+        {
+            "hour": 1,
+            "minute": 30,
+            "event": "Performances"
+        },
+        {
+            "hour": 5,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "All ages event."
+    ],
+    "infoUrl": "http://bluesshout.com",
+    "attendance": "100+",
+    "music": {
+        "type": "",
+        "url": "",
+        "by": ""
+    },
+    "floorSize": "Large",
+    "location": {
+        "addressName": "Chicago High School for the Arts",
+        "addressOne": "2714 W Augusta Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60622"
+    },
+    "dressCode": "Dressy",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Venue parking available.",
+    "price": "$10 per dancer",
+    "colors": {
+        "bg": "#979731",
+        "text": "white"
+    }
+}
