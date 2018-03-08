@@ -1,5 +1,5 @@
 {
-    "title": "New Orleans Mudcats at Glendora House",
+    "title": "New Orleans Mudcats at Glendora House",
     "className": "glendora",
     "date": {
         "year": 2018,
@@ -9,8 +9,8 @@
     },
     "timezone": {
         "tzid": "America/Chicago",
-        "startTimestamp": "20180415T140000",
-        "endTimestamp": "20180415T170000"
+        "startTimestamp": "20180415T140000",
+        "endTimestamp": "20180415T170000"
     },
     "recurrence": {
         "rule": "none"
@@ -37,8 +37,8 @@
     "attendance": "",
     "music": {
         "type": "Live",
-        "url": "",
-        "by": "New Orleans Mudcats"
+        "url": "",
+        "by": "New Orleans Mudcats"
     },
     "floorSize": "Large",
     "location": {
