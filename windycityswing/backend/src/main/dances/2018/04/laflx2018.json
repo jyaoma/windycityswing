@@ -1,0 +1,111 @@
+{
+    "title": "LAFLX 2018",
+    "className": "laflx",
+    "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 13,
+        "weekday": 5
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180413T200000",
+        "endTimestamp": "20180415T170000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "Purdue Night Train",
+    "instructor": "Several",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 21,
+            "minute": 0,
+            "event": "Dancing with Roya & The High Timers"
+        },
+        {
+            "hour": 0,
+            "minute": 0,
+            "event": "Late Night Dance"
+        },
+        {
+            "hour": 3,
+            "minute": 0,
+            "event": "End of Night"
+        },
+        {
+            "hour": 13,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 16,
+            "minute": 0,
+            "event": "End of afternoon dance"
+        },
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Dancing with the Gaslight Squares"
+        },
+        {
+            "hour": 23,
+            "minute": 0,
+            "event": "LAFABLE Contest"
+        },
+        {
+            "hour": 24,
+            "minute": 0,
+            "event": "Late Night Dance"
+        },
+        {
+            "hour": 3,
+            "minute": 0,
+            "event": "End of Night"
+        },
+        {
+            "hour": 13,
+            "minute": 30,
+            "event": "Dancing"
+        },
+        {
+            "hour": 17,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "All ages event."
+    ],
+    "infoUrl": "http://swingpurdue.org",
+    "attendance": "100+",
+    "music": {
+        "type": "",
+        "url": "",
+        "by": ""
+    },
+    "floorSize": "Large",
+    "location": {
+        "addressName": "Merou Grotto",
+        "addressOne": "1860 N River Rd",
+        "city": "West Lafayette",
+        "state": "IN",
+        "zip": "47906"
+    },
+    "dressCode": "Dressy",
+    "danceStyles": [
+        "Lindy Hop"
+    ],
+    "parking": "Venue parking available.",
+    "price": "Unknown",
+    "colors": {
+        "bg": "#37C5F3",
+        "text": "black"
+    }
+}
