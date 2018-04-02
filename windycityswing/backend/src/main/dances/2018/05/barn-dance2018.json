@@ -1,0 +1,69 @@
+{
+    "title": "Swing Into Summer Barn Dance",
+    "className": "barn-dance",
+    "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 19,
+        "weekday": 6
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180519T180000",
+        "endTimestamp": "20180519T220000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "Primrose Farm",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 18,
+            "minute": 15,
+            "event": "Lesson"
+        },
+        {
+            "hour": 19,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 22,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "All ages event"
+    ],
+    "infoUrl": "https://www.primrosefarmpark.com",
+    "attendance":"100+",
+    "music": {
+        "type": "Live",
+        "url": "",
+        "by": ""
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Primrose Farm",
+        "addressOne": "5N726 Crane Rd",
+        "city": "St. Charles",
+        "state": "IL",
+        "zip": "60175"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Venue parking available.",
+    "price": "$10 per person in advance, $15 at the door",
+    "colors": {
+        "bg": "#EA3A3D",
+        "text": "white"
+    }
+}

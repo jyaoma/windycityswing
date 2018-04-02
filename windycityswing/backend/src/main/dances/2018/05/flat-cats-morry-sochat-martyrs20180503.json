@@ -1,0 +1,67 @@
+{
+    "title": "The Flat Cats and Morry Sochat and the Special 20s at Martyrs'",
+    "className": "flat-cats-morry-sochat-martyrs",
+    "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 3,
+        "weekday": 4
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180503T200000",
+        "endTimestamp": "20180503T230000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/events/1629534207123896/",
+    "organizer": "The Flat Cats",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 23,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "21+ event.",
+        "It's the battle of the bands!"
+    ],
+    "infoUrl": "http://www.flatcatsmusic.com/",
+    "attendance": "",
+    "music": {
+        "type": "Live",
+        "url": "http://www.flatcatsmusic.com/",
+        "by": "The Flat Cats"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Martyrs'",
+        "addressOne": "3855 N Lincoln Ave",
+        "addressTwo": "",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60613"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Charleston",
+        "Balboa",
+        "Lindy Hop",
+        "Salsa"
+    ],
+    "parking": "Street parking",
+    "price": "$12 per person",
+    "colors": {
+        "bg": "#D45B64",
+        "text": "white"
+    }
+}
