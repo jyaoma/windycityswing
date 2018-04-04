@@ -16,7 +16,7 @@
         "rule": "dayOfWeek",
         "dayOfWeek": 1,
         "exceptions": ["2017-05-29", "2017-10-02", "2017-10-16", "2017-10-30", "2017-12-11", "2017-12-18", "2017-12-25",
-            "2018-01-01", "2018-05-28"]
+            "2018-01-01", "2018-05-28"]
     },
     "facebookUrl": "https://www.facebook.com/Fizz-Swing-Dancing-73706742234/",
     "organizer": "Fizz Staff",
