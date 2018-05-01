@@ -1,0 +1,70 @@
+{
+    "title": "Schaumburg Summer Dance Concerts - Swing",
+    "className": "schaumburg-summer",
+    "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 1,
+        "weekday": 5
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180601T183000",
+        "endTimestamp": "20180601T213000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/events/1764289346924891/",
+    "organizer": "Schaumburg Park District",
+    "instructor": "Arthur Murray instructors",
+    "schedule": [
+        {
+            "hour": 18,
+            "minute": 30,
+            "event": "Lesson"
+        },
+        {
+            "hour": 19,
+            "minute": 30,
+            "event": "Dancing"
+        },
+        {
+            "hour": 21,
+            "minute": 30,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "All ages event",
+        "Guests should bring a lawn chair."
+    ],
+    "infoUrl": "http://www.parkfun.com/programs/cultural-arts/summer-dance-concerts",
+    "attendance":"",
+    "music": {
+        "type": "Live",
+        "url": "http://www.thestingrays.com",
+        "by": "The Sting Rays"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "",
+        "addressOne": "N Schaumburg Road & W Roselle Road",
+        "city": "Schaumburg",
+        "state": "IL",
+        "zip": "60193"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Venue parking available.",
+    "price": "Free",
+    "colors": {
+        "bg": "#4A4F23",
+        "text": "white"
+    }
+}

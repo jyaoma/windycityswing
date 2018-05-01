@@ -1,0 +1,69 @@
+{
+    "title": "Rhythm Rockets at Frankie's Blue Room",
+    "className": "rhythm-rockets-blue-room",
+    "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 2,
+        "weekday": 6
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180602T190000",
+        "endTimestamp": "20180602T233000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/events/2066484976976335/",
+    "organizer": "Rhythm Rockets",
+    "instructor": "Dora Parks",
+    "schedule": [
+        {
+            "hour": 17,
+            "minute": 0,
+            "event": "Lesson"
+        },
+        {
+            "hour": 18,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 21,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "21+ Only"
+    ],
+    "infoUrl": "http://frankiesblueroom.net/",
+    "attendance": "",
+    "music": {
+        "type": "Live Music",
+        "url": "http://www.therhythmrockets.com/",
+        "by": "The Rhythm Rockets"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Frankie's Blue Room",
+        "addressOne": "16 W Chicago Ave.",
+        "city": "Naperville",
+        "state": "IL",
+        "zip": "60540"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East Coast Swing",
+        "Charleston",
+        "Lindy Hop",
+        "Balboa"
+    ],
+    "parking": "Venue parking available.",
+    "price": "$10",
+    "colors": {
+        "bg": "#AF0C36",
+        "text": "black"
+    }
+}
