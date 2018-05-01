@@ -1,5 +1,5 @@
 {
-    "title": "Chicago Cellar Boys at Glendora House",
+    "title": "Chicago Cellar Boys at Glendora House",
     "className": "glendora",
     "date": {
         "year": 2018,
@@ -9,8 +9,8 @@
     },
     "timezone": {
         "tzid": "America/Chicago",
-        "startTimestamp": "20180513T140000",
-        "endTimestamp": "20180513T170000"
+        "startTimestamp": "20180513T140000",
+        "endTimestamp": "20180513T170000"
     },
     "recurrence": {
         "rule": "none"
@@ -38,7 +38,7 @@
     "music": {
         "type": "Live",
         "url": "https://www.chicagocellarboys.com",
-        "by": "Chicago Cellar Boys"
+        "by": "Chicago Cellar Boys"
     },
     "floorSize": "Large",
     "location": {
