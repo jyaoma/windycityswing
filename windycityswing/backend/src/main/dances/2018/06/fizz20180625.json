@@ -1,0 +1,71 @@
+{
+    "title": "Fizz Band Night with the L.A. Swing Barons",
+    "className": "fizz",
+    "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 25,
+        "weekday": 1
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180625T200000",
+        "endTimestamp": "20180626T000000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "https://www.facebook.com/events/207446239852683/",
+    "organizer": "Fizz Staff",
+    "instructor": "Fizz Staff",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Swing lesson"
+        },
+        {
+            "hour": 21,
+            "minute": 0,
+            "event": "Dancing"
+        },
+        {
+            "hour": 0,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "Occurs every Monday.",
+        "Must be 18 years or older to attend."
+    ],
+    "infoUrl": "",
+    "attendance": "50-100",
+    "music": {
+        "type": "Live",
+        "url": "https://swingbarons.com/",
+        "by": "L.A. Swing Barons"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Lion Head Pub",
+        "addressOne": "2251 N Lincoln Ave",
+        "addressTwo": "2nd Floor",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60614"
+    },
+    "dressCode": "Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Street parking",
+    "price": "$15/person for general public, $7/person for students",
+    "colors": {
+        "bg": "#654639",
+        "text": "white"
+    }
+}
