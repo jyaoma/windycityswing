@@ -1,0 +1,65 @@
+{
+    "title": "The Flat Cats at Evanston Rocks!",
+    "className": "flat-cats-evanston-rocks",
+    "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 16,
+        "weekday": 6
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180616T200000",
+        "endTimestamp": "20180616T233000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "The Flat Cats",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 00,
+            "event": "Dancing"
+        },
+        {
+            "hour": 23,
+            "minute": 30,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "All ages event"
+    ],
+    "infoUrl": "",
+    "attendance": "",
+    "music": {
+        "type": "Live",
+        "url": "http://www.flatcatsmusic.com/",
+        "by": "The Flat Cats"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressOne": "1012 Church St.",
+        "addressTwo": "",
+        "city": "Evanston",
+        "state": "IL",
+        "zip": "60201"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Charleston",
+        "Balboa",
+        "Lindy Hop",
+        "Salsa"
+    ],
+    "parking": "Street parking",
+    "price": "Free",
+    "colors": {
+        "bg": "#DD3333",
+        "text": "white"
+    }
+}

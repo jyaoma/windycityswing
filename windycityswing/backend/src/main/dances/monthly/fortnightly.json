@@ -1,0 +1,76 @@
+{
+    "title": "Fortnightly",
+    "className": "fortnightly",
+    "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 18,
+        "weekday": 5
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180518T200000",
+        "endTimestamp": "20180518T000000"
+    },
+    "recurrence": {
+        "rule": "dayOfWeekOfMonth",
+        "dayOfWeek": 5,
+        "weekOfMonth": 2,
+        "startYear": 2018,
+        "startMonth": 5
+    },
+    "facebookUrl": "",
+    "organizer": "Big City Swing",
+    "instructor": "Big City Swing Staff",
+    "schedule": [
+        {
+            "hour": 20,
+            "minute": 0,
+            "event": "Swing lesson"
+        },
+        {
+            "hour": 20,
+            "minute": 45,
+            "event": "Dancing"
+        },
+        {
+            "hour": 0,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "Occurs on the third Friday of each month.",
+        "Snacks and water are provided, but bring your own cups.",
+        "All ages event.",
+        "If it's your first lesson, arrive a little before 8 PM."
+    ],
+    "infoUrl": "http://www.bigcityswing.com/first-fridays",
+    "attendance": "50-100",
+    "music": {
+        "type": "DJ",
+        "url": "",
+        "by": "Big City Swing Staff"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Big City Swing",
+        "addressOne": "1850 N Western Ave.",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60647"
+    },
+    "dressCode": "Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Lindy hop",
+        "Charleston",
+        "Balboa"
+    ],
+    "parking": "Free street parking available.",
+    "price": "$10 per person, cash only.",
+    "colors": {
+        "bg": "#0A0A0A",
+        "text": "white"
+    }
+}
