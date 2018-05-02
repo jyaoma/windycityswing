@@ -1,0 +1,67 @@
+{
+    "title": "The Flat Cats at Lincoln Square",
+    "className": "flat-cats-lincoln-square",
+    "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 7,
+        "weekday": 4
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180607T183000",
+        "endTimestamp": "20180607T210000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "The Flat Cats",
+    "instructor": "",
+    "schedule": [
+        {
+            "hour": 18,
+            "minute": 30,
+            "event": "Dancing"
+        },
+        {
+            "hour": 21,
+            "minute": 0,
+            "event": "End"
+        }
+    ],
+    "info": [
+        "All ages event",
+        "Outdoor event"
+    ],
+    "infoUrl": "http://www.lincolnsquare.org/summer-concert-series",
+    "attendance": "",
+    "music": {
+        "type": "Live",
+        "url": "http://www.flatcatsmusic.com/",
+        "by": "The Flat Cats"
+    },
+    "floorSize": "Medium",
+    "location": {
+        "addressName": "Lincoln Square",
+        "addressOne": "4731 N Lincoln Ave",
+        "addressTwo": "",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60613"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "East coast swing",
+        "Charleston",
+        "Balboa",
+        "Lindy Hop",
+        "Salsa"
+    ],
+    "parking": "Street parking",
+    "price": "Free",
+    "colors": {
+        "bg": "#F26663",
+        "text": "white"
+    }
+}
