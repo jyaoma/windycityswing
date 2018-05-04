@@ -1,0 +1,49 @@
+{
+    "title": "Chicago Underground Blues Experience (CUBE) 2018",
+    "className": "cube",
+    "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 8,
+        "weekday": 5
+    },
+    "timezone": {
+        "tzid": "America/Chicago",
+        "startTimestamp": "20180608T210000",
+        "endTimestamp": "20180611T060000"
+    },
+    "recurrence": {
+        "rule": "none"
+    },
+    "facebookUrl": "",
+    "organizer": "CUBE Staff",
+    "instructor": "Several",
+    "schedule": [
+    ],
+    "info": [
+        "Held in tandem with the Chicago Blues Festival in Millennium Park, CUBE offers three nights of pure social dancing held in local dance spaces for your enjoyment. The ultimate hang out event, you can spend the day enjoying the live music at the Fest with friends, sampling Chicago's rampant Brunch culture, or even wandering around downtown if you'd like a break from the music. Then, join your friends and dance all night in our delightfully air conditioned spaces, and take a break from the heat."
+    ],
+    "infoUrl": "",
+    "attendance": "100+",
+    "music": {
+        "type": "Several"
+    },
+    "floorSize": "Large",
+    "location": {
+        "addressName": "Millenium Park",
+        "addressOne": "201 E Randolph St",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60602"
+    },
+    "dressCode": "Dressy Casual",
+    "danceStyles": [
+        "Blues"
+    ],
+    "parking": "Street parking",
+    "price": "$45 per person for the whole weekend",
+    "colors": {
+        "bg": "#6F6F6F",
+        "text": "white"
+    }
+}
