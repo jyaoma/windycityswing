@@ -75,7 +75,7 @@
     },
     "unmockedModulePathPatterns": [
       "<rootDir>/node_modules/",
-      "<rootDir>/web/__tests__/testUtils"
+      "<rootDir>/__tests__/testUtils"
     ],
     "transformIgnorePatterns": [
       "<rootDir>/node_modules/"

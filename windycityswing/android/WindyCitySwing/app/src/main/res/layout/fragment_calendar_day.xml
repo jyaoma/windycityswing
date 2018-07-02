@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white">
+    <TextView
+        android:id="@+id/calendar_day_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:gravity="center_horizontal"
+        tools:text="1" />
+</LinearLayout>

@@ -50,3 +50,9 @@ windycityswing/android/WindyCitySwing/.DS_Store
 windycityswing/android/WindyCitySwing/build
 windycityswing/android/WindyCitySwing/captures
 windycityswing/android/WindyCitySwing/.externalNativeBuild
+
+# Native apps
+windycityswing/android/
+windycityswing/ios/
+
+my-app/

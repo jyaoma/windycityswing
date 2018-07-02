@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.windycityswing.windycityswing.Calendar">
+    tools:context="com.windycityswing.windycityswing.CalendarActivity">
 
     <TextView
         android:id="@+id/title"
@@ -23,6 +23,13 @@
         android:text="@string/subtitle"
         android:textSize="12sp"
         android:gravity="center"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="30dp"/>
+
+    <fragment
+        android:id="@+id/calendar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.windycityswing.windycityswing.CalendarFragment"/>
 
 </LinearLayout>

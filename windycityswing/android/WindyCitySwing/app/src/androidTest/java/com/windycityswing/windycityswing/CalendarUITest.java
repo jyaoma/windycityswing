@@ -1,7 +1,6 @@
 package com.windycityswing.windycityswing;
 
 import android.content.Context;
-import android.graphics.Typeface;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
@@ -34,7 +33,7 @@ public class CalendarUITest {
     }
 
     @Rule
-    public ActivityTestRule<Calendar> activityTestRule = new ActivityTestRule<>(Calendar.class);
+    public ActivityTestRule<CalendarActivity> activityTestRule = new ActivityTestRule<>(CalendarActivity.class);
 
     @Test
     public void hasTitle() {
@@ -44,17 +43,5 @@ public class CalendarUITest {
     @Test
     public void hasSubtitle() {
         onView(withText("THE SWING DANCING INFORMATION IN CHICAGO AND CHICAGOLAND AREA")).check(matches(isDisplayed()));
-    }
-
-    @Test
-    public void titleFontIsChanged() {
-        TextView title = activityTestRule.getActivity().findViewById(R.id.title);
-        assertNotNull(title.getTypeface());
-    }
-
-    @Test
-    public void subtitleFontIsChanged() {
-        TextView subtitle = activityTestRule.getActivity().findViewById(R.id.subtitle);
-        assertNotNull(subtitle.getTypeface());
     }
 }
