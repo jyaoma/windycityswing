@@ -51,8 +51,7 @@ windycityswing/android/WindyCitySwing/build
 windycityswing/android/WindyCitySwing/captures
 windycityswing/android/WindyCitySwing/.externalNativeBuild
 
-# Native apps
-windycityswing/android/
-windycityswing/ios/
+# React Native app
+windycityswing/mobile/
 
 my-app/
