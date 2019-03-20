@@ -6,8 +6,9 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import net.hockeyapp.android.CrashManager;
-import net.hockeyapp.android.metrics.MetricsManager;
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 
 public class CalendarActivity extends AppCompatActivity {
 
@@ -24,17 +25,7 @@ public class CalendarActivity extends AppCompatActivity {
         Typeface subtitleTypeface = Typeface.createFromAsset(getAssets(), "fonts/Rampung.ttf");
         subtitle.setTypeface(subtitleTypeface);
 
-        MetricsManager.register(getApplication());
-        MetricsManager.trackEvent("App startup");
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        checkForCrashes();
-    }
-
-    private void checkForCrashes() {
-        CrashManager.register(this);
+        AppCenter.start(getApplication(), "5d5820f3-7c31-42c3-8d70-13e9fa56f81e",
+                Analytics.class, Crashes.class);
     }
 }

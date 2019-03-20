@@ -9,12 +9,11 @@ android {
     }
     defaultConfig {
         applicationId "com.windycityswing.windycityswing"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        manifestPlaceholders = [HOCKEYAPP_APP_ID: "WindyCitySwing"]
     }
     buildTypes {
         release {
@@ -42,13 +41,16 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:27.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    implementation 'net.hockeyapp.android:HockeySDK:5.1.1'
     compileOnly 'org.projectlombok:lombok:1.16.20'
     testImplementation 'junit:junit:4.12'
     testImplementation 'org.assertj:assertj-core:3.9.0'
     testImplementation 'org.mockito:mockito-core:2.13.0'
     testImplementation "org.robolectric:robolectric:3.7.1"
     testImplementation "org.robolectric:shadows-supportv4:3.7.1"
+
+    def appCenterSdkVersion = '1.11.4'
+    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
 }
 repositories {
     mavenCentral()
