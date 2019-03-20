@@ -27,5 +27,6 @@ public class CalendarActivity extends AppCompatActivity {
 
         AppCenter.start(getApplication(), "5d5820f3-7c31-42c3-8d70-13e9fa56f81e",
                 Analytics.class, Crashes.class);
+        Analytics.trackEvent("App Startup");
     }
 }
