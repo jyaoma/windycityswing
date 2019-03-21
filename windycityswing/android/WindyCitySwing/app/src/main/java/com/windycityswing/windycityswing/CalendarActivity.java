@@ -29,6 +29,7 @@ public class CalendarActivity extends AppCompatActivity {
         title.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Analytics.trackEvent("Title clicked, should crash.");
                 Crashes.generateTestCrash();
             }
         });
