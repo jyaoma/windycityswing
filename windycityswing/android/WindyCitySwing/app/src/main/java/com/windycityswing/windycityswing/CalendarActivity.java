@@ -30,7 +30,7 @@ public class CalendarActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Analytics.trackEvent("Title clicked, should crash.");
-                Crashes.generateTestCrash();
+                throw new IllegalStateException("This is a test exception");
             }
         });
 
