@@ -31,7 +31,7 @@ const events = (eventList, props) => {
         date = date + '-' + dayString;
 
         result.push(
-            <div onClick={() => {history.push('/WindyCitySwing__'+event.className+'--'+date)}} className='calendar-day-modal__event' key={i} style={{backgroundColor: event.colors.bg, color: event.colors.text}}>
+            <div onClick={() => {history.push('/'+event.className+'--'+date)}} className='calendar-day-modal__event' key={i} style={{backgroundColor: event.colors.bg, color: event.colors.text}}>
                 <span className='calendar-day-modal__event-title'>{event.title}</span>
                 <span className='calendar-day-modal__event-address'>{event.location.addressName + ', ' + event.location.addressOne + ', ' + event.location.city + ', ' + event.location.state}</span>
 

@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const createConfig = () => {
     const config = {
-        entry: './windycityswing/web/src/scripts/app.js',
+        entry: './src/scripts/app.js',
 
         output: {
             path: path.join(__dirname, 'dist'),
@@ -16,23 +16,7 @@ const createConfig = () => {
             rules: [
                 {
                     test: /\.js$/,
-                    include: path.join(__dirname, 'windycityswing', 'web', 'src', 'scripts'),
-                    loader: 'babel-loader',
-                    query: {
-                        presets: ['react', 'env']
-                    }
-                },
-                {
-                    test: /\.js$/,
-                    include: path.join(__dirname, 'vday2017', 'src', 'scripts'),
-                    loader: 'babel-loader',
-                    query: {
-                        presets: ['react', 'env']
-                    }
-                },
-                {
-                    test: /\.js$/,
-                    include: path.join(__dirname, 'jerissatothemoon', 'src', 'scripts'),
+                    include: path.join(__dirname, 'src', 'scripts'),
                     loader: 'babel-loader',
                     query: {
                         presets: ['react', 'env']
@@ -40,49 +24,19 @@ const createConfig = () => {
                 },
                 {
                     test: /\.less$/,
-                    include: path.join(__dirname, 'windycityswing', 'web', 'src', 'less'),
-                    loaders: ['style-loader', 'css-loader', 'resolve-url-loader', 'less-loader']
-                },
-                {
-                    test: /\.less$/,
-                    include: path.join(__dirname, 'vday2017', 'src', 'less'),
-                    loaders: ['style-loader', 'css-loader', 'resolve-url-loader', 'less-loader']
-                },
-                {
-                    test: /\.less$/,
-                    include: path.join(__dirname, 'jerissatothemoon', 'src', 'less'),
+                    include: path.join(__dirname, 'src', 'less'),
                     loaders: ['style-loader', 'css-loader', 'resolve-url-loader', 'less-loader']
                 },
                 {
                     test: /\.(eot|woff|woff2|ttf|svg|otf)$/,
-                    include: path.join(__dirname, 'windycityswing', 'web', 'src', 'fonts'),
-                    loader: 'url-loader?limit=70000&name=fonts/[name]-[hash].[ext]'
-                },
-                {
-                    test: /\.(eot|woff|woff2|ttf|svg|otf)$/,
-                    include: path.join(__dirname, 'vday2017', 'src', 'fonts'),
-                    loader: 'url-loader?limit=70000&name=fonts/[name]-[hash].[ext]'
-                },
-                {
-                    test: /\.(eot|woff|woff2|ttf|svg|otf)$/,
-                    include: path.join(__dirname, 'jerissatothemoon', 'src', 'fonts'),
+                    include: path.join(__dirname, 'src', 'fonts'),
                     loader: 'url-loader?limit=70000&name=fonts/[name]-[hash].[ext]'
                 },
                 {
                     test: /\.(jpg|svg|png)$/,
                     loader: 'url-loader?limit=10000&name=images/[name]-[hash].[ext]',
-                    include: path.join(__dirname, 'windycityswing', 'web', 'src', 'images')
+                    include: path.join(__dirname, 'src', 'images')
                 },
-                {
-                    test: /\.(jpg|svg|png)$/,
-                    loader: 'url-loader?limit=10000&name=images/[name]-[hash].[ext]',
-                    include: path.join(__dirname, 'vday2017', 'src', 'images')
-                },
-                {
-                    test: /\.(jpg|svg|png)$/,
-                    loader: 'url-loader?limit=10000&name=images/[name]-[hash].[ext]',
-                    include: path.join(__dirname, 'jerissatothemoon', 'src', 'images')
-                }
             ]
         },
 
@@ -92,15 +46,9 @@ const createConfig = () => {
 
         plugins: [
             new CopyWebpackPlugin([
-                {from: '.\\jerissatothemoon\\src\\images\\', to: 'images\\'}, // TODO: Use url-loader, it's better than this. Then remove copy-webpack-plugin.
-                {from: '.\\jerissatothemoon\\src\\fonts\\', to: 'fonts\\'},
-                {from: '.\\jerissatothemoon\\src\\less\\', to: 'less\\'},
-                {from: '.\\vday2017\\src\\images\\', to: 'images\\'}, // TODO: Use url-loader, it's better than this. Then remove copy-webpack-plugin.
-                {from: '.\\vday2017\\src\\fonts\\', to: 'fonts\\'},
-                {from: '.\\vday2017\\src\\less\\', to: 'less\\'},
-                {from: '.\\windycityswing\\src\\images\\', to: 'images\\'}, // TODO: Use url-loader, it's better than this. Then remove copy-webpack-plugin.
-                {from: '.\\windycityswing\\src\\fonts\\', to: 'fonts\\'},
-                {from: '.\\windycityswing\\src\\less\\', to: 'less\\'}
+                {from: '.\\src\\images\\', to: 'images\\'}, // TODO: Use url-loader, it's better than this. Then remove copy-webpack-plugin.
+                {from: '.\\src\\fonts\\', to: 'fonts\\'},
+                {from: '.\\src\\less\\', to: 'less\\'}
             ]),
             new HtmlWebpackPlugin({
                 template: path.join(__dirname, 'index.html')
